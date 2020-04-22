@@ -91,12 +91,14 @@
         top: 0;
     }
 
-    .main-navigation ul ul li:hover>ul {
+    .main-navigation ul ul li:hover>ul,
+    .main-navigation ul ul li.focus>ul {
         right: 100%;
         top: 0;
     }
 
-    .main-navigation ul li:hover>ul {
+    .main-navigation ul li:hover>ul,
+    .main-navigation ul li.focus>ul {
         display: block;
         right: 0;
         top: 100%;

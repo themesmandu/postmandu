@@ -23,8 +23,7 @@ a:link {
 
 a:focus,
 a:active {
-    outline: none !important;
-    box-shadow: none !important;
+    outline: 1px dotted;
 }
 
 a:hover {
@@ -247,7 +246,7 @@ h6 {
 /* -- Main Navigation Styles -- */
 
 .main-navigation {
-    padding: 0;
+    padding: 20px 0;
     max-width: 1920px;
     margin: auto;
     position: absolute;
@@ -258,7 +257,7 @@ h6 {
 }
 
 .site-branding {
-    margin: 10px 15px 10px 0;
+    margin: 0 15px 0 0;
 }
 
 .site-branding span {
@@ -281,8 +280,8 @@ h6 {
 
 .main-navigation .menu-item {
     display: inline-block;
-    margin: 0 25px;
-    padding: 23px 0 21px;
+    margin: 0 10px;
+    padding: 0;
 }
 
 .main-navigation .menu-item.current-menu-item .nav-link {
@@ -292,11 +291,12 @@ h6 {
 .main-navigation .menu-item.current-menu-item .nav-link:before {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
+    width: 70%;
     height: 2px;
+    margin: auto;
 }
 
 .main-navigation .menu-item.current-menu-item .sub-menu .nav-link:before {
@@ -304,12 +304,11 @@ h6 {
 }
 
 .main-navigation .menu-item:last-child {
-    margin-right: 0;
-    padding-right: 0;
+    margin-right: -12px;
 }
 
 .main-navigation .navbar-nav .nav-link {
-    padding: 0;
+    padding: 8px 12px;
 }
 
 /* -- Navbar With Search Bar [Alternative Option] -- */
