@@ -11,36 +11,29 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php
+	<?php
 	the_post_thumbnail();
 	?>
 
-    <div class="content">
+	<div class="content">
 
 
-        <?php
-if ( get_post_type() === 'post' ) {
-	?>
-        <div class="entry-meta">
-            <?php
+		<?php
+		if ( get_post_type() === 'post' ) {
+			?>
+		<div class="entry-meta">
+			<?php
 			postmandu_posted_on();
 			postmandu_posted_by();
+			?>
+		</div>
+			<?php
+		}
 		?>
-        </div>
-        <?php
-}
-?>
 
-        <?php
-	if ( has_excerpt() ) :
-		?>
-        <div class="lead"><?php the_excerpt(); ?></div>
-        <?php
-		endif;
-	?>
 
-        <div class="entry-content">
-            <?php
+		<div class="entry-content">
+			<?php
 			the_content(
 				sprintf(
 					/* translators: %s: Name of current post. Only visible to screen readers */
@@ -56,11 +49,11 @@ if ( get_post_type() === 'post' ) {
 				)
 			);
 			?>
-        </div><!-- .entry-content -->
+		</div><!-- .entry-content -->
 
-        <footer class="entry-footer">
-            <?php postmandu_entry_footer(); ?>
-        </footer>
+		<footer class="entry-footer">
+			<?php postmandu_entry_footer(); ?>
+		</footer>
 
-    </div><!-- .content -->
+	</div><!-- .content -->
 </article><!-- #post-<?php the_ID(); ?> -->
