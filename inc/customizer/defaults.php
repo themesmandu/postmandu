@@ -32,8 +32,8 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['link_color']                      = 'rgba(247,99,27,0.7)';        //Text Link Color.
 		$defaults['link_hover_color']                = '#0056b3';      //Text Link Hover Color.
 		$defaults['meta_color']                      = '#777777';        //Meta Text Color.
-		$defaults['postmandu_btn_color']             = '#cb0000';     //postmandu Button Background Color.
-		$defaults['postmandu_btn_hover_color']       = 'rgba(251,58,102,0.7)';      //postmandu Button Background: Hover Color.
+		$defaults['postmandu_btn_color']             = '#20aa73';     //postmandu Button Background Color.
+		$defaults['postmandu_btn_hover_color']       = 'rgba(32,170,115,0.7)';      //postmandu Button Background: Hover Color.
 		$defaults['postmandu_btn_text_color']        = 'rgba(255, 255, 255, 1)';       //postmandu Button Text Color.
 		$defaults['postmandu_player_now_playing_bg'] = '#cb0000';       //postmandu Highlight Color
 		$defaults['postmandu_btn_text_hover_color']  = 'rgba(255, 255, 255, 1)';     //postmandu Button Text: Hover Color.

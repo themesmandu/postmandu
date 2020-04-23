@@ -42,6 +42,13 @@
 				//header page title.
 				postmandu_header_page_title();
 				?>
+				<section class="header-banner">
+					<div class="container">
+						<h1>Welcome To Podcast</h1>
+						<h3>For Every Business</h3>
+						<button class="btn-podcast">Listen To The Podcast</button>
+					</div>
+				</section>
 			</div>
 
 		</header><!-- #masthead -->

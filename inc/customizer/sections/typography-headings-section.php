@@ -27,7 +27,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H1', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '48px',
 			'line-height'    => '1.3',
@@ -51,7 +51,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H2', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '36px',
 			'line-height'    => '1.3',
@@ -75,7 +75,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H3', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '32px',
 			'line-height'    => '1.3',
@@ -99,7 +99,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H4', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '28px',
 			'line-height'    => '1.3',
@@ -124,7 +124,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H5', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '24px',
 			'line-height'    => '1.3',
@@ -149,7 +149,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'H6', 'postmandu' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Montserrat',
 			'variant'        => 'regular',
 			'font-size'      => '18px',
 			'line-height'    => '1.3',

@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.sub-menu .menu-item-has-children::after {
+.main-navigation .sub-menu .menu-item-has-children::after {
     position: absolute;
     top: 10px;
     left: 15px;

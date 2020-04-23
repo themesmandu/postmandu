@@ -25,7 +25,7 @@ Kirki::add_field(
 		'label'     => esc_html__( 'Typography(body)', 'postmandu' ),
 		'section'   => 'typography_general_options',
 		'default'   => array(
-			'font-family'    => 'Nunito',
+			'font-family'    => 'Roboto',
 			'variant'        => 'regular',
 			'font-size'      => '16px',
 			'line-height'    => '1.5',

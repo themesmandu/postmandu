@@ -79,7 +79,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.navbar .navbar-nav .nav-link',
+				'element'  => '.navbar .navbar-nav .nav-link, .main-navigation .menu-item-has-children:after',
 				'property' => 'color',
 			),
 			array(
@@ -197,7 +197,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-postmandu, .main-navigation .menu-item.current-menu-item .nav-link:before, .section_four .active .sub_heading, .postmandu-span, #menu span, .skip-link',
+				'element'  => 'button, .btn-postmandu, .section_four .active .sub_heading, .postmandu-span, #menu span, .skip-link',
 				'property' => 'background-color',
 			),
 			array(
@@ -215,7 +215,8 @@ Kirki::add_field(
 			array(
 				'element'  => '.strong-view .wpmslider-controls .wpmslider-pager-link:hover:before,
 				.strong-view .wpmslider-controls .wpmslider-pager-link.active:before,
-				.strong-view .wpmslider-controls .wpmslider-pager-link.active:hover:before',
+				.strong-view .wpmslider-controls .wpmslider-pager-link.active:hover:before, .main-navigation .menu-item.current-menu-item .nav-link,
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after',
 				'property' => 'color',
 			),
 		),
