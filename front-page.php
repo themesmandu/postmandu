@@ -152,16 +152,16 @@ get_header();
                     </div>
                 </div>
             </div>
-            <button class="btn-postmandu"><a href="#">More Episode</a></button>
+            <button class="more-link btn-postmandu"><a href="#">More Episode</a></button>
         </div>
 
         <div class="episode-list">
-            <div class="list-wrap row">
-                <figure class="col-md-4 col-sm-5 m-0">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-avatar.jpg" />
+            <div class="list-wrap">
+                <figure class="column m-0">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
                 </figure>
 
-                <div class="list-content col-md-8 col-sm-7">
+                <div class="column list-content">
                     <h4 class="episode-title">Episode 10: Season Final</h4>
                     <div class="episode-meta">
                         <span class="posted-on">
@@ -182,14 +182,83 @@ get_header();
                     </div>
 
                     <div class="episode-summary">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
                             labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
                             viverra maecenas accumsan lacus vel facilisis.</p>
                     </div>
                 </div>
             </div>
 
-            <button class="btn-postmandu"><a href="">More Episode</a></button>
+            <div class="list-wrap">
+                <figure class="column m-0">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
+                </figure>
+
+                <div class="column list-content">
+                    <h4 class="episode-title">Episode 10: Season Final</h4>
+                    <div class="episode-meta">
+                        <span class="posted-on">
+                            <a href="#">4/23/2020</a>
+                        </span>
+
+                        <span class="posted-by">
+                            <a href="#">Admin</a>
+                        </span>
+
+                        <span class="episode-category">
+                            <a href="#">Media</a>
+                        </span>
+
+                        <span class="duration">
+                            <a href="#">02:32</a>
+                        </span>
+                    </div>
+
+                    <div class="episode-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-wrap">
+                <figure class="column m-0">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
+                </figure>
+
+                <div class="column list-content">
+                    <h4 class="episode-title">Episode 10: Season Final</h4>
+                    <div class="episode-meta">
+                        <span class="posted-on">
+                            <a href="#">4/23/2020</a>
+                        </span>
+
+                        <span class="posted-by">
+                            <a href="#">Admin</a>
+                        </span>
+
+                        <span class="episode-category">
+                            <a href="#">Media</a>
+                        </span>
+
+                        <span class="duration">
+                            <a href="#">02:32</a>
+                        </span>
+                    </div>
+
+                    <div class="episode-summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                            viverra maecenas accumsan lacus vel facilisis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="more-link btn-postmandu"><a href="">More Episode</a></button>
         </div>
     </div>
 </section>

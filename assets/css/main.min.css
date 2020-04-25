@@ -466,12 +466,41 @@ h6 {
     text-align: left;
 }
 
-.episode-grid .btn-postmandu {
+.more-link.btn-postmandu {
     margin: 70px 0 0;
 }
 
-.episode-grid .btn-postmandu a {
+.more-link.btn-postmandu a {
     color: #ffffff;
+}
+
+/* -- List Styles -- */
+
+.episode-list {
+    text-align: center;
+}
+
+.list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f6f6f6;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.list-wrap figure {
+    width: 35%;
+}
+
+.list-content {
+    width: 65%;
+    padding: 30px 70px;
+    background-color: transparent;
+}
+
+.list-wrap .episode-summary {
+    font-size: 14px;
 }
 
 
