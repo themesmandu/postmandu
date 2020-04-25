@@ -180,7 +180,7 @@ figcaption,
 
 /* -- to the top css -- */
 
-.up-btn {
+.btn-postmandu.up-btn {
     position: fixed;
     visibility: hidden;
     bottom: 5%;

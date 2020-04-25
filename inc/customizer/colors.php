@@ -216,7 +216,7 @@ Kirki::add_field(
 				'element'  => '.strong-view .wpmslider-controls .wpmslider-pager-link:hover:before,
 				.strong-view .wpmslider-controls .wpmslider-pager-link.active:before,
 				.strong-view .wpmslider-controls .wpmslider-pager-link.active:hover:before, .main-navigation .menu-item.current-menu-item .nav-link,
-				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after',
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post',
 				'property' => 'color',
 			),
 		),
