@@ -1154,13 +1154,16 @@ section span.wpcf7-not-valid-tip {
 }
 
 #footer {
-    text-align: center;
-    padding: 68px 0;
     position: relative;
+}
+
+#footer .widget-content-wrap {
+    padding: 60px 0;
 }
 
 #footer .content {
     margin-bottom: 56px;
+    position: relative;
 }
 
 #footer .content:last-child,
@@ -1199,14 +1202,43 @@ footer .paragraph span:last-child:after,
     padding: 0 15px;
 }
 
-#footer .site-info {
-    margin-bottom: 10px;
+.footer-copyright {
+    background-color: #101010;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
 }
 
-#footer .widget li {
-    border: none;
-    margin-bottom: 5px;
-    padding: 0;
+.footer-copyright .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-info p {
+    font-size: 14px;
+}
+
+#footer .footer-social-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer .footer-social-nav a {
+    height: 34px;
+    width: 34px;
+    background-color: #ffffff;
+    color: #101010;
+    border-radius: 100%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .footer-social-nav .menu-item:last-child a {
+    margin-right: 0;
 }
 
 /* -- Footer Widget Styles -- */
@@ -1214,6 +1246,12 @@ footer .paragraph span:last-child:after,
 
 #footer-widgets {
     text-align: left;
+}
+
+#footer .widget li {
+    border: none;
+    margin-bottom: 5px;
+    padding: 0;
 }
 
 #footer-widgets .column {

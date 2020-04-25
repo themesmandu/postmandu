@@ -37,7 +37,7 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['postmandu_btn_text_color']        = 'rgba(255, 255, 255, 1)';       //postmandu Button Text Color.
 		$defaults['postmandu_player_now_playing_bg'] = '#cb0000';       //postmandu Highlight Color
 		$defaults['postmandu_btn_text_hover_color']  = 'rgba(255, 255, 255, 1)';     //postmandu Button Text: Hover Color.
-		$defaults['footer_overlay']                  = 'rgba(0, 0, 0, 1)';      //Footer Background.
+		$defaults['footer_overlay']                  = '#232323';      //Footer Background.
 		$defaults['footer_color']                    = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
 
 		//blog defaults
