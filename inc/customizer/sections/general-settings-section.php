@@ -110,7 +110,7 @@ Kirki::add_field(
 		'settings'  => 'sidebar_bg',
 		'label'     => __( 'Sidebar Background Color', 'postmandu' ),
 		'section'   => 'general_options',
-		'default'   => '#ffffff',
+		'default'   => '#101010',
 		'choices'   => array(
 			'alpha' => true,
 		),
@@ -132,7 +132,7 @@ Kirki::add_field(
 		'settings'  => 'sidebar_color',
 		'label'     => __( 'Sidebar Color', 'postmandu' ),
 		'section'   => 'general_options',
-		'default'   => '#020407',
+		'default'   => '#ffffff',
 		'choices'   => array(
 			'alpha' => true,
 		),
@@ -224,4 +224,3 @@ Kirki::add_field(
 		),
 	)
 );
-

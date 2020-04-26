@@ -197,15 +197,15 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-postmandu, .section_four .active .sub_heading, .postmandu-span, #menu span, .skip-link',
+				'element'  => 'button, .btn-postmandu, .postmandu-span, #menu span, .skip-link, .tnp-widget-minimal input.tnp-submit, .tnp-field input[type="submit"], input[type="submit"]',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => 'span.page-numbers.current, section .wpcf7-form p input[type="submit"], .section_review .strong-view.controls-style-buttons2 .wpmslider-prev, .section_review .strong-view.controls-style-buttons2 .wpmslider-next',
+				'element'  => 'span.page-numbers.current, section .wpcf7-form p input[type="submit"]',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '.testimonialslide .slick-dots .slick-active button',
+				'element'  => '#footer .footer-social-nav a:hover, .input-group>.input-group-append>.btn',
 				'property' => 'background-color',
 			),
 			array(
@@ -213,10 +213,8 @@ Kirki::add_field(
 				'property' => 'border-color',
 			),
 			array(
-				'element'  => '.strong-view .wpmslider-controls .wpmslider-pager-link:hover:before,
-				.strong-view .wpmslider-controls .wpmslider-pager-link.active:before,
-				.strong-view .wpmslider-controls .wpmslider-pager-link.active:hover:before, .main-navigation .menu-item.current-menu-item .nav-link,
-				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post',
+				'element'  => 'a:hover, .main-navigation .menu-item.current-menu-item .nav-link,
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
 				'property' => 'color',
 			),
 		),
@@ -238,7 +236,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, #wizards_slider .slider_bullets .active, #wizards_slider .wiz-arrow:hover i',
+				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover',
 				'property' => 'background-color',
 			),
 			array(
@@ -296,8 +294,3 @@ Kirki::add_field(
 		),
 	)
 );
-
-
-
-
-

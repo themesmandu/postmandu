@@ -23,12 +23,20 @@ a:link {
 }
 
 a:focus,
-a:active {
+a:active,
+input:focus,
+textarea:focus,
+select:focus,
+input[type="submit"]:focus {
     outline: 1px dotted;
 }
 
 a:hover {
     text-decoration: none;
+}
+
+p {
+    line-height: 1.7;
 }
 
 p:last-child {
@@ -40,11 +48,6 @@ img,
 iframe {
     max-width: 100%;
     object-fit: cover;
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
 }
 
 label {
@@ -60,9 +63,10 @@ select,
 .comment-respond input[type=text],
 .comment-respond input[type=email],
 .comment-respond .comment-form-comment textarea {
-    color: #777777;
+    color: #555555;
     outline: none;
     border: 1px solid rgba(0, 0, 0, .14);
+    border-radius: 0;
     width: 100%;
     padding: 12px 15px;
     transition: .3s;
@@ -71,9 +75,14 @@ select,
 input[type="submit"] {
     width: auto;
     border: none;
+    border-radius: 0;
     padding: 15px 25px;
     line-height: 1;
     transition: .3s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -241,6 +250,10 @@ h6 {
 /* -- Main Navigation Styles -- */
 
 .main-navigation {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
     padding: 20px 0;
     max-width: 1920px;
     margin: auto;
@@ -283,6 +296,23 @@ h6 {
     padding: 8px 12px;
 }
 
+/* -- Search Form Styles -- */
+
+.form-control {
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+.postmandu-search input::placeholder {
+    font-size: 14px;
+}
+
+#searchform input[type="submit"]:focus {
+    box-shadow: none;
+    opacity: .7;
+}
+
 /* -- Navbar With Search Bar [Alternative Option] -- */
 
 .navbar #searchform {
@@ -297,11 +327,6 @@ h6 {
     font-size: 14px;
     border-radius: 0;
     border: none;
-}
-
-.navbar #searchform input:focus,
-.navbar #searchform input:active {
-    box-shadow: none !important;
 }
 
 .navbar #searchform input[type="submit"] {
@@ -421,7 +446,7 @@ h6 {
     display: none;
 }
 
-.episode-grid.show-grid ,
+.episode-grid.show-grid,
 .episode-list.show-list {
     display: block;
 }
@@ -466,11 +491,11 @@ h6 {
     text-align: left;
 }
 
-.more-link.btn-postmandu {
+.more-link-btn.btn-postmandu {
     margin: 70px 0 0;
 }
 
-.more-link.btn-postmandu a {
+.more-link-btn.btn-postmandu a {
     color: #ffffff;
 }
 
@@ -510,7 +535,7 @@ h6 {
     margin: 0 -20px;
 }
 
-.column-grid  {
+.column-grid {
     padding: 0 20px;
     margin: 0 0 40px;
 }
@@ -559,14 +584,12 @@ h6 {
 /* -- Page Styles -- */
 
 .page-content {
-    padding: 155px 0 50px;
+    padding: 200px 0 100px;
     text-align: center;
 }
 
 .page-content .header-title {
-    font-weight: 700;
     color: #ffffff;
-    text-transform: uppercase;
     margin: 0;
 }
 
@@ -611,7 +634,7 @@ h6 {
 }
 
 article {
-    margin: 0 0 32px;
+    margin: 0 0 52px;
     border: none;
     border-radius: 0;
 }
@@ -624,12 +647,13 @@ article time.updated.published {
     margin: 0;
 }
 
-article .post-wrap {
-    padding: 20px;
-}
-
 article .content {
     margin: 20px 0 0;
+}
+
+article .post-wrap figure {
+    padding: 0 0 30px;
+    margin: 0;
 }
 
 article .attachment-post-thumbnail {
@@ -676,6 +700,7 @@ article span i {
 .post .card-footer {
     border-radius: 0;
     border-color: rgba(0, 0, 0, .05);
+    padding: 20px 30px;
 }
 
 .entry-footer a {
@@ -718,6 +743,17 @@ article.post .entry-meta {
     margin: 20px 0 10px;
 }
 
+article .post-wrap .entry-title,
+article .post-wrap .entry-meta,
+article .post-wrap .entry-summary {
+    padding: 0 30px 20px;
+    margin: 0;
+}
+
+article.post .more-link {
+    background-color: transparent;
+    padding: 0;
+}
 
 /* -- Post Navigation -- */
 
@@ -1006,7 +1042,7 @@ span.page-numbers.current {
 
 #commentform .comment-form-cookies-consent label {
     font-weight: 300;
-    color: #777777;
+    color: #555555;
     margin: auto 0 auto 5px;
 }
 
@@ -1028,6 +1064,12 @@ span.page-numbers.current {
 }
 
 /* -- Sidebar Styles -- */
+
+#sidebar {
+    max-width: 345px;
+    margin-left: auto;
+    font-size: 15px;
+}
 
 #sidebar section {
     padding: 0;
@@ -1055,7 +1097,9 @@ section.widget p {
 }
 
 .widget ul {
+    list-style: none;
     margin: 0;
+    padding: 0 0 0 20px;
 }
 
 .widget ul ul {
@@ -1065,9 +1109,17 @@ section.widget p {
 .widget li {
     font-weight: 500;
     color: inherit;
-    border-bottom: 1px solid #e4e7eb;
-    margin-bottom: 10px;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-indent: -20px;
+}
+
+.widget li:before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f054";
+    font-weight: 800;
+    font-size: 10px;
+    margin-right: 10px;
+    line-height: 27px;
 }
 
 .widget li:last-child {
@@ -1090,18 +1142,9 @@ section.widget p {
     color: inherit;
     text-transform: capitalize;
     display: block;
-    margin: 8px 0;
+    margin: 8px 0 0;
     opacity: .5;
-}
-
-.widget_archive li,
-.widget_archive li:last-child,
-.widget_categories li,
-.widget_categories li:last-child,
-.widget_tag_cloud a {
-    display: inline-block;
-    border: 1px solid #e4e7eb;
-    padding: 8px 12px;
+    text-indent: 0;
 }
 
 .widget .menu-item-has-children:after {
@@ -1115,22 +1158,6 @@ section.widget p {
 .widget_tag_cloud a {
     font-size: 13px !important;
     margin-bottom: 4px;
-}
-
-/* -- Search Form Styles -- */
-
-.form-control {
-    border-radius: 0;
-    box-shadow: none !important;
-    border-color: #e4e7eb;
-}
-
-.form-control:focus {
-    border-color: #e4e7eb !important;
-}
-
-.postmandu-search input::placeholder {
-    font-size: 14px;
 }
 
 /* -- Contact Form Seven -- */
@@ -1223,6 +1250,8 @@ footer .paragraph span:last-child:after,
 #footer .footer-social-nav {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
 }
 
 #footer .footer-social-nav a {
@@ -1246,12 +1275,6 @@ footer .paragraph span:last-child:after,
 
 #footer-widgets {
     text-align: left;
-}
-
-#footer .widget li {
-    border: none;
-    margin-bottom: 5px;
-    padding: 0;
 }
 
 #footer-widgets .column {
@@ -1365,6 +1388,12 @@ footer .paragraph span:last-child:after,
 
 .search-results li:last-child {
     margin-bottom: 0;
+}
+
+/* -- Plugins Styles -- */
+
+.tnp-field label {
+    font-weight: 400;
 }
 
 /* -- All Animation Styles -- */
