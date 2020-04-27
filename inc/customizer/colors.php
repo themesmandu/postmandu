@@ -209,7 +209,7 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '.section_four .column-content .paragraph',
+				'element'  => '',
 				'property' => 'border-color',
 			),
 			array(
@@ -240,7 +240,7 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#wizards_slider .wiz-arrow img, section .wpcf7-form p input[type="submit"]:hover, .section_review .strong-view.controls-style-buttons2 .wpmslider-prev:hover, .section_review .strong-view.controls-style-buttons2 .wpmslider-next:hover',
+				'element'  => 'section .wpcf7-form p input[type="submit"]:hover',
 				'property' => 'background-color',
 			),
 		),
