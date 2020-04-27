@@ -34,6 +34,20 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 <div class="page-content">
 	<div class="container">
 		<h1 class="header-title"><?php single_post_title(); ?></h1>
+			<?php
+			if ( get_post_type() === 'post' && is_single() ) {
+				?>
+		<div class="entry-meta">
+				<?php
+				postmandu_posted_on();
+				postmandu_posted_by();
+				postmandu_entry_footer();
+				?>
+
+		</div>
+				<?php
+			}
+			?>
 	</div>
 </div>
 			<?php

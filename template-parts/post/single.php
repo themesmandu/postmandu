@@ -17,21 +17,6 @@
 
 	<div class="content">
 
-
-		<?php
-		if ( get_post_type() === 'post' ) {
-			?>
-		<div class="entry-meta">
-			<?php
-			postmandu_posted_on();
-			postmandu_posted_by();
-			?>
-		</div>
-			<?php
-		}
-		?>
-
-
 		<div class="entry-content">
 			<?php
 			the_content(
@@ -51,9 +36,7 @@
 			?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-footer">
-			<?php postmandu_entry_footer(); ?>
-		</footer>
+
 
 	</div><!-- .content -->
 </article><!-- #post-<?php the_ID(); ?> -->
