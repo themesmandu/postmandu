@@ -209,11 +209,11 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '',
+				'element'  => 'blockquote',
 				'property' => 'border-color',
 			),
 			array(
-				'element'  => 'a:hover, .main-navigation .menu-item.current-menu-item .nav-link,
+				'element'  => 'a:hover, .main-navigation .menu-item.current-menu-item .nav-link, blockquote p,
 				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
 				'property' => 'color',
 			),
