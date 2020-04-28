@@ -217,6 +217,10 @@ Kirki::add_field(
 				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
 				'property' => 'color',
 			),
+			array(
+				'element'  => '.single-post .navigation .column h4:hover',
+				'property' => 'color',
+			),
 		),
 	)
 );
@@ -236,11 +240,11 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover',
+				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover',
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => 'section .wpcf7-form p input[type="submit"]:hover',
+				'element'  => '',
 				'property' => 'background-color',
 			),
 		),
