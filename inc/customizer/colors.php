@@ -262,11 +262,11 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-postmandu, .postmandu-span, .cart-pop-up .edd_download_purchase_form .edd_price_options li.selected span, .skip-link, span.page-numbers.current',
+				'element'  => 'button, .btn-postmandu, .postmandu-span, .skip-link, span.page-numbers.current',
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.cart-pop-up .edd_price_options label:hover span, section .wpcf7-form p input[type="submit"], .section_review .strong-view.controls-style-buttons2 .wpmslider-prev, .section_review .strong-view.controls-style-buttons2 .wpmslider-next',
+				'element'  => 'input[type="submit"], .more-link-btn.btn-postmandu a',
 				'property' => 'color',
 			),
 		),
@@ -288,7 +288,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, section .wpcf7-form p input[type="submit"]:hover, .section_review .strong-view.controls-style-buttons2 .wpmslider-prev:hover, .section_review .strong-view.controls-style-buttons2 .wpmslider-next:hover',
+				'element'  => 'button:hover, .btn-postmandu:hover, input[type="submit"]:hover, .more-link-btn.btn-postmandu a:hover',
 				'property' => 'color',
 			),
 		),

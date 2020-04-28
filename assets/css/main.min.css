@@ -57,7 +57,6 @@ iframe {
 
 label {
     font-size: 14px;
-    font-weight: 700;
     color: #353638;
     display: block;
 }
@@ -480,10 +479,7 @@ h6 {
 
 .more-link-btn.btn-postmandu {
     margin: 70px 0 0;
-}
-
-.more-link-btn.btn-postmandu a {
-    color: #ffffff;
+    display: inline-block;
 }
 
 /* -- List Styles -- */
@@ -907,14 +903,14 @@ span.page-numbers.current {
 #comments,
 #respond {
     background: inherit;
-    padding: 20px;
-    margin: 32px 0 0;
+    margin: 82px 0 0;
 }
 
 .comments-title,
 #reply-title {
-    color: #31396b;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #main .comment article {
@@ -946,15 +942,31 @@ span.page-numbers.current {
 }
 
 .comment-meta figure {
+    width: 12%;
     padding-right: 15px;
 }
 
 .comment-meta figure img {
-    width: 55px;
+    border-radius: 100%;
 }
 
 .comment-metadata {
     width: 88%;
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+}
+
+.comment-metadata:before {
+    content: '';
+    background-color: #ffffff;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -6px;
+    top: 20px;
+    z-index: -1;
 }
 
 .comment-metadata .fn,
@@ -972,7 +984,7 @@ span.page-numbers.current {
 }
 
 .comment-metadata .comment-details {
-    margin: 5px 0 20px;
+    margin: 8px 0 15px;
 }
 
 .comment-awaiting-moderation {
@@ -982,7 +994,8 @@ span.page-numbers.current {
 }
 
 #comments .reply {
-    margin-left: auto;
+    display: block;
+    text-align: right;
 }
 
 #comments .reply a,
@@ -992,11 +1005,21 @@ span.page-numbers.current {
     border: 1px solid #eeeeee;
     text-transform: uppercase;
     padding: 6px 16px;
-    display: block;
+    display: inline-block;
+}
+
+.comment_pagination {
+    padding: 10px 15px;
+    background-color: rgba(255,255,255,.1);
 }
 
 .comment-notes {
     margin-bottom: 32px;
+    color: #ffffff;
+}
+
+#commentform label {
+    color: #ffffff;
 }
 
 #commentform .required {

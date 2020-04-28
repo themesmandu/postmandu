@@ -152,7 +152,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<button class="more-link-btn btn-postmandu"><a href="#">More Episode</a></button>
+			<a href="#" class="more-link-btn btn-postmandu">More Episode</a>
 		</div>
 
 		<div class="episode-list">
@@ -258,7 +258,7 @@ get_header();
 				</div>
 			</div>
 
-			<button class="more-link-btn btn-postmandu"><a href="">More Episode</a></button>
+			<a href="" class="more-link-btn btn-postmandu">More Episode</a>
 		</div>
 	</div>
 </section>
