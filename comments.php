@@ -50,7 +50,7 @@ if ( have_comments() ) :
 	</ul>
 
 
-
+	<?php if ( paginate_comments_links() ) : ?>
 	<div class="comment_pagination">
 		<?php
 			paginate_comments_links(
@@ -62,6 +62,7 @@ if ( have_comments() ) :
 			);
 		?>
 	</div>
+	<?php endif; ?>
 
 	<?php
 
