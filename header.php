@@ -42,17 +42,12 @@
 				//header page title.
 				postmandu_header_page_title();
 				?>
-				<?php if ( is_front_page() && ! is_home() ) : ?>
-				<section class="header-banner">
-					<div class="container">
-						<div class="banner-content">
-							<h1 class="banner-heading">Welcome To Podcast</h1>
-							<h4 class="banner-sub-heading">For Every Business</h4>
-							<button class="btn-podcast">LISTEN TO THE PODCAST</button>
-						</div>
-					</div>
-				</section>
-				<?php endif; ?>
+			<?php
+			if ( is_front_page() && ! is_home() && get_theme_mod( 'banner_toggle' ) ) {
+				// head banner on the front page if it enabled.
+				get_template_part( 'template-parts/jumbotron' );
+			}
+			?>
 			</div>
 
 		</header><!-- #masthead -->

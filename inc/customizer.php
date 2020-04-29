@@ -103,6 +103,11 @@ require get_template_directory() . '/inc/customizer/colors.php';
 require get_template_directory() . '/inc/customizer/sections/general-settings-section.php';
 
 /**
+* Header banner section.
+*/
+require get_template_directory() . '/inc/customizer/sections/head-banner-section.php';
+
+/**
 * Post page section.
 */
 require get_template_directory() . '/inc/customizer/sections/post-page-section.php';
