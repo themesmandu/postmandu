@@ -80,7 +80,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'background-color',
 			),
 		),
@@ -98,7 +98,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'color',
 			),
 		),
@@ -132,9 +132,9 @@ Kirki::add_field(
 		'label'     => esc_html__( 'Banner Paddings', 'postmandu' ),
 		'section'   => 'frontpage_banner',
 		'default'   => array(
-			'padding-top'    => '350px',
+			'padding-top'    => '0px',
 			'padding-right'  => '0px',
-			'padding-bottom' => '350px',
+			'padding-bottom' => '0px',
 			'padding-left'   => '0px',
 		),
 		'choices'   => array(
@@ -149,22 +149,22 @@ Kirki::add_field(
 		'output'    => array(
 			array(
 				'choice'   => 'padding-top',
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'padding-top',
 			),
 			array(
 				'choice'   => 'padding-right',
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'padding-right',
 			),
 			array(
 				'choice'   => 'padding-bottom',
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'padding-bottom',
 			),
 			array(
 				'choice'   => 'padding-left',
-				'element'  => '.front-page .jumbotron',
+				'element'  => '.front-page .header-banner',
 				'property' => 'padding-left',
 			),
 		),
