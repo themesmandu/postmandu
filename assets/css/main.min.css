@@ -386,6 +386,7 @@ h6 {
     margin-top: 20px;
     padding: 18px;
     cursor: pointer;
+    display: inline-block;
 }
 
 /* -- Content Styles -- */
@@ -1388,6 +1389,10 @@ footer .paragraph span:last-child:after,
 
 .error404 #content {
     display: none;
+}
+
+.error404 .page-content {
+    text-align: center;
 }
 
 .error404 .postmandu-search {

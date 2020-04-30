@@ -292,7 +292,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, input[type="submit"]:hover, .more-link-btn.btn-postmandu a:hover',
+				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-postmandu a:hover',
 				'property' => 'color',
 			),
 		),

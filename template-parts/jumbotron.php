@@ -35,7 +35,7 @@ if ( empty( $heading ) && empty( $subheading ) && empty( $bg_img ) && empty( $bt
 			</h4>
 
 			<?php if ( ! empty( $btn_label ) ) { ?>
-			<a href="<?php echo esc_url( $btn_link ); ?>" class="btn-podcast">
+			<a href="<?php echo esc_url( $btn_link ); ?>" class="btn-postmandu btn-podcast">
 				<?php echo esc_html( $btn_label ); ?>
 			</a>
 			<?php } ?>
