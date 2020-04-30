@@ -18,6 +18,18 @@ function postmandu_set_front_page() {
 	}
 }
 
+/**
+ *
+ * Helper function for checking plugin status
+ */
+function postmandu_is_active_ssp() {
+	// check for plugin using plugin name.
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	if ( is_plugin_active( 'seriously-simple-podcasting/seriously-simple-podcasting.php' ) ) {
+		return true;
+	}
+}
+
 
 if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 

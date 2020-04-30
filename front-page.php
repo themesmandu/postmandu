@@ -14,6 +14,22 @@ get_header();
 
 ?>
 
+<?php if ( postmandu_is_active_ssp() ) : ?>
+	<?php
+	// WP_Query arguments
+	$args = array(
+		'post_type'           => array( 'podcast' ),
+		'post_status'         => array( 'publish' ),
+		'posts_per_page'      => '4',
+		'ignore_sticky_posts' => true,
+		'order'               => 'DESC',
+		'orderby'             => 'date',
+	);
+
+	// The Query
+	$postmandu_podcasts = new WP_Query( $args );
+	if ( $postmandu_podcasts->have_posts() ) :
+		?>
 <section class="latest-episode">
 	<div class="container">
 		<h2 class="section-heading">Latest Episodes</h2>
@@ -24,21 +40,22 @@ get_header();
 
 		<div class="episode-grid show-grid">
 			<div class="grid-wrap row">
+				<?php
+				while ( $postmandu_podcasts->have_posts() ) :
+					$postmandu_podcasts->the_post();
+					?>
 				<div class="column-grid col-sm-6">
+					<?php if ( has_post_thumbnail() ) : ?>
 					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
+						<?php the_post_thumbnail(); ?>
 					</figure>
+					<?php endif; ?>
 
 					<div class="grid-content">
-						<h4 class="episode-title">Episode 10: Season Final</h4>
+						<?php the_title( sprintf( '<h4 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 						<div class="episode-meta">
-							<span class="posted-on">
-								<a href="#">April 4, 2020</a>
-							</span>
-
-							<span class="posted-by">
-								<a href="#">Admin</a>
-							</span>
+						<?php postmandu_posted_on(); ?>
+						<?php postmandu_posted_by(); ?>
 
 							<span class="episode-category">
 								<a href="#">Media</a>
@@ -50,127 +67,34 @@ get_header();
 						</div>
 
 						<div class="episode-summary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.</p>
+						<?php postmandu_entry_summary(); ?>
 						</div>
 					</div>
 				</div>
+				<?php endwhile; ?>
 
-				<div class="column-grid col-sm-6">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
-					</figure>
 
-					<div class="grid-content">
-						<h4 class="episode-title">Episode 10: Season Final</h4>
-						<div class="episode-meta">
-							<span class="posted-on">
-								<a href="#">April 4, 2020</a>
-							</span>
-
-							<span class="posted-by">
-								<a href="#">Admin</a>
-							</span>
-
-							<span class="episode-category">
-								<a href="#">Media</a>
-							</span>
-
-							<span class="duration">
-								<a href="#">02:32</a>
-							</span>
-						</div>
-
-						<div class="episode-summary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="column-grid col-sm-6">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
-					</figure>
-
-					<div class="grid-content">
-						<h4 class="episode-title">Episode 10: Season Final</h4>
-						<div class="episode-meta">
-							<span class="posted-on">
-								<a href="#">April 4, 2020</a>
-							</span>
-
-							<span class="posted-by">
-								<a href="#">Admin</a>
-							</span>
-
-							<span class="episode-category">
-								<a href="#">Media</a>
-							</span>
-
-							<span class="duration">
-								<a href="#">02:32</a>
-							</span>
-						</div>
-
-						<div class="episode-summary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="column-grid col-sm-6">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
-					</figure>
-
-					<div class="grid-content">
-						<h4 class="episode-title">Episode 10: Season Final</h4>
-						<div class="episode-meta">
-							<span class="posted-on">
-								<a href="#">April 4, 2020</a>
-							</span>
-
-							<span class="posted-by">
-								<a href="#">Admin</a>
-							</span>
-
-							<span class="episode-category">
-								<a href="#">Media</a>
-							</span>
-
-							<span class="duration">
-								<a href="#">02:32</a>
-							</span>
-						</div>
-
-						<div class="episode-summary">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-				</div>
 			</div>
 			<a href="#" class="more-link-btn btn-postmandu">More Episode</a>
 		</div>
 
 		<div class="episode-list">
+		<?php
+		while ( $postmandu_podcasts->have_posts() ) :
+			$postmandu_podcasts->the_post();
+			?>
 			<div class="list-wrap">
+				<?php if ( has_post_thumbnail() ) : ?>
 				<figure class="column m-0">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
+					<?php the_post_thumbnail(); ?>
 				</figure>
+				<?php endif; ?>
 
 				<div class="column list-content">
-					<h4 class="episode-title">Episode 10: Season Final</h4>
+				<?php the_title( sprintf( '<h4 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 					<div class="episode-meta">
-						<span class="posted-on">
-							<a href="#">4/23/2020</a>
-						</span>
-
-						<span class="posted-by">
-							<a href="#">Admin</a>
-						</span>
+						<?php postmandu_posted_on(); ?>
+						<?php postmandu_posted_by(); ?>
 
 						<span class="episode-category">
 							<a href="#">Media</a>
@@ -182,86 +106,19 @@ get_header();
 					</div>
 
 					<div class="episode-summary">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut
-							labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-							viverra maecenas accumsan lacus vel facilisis.</p>
+					<?php postmandu_entry_summary(); ?>	
 					</div>
 				</div>
 			</div>
+			<?php endwhile; ?>
 
-			<div class="list-wrap">
-				<figure class="column m-0">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
-				</figure>
-
-				<div class="column list-content">
-					<h4 class="episode-title">Episode 10: Season Final</h4>
-					<div class="episode-meta">
-						<span class="posted-on">
-							<a href="#">4/23/2020</a>
-						</span>
-
-						<span class="posted-by">
-							<a href="#">Admin</a>
-						</span>
-
-						<span class="episode-category">
-							<a href="#">Media</a>
-						</span>
-
-						<span class="duration">
-							<a href="#">02:32</a>
-						</span>
-					</div>
-
-					<div class="episode-summary">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut
-							labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-							viverra maecenas accumsan lacus vel facilisis.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="list-wrap">
-				<figure class="column m-0">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/microphone.jpg" />
-				</figure>
-
-				<div class="column list-content">
-					<h4 class="episode-title">Episode 10: Season Final</h4>
-					<div class="episode-meta">
-						<span class="posted-on">
-							<a href="#">4/23/2020</a>
-						</span>
-
-						<span class="posted-by">
-							<a href="#">Admin</a>
-						</span>
-
-						<span class="episode-category">
-							<a href="#">Media</a>
-						</span>
-
-						<span class="duration">
-							<a href="#">02:32</a>
-						</span>
-					</div>
-
-					<div class="episode-summary">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-							ut
-							labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-							viverra maecenas accumsan lacus vel facilisis.</p>
-					</div>
-				</div>
-			</div>
 
 			<a href="" class="more-link-btn btn-postmandu">More Episode</a>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
+<?php endif; ?>
 
 <section class="featured-guest">
 	<div class="container">
