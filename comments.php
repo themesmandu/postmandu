@@ -50,7 +50,7 @@ if ( have_comments() ) :
 	</ul>
 
 
-	<?php if ( paginate_comments_links() ) : ?>
+	<?php if ( ! empty( get_query_var( 'cpage' ) ) ) : ?>
 	<div class="comment_pagination">
 		<?php
 			paginate_comments_links(
