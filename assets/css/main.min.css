@@ -545,7 +545,7 @@ h6 {
 }
 
 .featured-guest-row .column {
-    max-width: 280px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -825,8 +825,8 @@ span.page-numbers.current {
 }
 
 .single-post .navigation {
-    border-top: 1px solid #eeeeee;
     padding: 20px;
+    margin-top: 15px;
 }
 
 .nav_direction {
