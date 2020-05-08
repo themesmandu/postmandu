@@ -222,12 +222,12 @@
         font-size: 32px;
     }
 
-    .single-post .navigation .column {
+    .navigation .nav_direction.column {
         width: 100%;
         display: block;
     }
 
-    .single-post .navigation .column.next_post {
+    .navigation .nav_direction.column.next_post {
         margin-top: 24px;
     }
 
@@ -235,7 +235,7 @@
         order: 1;
     }
 
-    .single-post .navigation .next_post figure {
+    .navigation .nav_direction.next_post figure {
         margin-left: auto;
     }
 

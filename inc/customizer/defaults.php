@@ -19,7 +19,7 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 
 		$defaults = array();
 
-		$defaults['menu_bar_bgcolor']                = 'rgba(255,255,255,.07)';        //Main Menu Bar Background.
+		$defaults['menu_bar_bgcolor']                = 'rgba(0,0,0,1)';        //Main Menu Bar Background.
 		$defaults['menu_bar_scroll_bgcolor']         = 'rgba(0,0,0,1)';        //Main Menu Bar Fixed Scroll Background.
 		$defaults['menu_color']                      = 'rgba(255,255,255,1)';        //Main Menu Color.
 		$defaults['menu_hover_color']                = 'rgba(243,202,122,1)';      //Main Menu Hover Color.
