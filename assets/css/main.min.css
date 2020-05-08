@@ -819,22 +819,19 @@ span.page-numbers.current {
 
 /* -- Single Page Styles -- */
 
-.single-post article {
+.single-post article,
+.single-podcast article {
     padding: 20px;
     margin: 0;
 }
 
-.single-post article .content {
+.single-post article .content,
+.single-podcast article .content {
     margin: 30px 0 0;
 }
 
 .single-post .entry-footer {
     margin: 16px 0 0;
-}
-
-.navigation .nav_direction {
-    padding: 20px;
-    margin-top: 15px;
 }
 
 .nav_direction {
