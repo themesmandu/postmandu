@@ -461,6 +461,10 @@ h6 {
     color: #555555;
 }
 
+.episode-summary .screen-reader-text {
+    font-size: 0;
+} 
+
 /* -- Grid Styles -- */
 
 .episode-grid {
