@@ -52,7 +52,7 @@ if ( is_home() ) {
 
 						endwhile;
 
-					if ( get_theme_mod( 'blog_pagination_mode' ) === 'numeric' ) {
+					if ( get_theme_mod( 'blog_pagination_mode', 'numeric' ) === 'numeric' ) {
 						the_posts_pagination();
 					} else {
 						the_posts_navigation();
