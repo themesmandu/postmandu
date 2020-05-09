@@ -437,6 +437,10 @@ h6 {
     display: block;
 }
 
+.latest-episode figure img {
+    height: auto;
+}
+
 .episode-meta span {
     position: relative;
 }
@@ -460,6 +464,10 @@ h6 {
     margin-top: 15px;
     color: #555555;
 }
+
+.episode-summary .screen-reader-text {
+    font-size: 0;
+} 
 
 /* -- Grid Styles -- */
 
@@ -811,22 +819,19 @@ span.page-numbers.current {
 
 /* -- Single Page Styles -- */
 
-.single-post article {
+.single-post article,
+.single-podcast article {
     padding: 20px;
     margin: 0;
 }
 
-.single-post article .content {
+.single-post article .content,
+.single-podcast article .content {
     margin: 30px 0 0;
 }
 
 .single-post .entry-footer {
     margin: 16px 0 0;
-}
-
-.single-post .navigation {
-    padding: 20px;
-    margin-top: 15px;
 }
 
 .nav_direction {
@@ -835,50 +840,50 @@ span.page-numbers.current {
     margin: 0 -15px;
 }
 
-.single-post .navigation .column {
+.navigation .nav_direction .column {
     width: 50%;
     padding: 0 15px;
     display: flex;
 }
 
-.single-post .navigation .column figure {
+.navigation .nav_direction .column figure {
     height: 60px;
     margin: 0 20px 0 0;
     display: inline-block;
 }
 
-.single-post .navigation .column img {
+.navigation .nav_direction .column img {
     width: 60px;
     height: 60px;
     max-width: 60px;
     transition: all 0.3s;
 }
 
-.single-post .navigation .column figure {
+.navigation .nav_direction .column figure {
     position: relative;
 }
 
-.single-post .navigation .column figure a:before {
+.navigation .nav_direction .column figure a:before {
     content: '';
     background: rgba(0, 0, 0, .6);
     visibility: hidden;
 }
 
-.single-post .navigation .column:hover figure a:before {
+.navigation .nav_direction .column:hover figure a:before {
     visibility: visible;
 }
 
-.single-post .navigation a {
+.navigation .nav_direction a {
     color: inherit;
     display: block;
 }
 
-.single-post .navigation span {
+.navigation .nav_direction span {
     font-weight: 300;
     color: inherit;
 }
 
-.single-post .navigation .column h4 {
+.navigation .nav_direction .column h4 {
     font-size: inherit;
     font-weight: 500;
     margin: 0;
@@ -893,7 +898,7 @@ span.page-numbers.current {
     margin-left: auto;
 }
 
-.single-post .navigation .next_post figure {
+.navigation .nav_direction .next_post figure {
     order: 1;
     margin: 0 0 0 20px;
 }

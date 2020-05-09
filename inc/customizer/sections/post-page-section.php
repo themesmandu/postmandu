@@ -74,7 +74,7 @@ Kirki::add_field(
 		),
 		'output'   => array(
 			array(
-				'element'         => 'article.post,article.page',
+				'element'         => 'article.post,article.page, article.podcast',
 				'property'        => 'box-shadow',
 				'value_pattern'   => '0px 0px $px shadow_spreadpx shadow_color',
 				'pattern_replace' => array(
@@ -101,7 +101,7 @@ Kirki::add_field(
 		),
 		'output'   => array(
 			array(
-				'element'         => 'article.post,article.page',
+				'element'         => 'article.post,article.page, article.podcast',
 				'property'        => 'box-shadow',
 				'value_pattern'   => '0px 0px shadow_blurpx $px shadow_color',
 				'pattern_replace' => array(
@@ -126,7 +126,7 @@ Kirki::add_field(
 		),
 		'output'   => array(
 			array(
-				'element'         => 'article.post,article.page',
+				'element'         => 'article.post,article.page, article.podcast',
 				'property'        => 'box-shadow',
 				'value_pattern'   => '0px 0px shadow_blurpx shadow_spreadpx $',
 				'pattern_replace' => array(
@@ -241,7 +241,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'article.post,article.page, article.post p, article.page p',
+				'element'  => 'article.post,article.page, article.post p, article.page p, article.podcast, article.podcast p',
 				'property' => 'color',
 			),
 		),
@@ -263,7 +263,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'article.post, article.page',
+				'element'  => 'article.post, article.page, article.podcast',
 				'property' => 'background-color',
 			),
 		),
