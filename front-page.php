@@ -58,11 +58,17 @@ get_header();
 							<?php postmandu_posted_by(); ?>
 
 							<span class="episode-category">
-								<a href="#">Media</a>
+							<?php
+							$postmandu_terms = get_the_term_list( $post->ID, 'series', '', ', ' );
+							echo wp_kses_post( $postmandu_terms );
+							?>
 							</span>
 
 							<span class="duration">
-								<a href="#">02:32</a>
+							<?php
+							$postmandu_duration = get_post_meta( get_the_id(), 'duration', true );
+							echo esc_html( $postmandu_duration );
+							?>
 							</span>
 						</div>
 
@@ -101,8 +107,11 @@ get_header();
 						</span>
 
 						<span class="duration">
-							<a href="#">02:32</a>
-						</span>
+							<?php
+							$postmandu_duration = get_post_meta( get_the_id(), 'duration', true );
+							echo esc_html( $postmandu_duration );
+							?>
+							</span>
 					</div>
 
 					<div class="episode-summary">
@@ -118,6 +127,7 @@ get_header();
 	</div>
 </section>
 <?php endif; ?>
+	<?php wp_reset_postdata(); ?>
 <?php endif; ?>
 
 <section class="featured-guest">
