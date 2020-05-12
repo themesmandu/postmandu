@@ -32,7 +32,9 @@ get_header();
 		?>
 <section class="latest-episode">
 	<div class="container">
-		<h2 class="section-heading">Latest Episodes</h2>
+		<?php if ( get_theme_mod( 'episode_section_title' ) ) : ?>
+		<h2 class="section-heading"><?php echo esc_html( get_theme_mod( 'episode_section_title' ) ); ?></h2>
+		<?php endif; ?>
 		<div class="action to-right-align">
 			<span class="active"><i class="fas fa-th-large view-grid"></i></span>
 			<span><i class="fas fa-th-list view-list"></i></span>

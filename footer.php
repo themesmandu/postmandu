@@ -43,24 +43,6 @@
 			</div><!-- #footer-widgets -->
 			<?php } ?>
 
-			<div class="footer_content_wrap content">
-				<?php if ( get_theme_mod( 'footer_title' ) ) : ?>
-				<h2 class="postmandu-heading"><?php echo esc_html( get_theme_mod( 'footer_title' ) ); ?></h2>
-				<?php else : ?>
-				<h2 class="postmandu-heading"><?php bloginfo( 'name' ); ?></h2>
-				<?php endif; ?>
-				<?php
-				if ( has_nav_menu( 'footer' ) ) :
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_id'        => 'footer-menu',
-							'menu_class'     => 'footer-nav',
-						)
-					);
-		endif;
-				?>
-			</div>
 		</div><!-- .container -->
 	</div><!-- ."widget-content-wrap -->
 

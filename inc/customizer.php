@@ -67,7 +67,7 @@ Kirki::add_panel(
 	'typography_options',
 	array(
 		'priority' => 190,
-		'title'    => esc_html__( 'Typography', 'kirki' ),
+		'title'    => esc_html__( 'Typography', 'postmandu' ),
 	)
 );
 
@@ -91,6 +91,21 @@ require get_template_directory() . '/inc/customizer/sections/typography-slider-b
 * Header slider section.
 */
 require get_template_directory() . '/inc/customizer/sections/header-background.php';
+
+/**
+ *
+ * Add Panel Front page Settings
+ */
+Kirki::add_panel(
+	'front_page_options',
+	array(
+		'title' => esc_html__( 'Front Page Settings', 'postmandu' ),
+	)
+);
+/**
+* Front page section.
+*/
+require get_template_directory() . '/inc/customizer/sections/front-page/episode-section.php';
 
 /**
 * Additional color settings.
