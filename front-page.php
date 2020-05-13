@@ -139,8 +139,9 @@ get_header();
 <?php
 	$postmandu_users = get_users(
 		array(
-			'orderby' => 'user_registered',
-			'order'   => 'DESC',
+			'orderby'      => 'user_registered',
+			'order'        => 'DESC',
+			'role__not_in' => array( 'administrator' ),
 
 		)
 	);
