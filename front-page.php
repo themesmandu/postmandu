@@ -133,68 +133,37 @@ get_header();
 <?php endif; ?>
 
 <section class="featured-guest">
+<?php
+	$postmandu_users = get_users(
+		array(
+			'orderby' => 'user_registered',
+			'order'   => 'DESC',
+
+		)
+	);
+	?>
 	<div class="container">
 		<h2 class="section-heading">Featured Guest</h2>
 		<div class="row featured-guest-row">
+		<?php foreach ( $postmandu_users as $postmandu_user ) : ?>
+			<?php
+			$postmandu_user_meta  = get_user_meta( $postmandu_user->ID );
+			$postmandu_user_roles = $postmandu_user->roles;
+			?>
 			<div class="col-lg-3 col-md-6">
 				<div class="column">
 					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-avatar.jpg" />
+						<img src="<?php echo esc_url( get_avatar_url( $postmandu_user->ID ) ); ?>" />
 					</figure>
-					<h5 class="guest-name">Emma Thomas</h5>
-					<span class="guest-post">DIRECTOR</span>
-					<p class="guest-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor
-						incididunt ut</p>
+					<h5 class="guest-name"><?php echo esc_html( $postmandu_user->display_name ); ?></h5>
+					<?php foreach ( $postmandu_user_roles as $posmandu_user_role ) : ?>
+					<span class="guest-post"><?php echo esc_html( $posmandu_user_role ); ?></span>
+					<?php endforeach; ?>
+					<p class="guest-content"><?php echo esc_html( $postmandu_user_meta['description'][0] ); ?></p>
 				</div>
 			</div>
-			
-			<div class="col-lg-3 col-md-6">
-				<div class="column">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-avatar.jpg" />
-					</figure>
-					<h5 class="guest-name">Emma Thomas</h5>
-					<span class="guest-post">DIRECTOR</span>
-					<p class="guest-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor
-						incididunt ut</p>
-				</div>
+			<?php endforeach; ?>
 			</div>
-			
-			<div class="col-lg-3 col-md-6">
-				<div class="column">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-avatar.jpg" />
-					</figure>
-					<h5 class="guest-name">Emma Thomas</h5>
-					<span class="guest-post">DIRECTOR</span>
-					<p class="guest-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor
-						incididunt ut</p>
-				</div>
-			</div>
-			
-			<div class="col-lg-3 col-md-6">
-				<div class="column">
-					<figure>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/music-avatar.jpg" />
-					</figure>
-					<h5 class="guest-name">Emma Thomas</h5>
-					<span class="guest-post">DIRECTOR</span>
-					<p class="guest-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor
-						incididunt ut</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="newsletter">
-	<div class="container">
-		<div class="newsletter-wrap">
-		</div>
 	</div>
 </section>
 
