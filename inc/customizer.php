@@ -103,9 +103,10 @@ Kirki::add_panel(
 	)
 );
 /**
-* Front page section.
+* Front page sections.
 */
 require get_template_directory() . '/inc/customizer/sections/front-page/episode-section.php';
+require get_template_directory() . '/inc/customizer/sections/front-page/users-section.php';
 
 /**
 * Additional color settings.

@@ -24,7 +24,7 @@ Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
 		'type'     => 'image',
-		'settings' => 'footer_bg',
+		'settings' => 'episode_section_bg',
 		'label'    => esc_html__( 'Section Background Image', 'postmandu' ),
 		'section'  => 'episode_section',
 		'output'   => array(
@@ -47,7 +47,7 @@ Kirki::add_field(
 		'settings'  => 'episode_section_overlay',
 		'label'     => esc_html__( 'Section Background Overlay', 'postmandu' ),
 		'section'   => 'episode_section',
-		'default'   => $defaults['footer_overlay'],
+		'default'   => $defaults['episode_section_overlay'],
 		'choices'   => array(
 			'alpha' => true,
 		),
@@ -115,6 +115,27 @@ Kirki::add_field(
 		'type'     => 'text',
 		'settings' => 'episode_section_title',
 		'label'    => __( 'Section Heading', 'postmandu' ),
+		'section'  => 'episode_section',
+	)
+);
+
+Kirki::add_field(
+	'postmandu_kirki_config',
+	array(
+		'type'     => 'text',
+		'settings' => 'episode_section_button_label',
+		'label'    => esc_html__( 'Button Label', 'postmandu' ),
+		'section'  => 'episode_section',
+	)
+);
+
+
+Kirki::add_field(
+	'postmandu_kirki_config',
+	array(
+		'type'     => 'link',
+		'settings' => 'episode_section_button_link',
+		'label'    => __( 'Button Link', 'postmandu' ),
 		'section'  => 'episode_section',
 	)
 );

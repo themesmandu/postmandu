@@ -105,8 +105,11 @@ get_header();
 						<?php postmandu_posted_by(); ?>
 
 						<span class="episode-category">
-							<a href="#">Media</a>
-						</span>
+							<?php
+							$postmandu_terms = get_the_term_list( $post->ID, 'series', '', ', ' );
+							echo wp_kses_post( $postmandu_terms );
+							?>
+							</span>
 
 						<span class="duration">
 							<?php
@@ -143,7 +146,9 @@ get_header();
 	);
 	?>
 	<div class="container">
-		<h2 class="section-heading">Featured Guest</h2>
+	<?php if ( get_theme_mod( 'users_section_title' ) ) : ?>
+		<h2 class="section-heading"><?php echo esc_html( get_theme_mod( 'users_section_title' ) ); ?></h2>
+		<?php endif; ?>
 		<div class="row featured-guest-row">
 		<?php foreach ( $postmandu_users as $postmandu_user ) : ?>
 			<?php
