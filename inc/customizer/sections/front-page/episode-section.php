@@ -54,8 +54,8 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.latest-episode .overlay',
-				'property' => 'background',
+				'element'  => '.latest-episode:before',
+				'property' => 'background-color',
 			),
 		),
 	)
@@ -92,15 +92,20 @@ Kirki::add_field(
 		'label'       => __( 'Section Preset Color', 'postmandu' ),
 		'description' => __( 'Includes title,button,sort colors', 'postmandu' ),
 		'section'     => 'episode_section',
-		'default'     => $defaults['episode_section_color'],
+		'default'     => $defaults['episode_section_preset_color'],
 		'choices'     => array(
 			'alpha' => true,
 		),
 		'transport'   => 'auto',
 		'output'      => array(
 			array(
-				'element'  => '.latest-episode',
+				'element'  => '.episode-title a, .action .active i, .episode-meta span',
 				'property' => 'color',
+			),
+
+			array(
+				'element'  => '.latest-episode .btn-postmandu',
+				'property' => 'background-color',
 			),
 		),
 	)

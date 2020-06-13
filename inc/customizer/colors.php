@@ -214,7 +214,7 @@ Kirki::add_field(
 			),
 			array(
 				'element'  => 'a:hover, .main-navigation .menu-item.current-menu-item .nav-link, blockquote p,
-				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .action .active i, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
 				'property' => 'color',
 			),
 			array(

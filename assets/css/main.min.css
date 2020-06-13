@@ -180,7 +180,9 @@ h6 {
 /* -- Global Styles -- */
 
 .overlay,
-.header-banner:before {
+.header-banner:before,
+.latest-episode:before,
+.featured-guest:before {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -189,6 +191,7 @@ h6 {
 }
 
 .header-banner,
+.latest-episode,
 #footer {
     background-repeat: no-repeat;
     background-position: center;
@@ -402,13 +405,17 @@ h6 {
 
 /* -- Section Latest Episode Styles -- */
 
-.latest-episode,
-.featured-guest {
-    background-color: #101010;
+.latest-episode:before {
+    content: '';
+}
+
+.latest-episode .container,
+.featured-guest .container {
+    position: relative;
 }
 
 .section-heading {
-    color: #ffffff;
+    color: inherit;
     margin: 0 0 20px;
 }
 
@@ -424,7 +431,7 @@ h6 {
 
 .action i {
     font-size: 20px;
-    color: #cccccc;
+    color: inherit;
 }
 
 .episode-grid,
@@ -467,7 +474,7 @@ h6 {
 
 .episode-summary .screen-reader-text {
     font-size: 0;
-} 
+}
 
 /* -- Grid Styles -- */
 
@@ -531,7 +538,8 @@ h6 {
     margin: 0 0 40px;
 }
 
-.content-wrap section {
+.content-wrap section,
+#footer .newsletter-widgets {
     position: relative;
     padding: 90px 0;
     overflow: hidden;
@@ -545,11 +553,14 @@ h6 {
 
 .featured-guest {
     text-align: center;
-    color: #ffffff;
+}
+
+.featured-guest:before {
+    content: '';
 }
 
 .featured-guest .section-heading {
-    margin-bottom: 42px;
+    margin-bottom: 62px;
 }
 
 .featured-guest-row .column {
@@ -588,7 +599,7 @@ h6 {
 .page-content .entry-meta {
     color: inherit;
     margin-top: 15px;
-} 
+}
 
 .page-content .header-title span {
     font-family: vontens, sans-serif;
@@ -1011,7 +1022,7 @@ span.page-numbers.current {
 
 .comment_pagination {
     padding: 10px 15px;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .comment-notes {
@@ -1208,8 +1219,14 @@ section span.wpcf7-not-valid-tip {
     text-align: left;
 }
 
+/* -- Footer Styles -- */
+
 #footer {
     position: relative;
+}
+
+#footer .overlay {
+    z-index: -1;
 }
 
 #footer .widget-content-wrap {
@@ -1296,7 +1313,6 @@ footer .paragraph span:last-child:after,
 
 /* -- Footer Widget Styles -- */
 
-
 #footer-widgets {
     text-align: left;
 }
@@ -1316,6 +1332,83 @@ footer .paragraph span:last-child:after,
 
 #footer .widget-title {
     color: inherit;
+}
+
+/* -- Footer Newsletter Section Styles -- */
+
+#footer .newsletter-widgets {
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+#footer .newsletter-widgets .widget_newsletterwidget {
+    color: #232323;
+}
+
+#footer .newsletter-widgets .widget-title {
+    font-size: 48px;
+    font-weight: 400;
+    color: #232323;
+    text-transform: none;
+}
+
+#footer .newsletter-widgets .tnp-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: 42px auto 0;
+    height: 55px;
+}
+
+#footer .newsletter-widgets .tnp-widget-minimal input.tnp-email {
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #777777;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 0 15px;
+}
+
+#footer .newsletter-widgets .tnp-widget-minimal input.tnp-submit {
+    width: 20%;
+    font-size: 17px;
+    border: 1px solid #777777;
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    letter-spacing: .5px;
+}
+
+#footer .newsletter-widgets .tnp-widget {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 42px;
+}
+
+#footer .newsletter-widgets .tnp-widget .tnp-field  {
+    margin-bottom: 18px;
+}
+
+#footer .newsletter-widgets .tnp-widget label {
+    font-size: 16px;
+    color: #232323;
+}
+
+#footer .newsletter-widgets .tnp-widget .tnp-field input {
+    height: 45px;
+}
+
+#footer .newsletter-widgets .tnp-widget .tnp-field input[type='text'],
+#footer .newsletter-widgets .tnp-widget .tnp-field input[type='email'] {
+    border: 1px solid #777777;
+    background-color: #ffffff;
+}
+
+#footer .newsletter-widgets .tnp-widget .tnp-field input[type='checkbox'] {
+    height: auto;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 /* -- Social Icons Styles -- */

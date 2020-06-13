@@ -39,6 +39,17 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['footer_overlay']                  = '#232323';      //Footer Background.
 		$defaults['footer_color']                    = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
 
+		// Latest Episode Color Settings
+
+		$defaults['episode_section_overlay']         = 'rgba(0, 0, 0, 1)';       //Section Episode Overlay Default color
+		$defaults['episode_section_color']         	 = 'rgba(255, 255, 255, 1)';       //Section Episode Section color
+		$defaults['episode_section_preset_color']    = '#20aa73';       //Section Episode Preset color
+
+		// FEature Post Guest Color Settings
+
+		$defaults['users_section_overlay']         = 'rgba(0, 0, 0, 1)';       // Section uSER Overlay Default color
+		$defaults['users_section_color']         	 = 'rgba(255, 255, 255, 1)';       //Section User Section color
+
 		//blog defaults
 
 		$defaults['blog_sortable_content_sandard'] = array( 'title', 'thumbnail', 'meta', 'content' );   //blod content sortable defaults standard

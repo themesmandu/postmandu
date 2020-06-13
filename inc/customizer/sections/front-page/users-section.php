@@ -29,7 +29,7 @@ Kirki::add_field(
 		'section'  => 'users_section',
 		'output'   => array(
 			array(
-				'element'  => '.latest-episode',
+				'element'  => '.featured-guest',
 				'property' => 'background-image',
 			),
 		),
@@ -54,7 +54,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.latest-episode .overlay',
+				'element'  => '.featured-guest:before',
 				'property' => 'background',
 			),
 		),
@@ -76,7 +76,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.latest-episode',
+				'element'  => '.featured-guest',
 				'property' => 'color',
 			),
 		),
