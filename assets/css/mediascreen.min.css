@@ -3,6 +3,15 @@
     .featured-guest .section-heading {
         margin-bottom: 42PX;
     }
+
+    #footer-widgets .column {
+        margin-bottom: 42px;
+    }
+
+    #footer-widgets .column:last-child,
+    #footer-widgets .column:nth-last-child(2) {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -38,6 +47,10 @@
 
     .episode-title {
         font-size: 22px;
+    }
+
+    #footer-widgets .column:nth-last-child(2) {
+        margin-bottom: 42px;
     }
 
     #footer .newsletter-widgets .tnp-form {
