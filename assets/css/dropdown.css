@@ -39,13 +39,10 @@
     font-size: 9px;
     content: "\f078";
     color: #ffffff;
-    margin: 6px 0 0 8px;
-    vertical-align: text-top;
-    display: inline-block;
     cursor: pointer;
 }
 
-.sub-menu .menu-item-has-children::after {
+.main-navigation .sub-menu .menu-item-has-children::after {
     position: absolute;
     top: 10px;
     left: 15px;
@@ -91,12 +88,14 @@
         top: 0;
     }
 
-    .main-navigation ul ul li:hover>ul {
+    .main-navigation ul ul li:hover>ul,
+    .main-navigation ul ul li.focus>ul {
         right: 100%;
         top: 0;
     }
 
-    .main-navigation ul li:hover>ul {
+    .main-navigation ul li:hover>ul,
+    .main-navigation ul li.focus>ul {
         display: block;
         right: 0;
         top: 100%;
