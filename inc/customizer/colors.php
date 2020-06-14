@@ -209,6 +209,10 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
+				'element'  => '.podcast_player .mejs-container, .podcast_player .mejs-container .mejs-controls, .podcast_player .mejs-embed, .podcast_player .mejs-embed body',
+				'property' => 'background',
+			),
+			array(
 				'element'  => 'blockquote',
 				'property' => 'border-color',
 			),
