@@ -59,19 +59,25 @@ get_header();
 							<?php postmandu_posted_on(); ?>
 							<?php postmandu_posted_by(); ?>
 
-							<span class="episode-category">
 							<?php
 							$postmandu_terms = get_the_term_list( $post->ID, 'series', '', ', ' );
-							echo wp_kses_post( $postmandu_terms );
-							?>
+							if ( $postmandu_terms ) :
+								?>
+						<span class="episode-category">
+								<?php echo wp_kses_post( $postmandu_terms ); ?>
 							</span>
+							<?php endif; ?>
 
-							<span class="duration">
 							<?php
 							$postmandu_duration = get_post_meta( get_the_id(), 'duration', true );
-							echo esc_html( $postmandu_duration );
-							?>
+							if ( $postmandu_duration ) :
+								?>
+						<span class="duration">
+								<?php
+								echo esc_html( $postmandu_duration );
+								?>
 							</span>
+							<?php endif; ?>
 						</div>
 
 						<div class="episode-summary">
@@ -83,7 +89,7 @@ get_header();
 
 
 			</div>
-			<a href="#" class="more-link-btn btn-postmandu">More Episode</a>
+			<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-postmandu"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
 		</div>
 
 		<div class="episode-list">
@@ -104,19 +110,25 @@ get_header();
 						<?php postmandu_posted_on(); ?>
 						<?php postmandu_posted_by(); ?>
 
-						<span class="episode-category">
-							<?php
+						<?php
 							$postmandu_terms = get_the_term_list( $post->ID, 'series', '', ', ' );
-							echo wp_kses_post( $postmandu_terms );
+						if ( $postmandu_terms ) :
 							?>
+						<span class="episode-category">
+							<?php echo wp_kses_post( $postmandu_terms ); ?>
 							</span>
+							<?php endif; ?>
 
-						<span class="duration">
 							<?php
 							$postmandu_duration = get_post_meta( get_the_id(), 'duration', true );
-							echo esc_html( $postmandu_duration );
-							?>
+							if ( $postmandu_duration ) :
+								?>
+						<span class="duration">
+								<?php
+								echo esc_html( $postmandu_duration );
+								?>
 							</span>
+							<?php endif; ?>
 					</div>
 
 					<div class="episode-summary">
@@ -127,7 +139,7 @@ get_header();
 			<?php endwhile; ?>
 
 
-			<a href="" class="more-link-btn btn-postmandu">More Episode</a>
+			<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-postmandu"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
 		</div>
 	</div>
 </section>
