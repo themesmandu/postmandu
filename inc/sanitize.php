@@ -73,7 +73,7 @@ function postmandu_sanitize_mainmenu_style( $input ) {
  *
  * @param string $input Sidebar position options.
  */
-function postmandu_sanitize_sidebar_position( $input ) {
+function postmandu_sanitize_( $input ) {
 	$valid = array(
 		'right' => __( 'Right sidebar', 'postmandu' ),
 		'left'  => __( 'Left sidebar', 'postmandu' ),

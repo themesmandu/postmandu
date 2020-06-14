@@ -1307,6 +1307,10 @@ footer .paragraph span:last-child:after,
     justify-content: center;
 }
 
+#footer .footer-social-nav a:focus {
+    outline-color: #ffffff;
+}
+
 #footer .footer-social-nav .menu-item:last-child a {
     margin-right: 0;
 }
