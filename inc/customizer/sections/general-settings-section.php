@@ -23,7 +23,7 @@ Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
 		'type'     => 'toggle',
-		'settings' => 'skip_to_content_toggle',
+		'settings' => 'postmandu_theme_options[skip_to_content_toggle]',
 		'label'    => esc_html__( 'Show Skip To Content', 'postmandu' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['skip_to_content_toggle'],
@@ -36,7 +36,7 @@ Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
 		'type'     => 'radio-buttonset',
-		'settings' => 'menubar_mode',
+		'settings' => 'postmandu_theme_options[menubar_mode]',
 		'label'    => esc_html__( 'Main Menu Bar Mode', 'postmandu' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['menubar_mode'],
@@ -81,7 +81,7 @@ Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
 		'type'     => 'radio-image',
-		'settings' => 'sidebar_position',
+		'settings' => 'postmandu_theme_options[sidebar_position]',
 		'label'    => esc_html__( 'Sidebar Displays', 'postmandu' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['sidebar_position'],

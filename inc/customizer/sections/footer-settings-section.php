@@ -88,7 +88,7 @@ Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
 		'type'     => 'editor',
-		'settings' => 'footer_copyright',
+		'settings' => 'postmandu_theme_options[footer_copyright]',
 		'label'    => __( 'Copyright Text', 'postmandu' ),
 		'section'  => 'footer_options',
 		'default'  => $defaults['footer_copyright'],

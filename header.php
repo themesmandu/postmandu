@@ -29,7 +29,7 @@
 				<?php endif; ?>
 
 				<?php
-				if ( postmandu_get_theme_option( 'menubar_mode' ) === 'alt' ) {
+				if ( get_theme_mod( 'menubar_mode' ) === 'alt' ) {
 					// alternative navigation bar:
 					// left: logo, main menu - right: search form or something.
 					get_template_part( 'template-parts/navigation/main-navbar', 'alt' );
@@ -43,7 +43,7 @@
 				postmandu_header_page_title();
 				?>
 			<?php
-			if ( is_front_page() && ! is_home() && postmandu_get_theme_option( 'banner_toggle' ) ) {
+			if ( is_front_page() && ! is_home() && get_theme_mod( 'banner_toggle' ) ) {
 				// head banner on the front page if it enabled.
 				get_template_part( 'template-parts/jumbotron' );
 			}

@@ -5,7 +5,7 @@
  * @package Postmandu
  */
 
-
+$defaults = postmandu_get_default_theme_options();
 /**
  *
  * Add Section
