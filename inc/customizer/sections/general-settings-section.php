@@ -5,6 +5,7 @@
  * @package Postmandu
  */
 
+$defaults = postmandu_get_default_theme_options();
 
 /**
  *
@@ -17,16 +18,6 @@ Kirki::add_section(
 	)
 );
 
-Kirki::add_field(
-	'postmandu_kirki_config',
-	array(
-		'type'     => 'toggle',
-		'settings' => 'mainmenu_cart_toggle',
-		'label'    => esc_html__( 'Show Shoping Cart', 'postmandu' ),
-		'section'  => 'general_options',
-		'default'  => '1',
-	)
-);
 
 Kirki::add_field(
 	'postmandu_kirki_config',
@@ -35,7 +26,7 @@ Kirki::add_field(
 		'settings' => 'skip_to_content_toggle',
 		'label'    => esc_html__( 'Show Skip To Content', 'postmandu' ),
 		'section'  => 'general_options',
-		'default'  => '1',
+		'default'  => $defaults['skip_to_content_toggle'],
 	)
 );
 
@@ -48,7 +39,7 @@ Kirki::add_field(
 		'settings' => 'menubar_mode',
 		'label'    => esc_html__( 'Main Menu Bar Mode', 'postmandu' ),
 		'section'  => 'general_options',
-		'default'  => 'standard',
+		'default'  => $defaults['menubar_mode'],
 		'choices'  => array(
 			'standard' => esc_html__( 'Withought Search', 'postmandu' ),
 			'alt'      => esc_html__( 'With Search', 'postmandu' ),
@@ -93,7 +84,7 @@ Kirki::add_field(
 		'settings' => 'sidebar_position',
 		'label'    => esc_html__( 'Sidebar Displays', 'postmandu' ),
 		'section'  => 'general_options',
-		'default'  => 'right',
+		'default'  => $defaults['sidebar_position'],
 		'choices'  => array(
 			'left'  => get_template_directory_uri() . '/assets/images/sidebar-left.png',
 			'none'  => get_template_directory_uri() . '/assets/images/sidebar-none.png',

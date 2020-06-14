@@ -294,7 +294,7 @@ function postmandu_set_content_class( $class = '' ) {
 	$classes[] = 'col-lg-8';
 
 	// Centered.
-	if ( ! is_active_sidebar( 'sidebar-1' ) || get_theme_mod( 'sidebar_position' ) === 'none' ) {
+	if ( ! is_active_sidebar( 'sidebar-1' ) || postmandu_get_theme_option( 'sidebar_position' ) === 'none' ) {
 		$classes[] = 'col-lg-12 no-sidebar';
 	}
 
