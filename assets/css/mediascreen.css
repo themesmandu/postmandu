@@ -1,11 +1,36 @@
 
+@media (max-width: 1200px) {
+    #sidebar {
+        max-width: 33.333333%;
+    }
+}
+
 @media (max-width: 991px) {
     .featured-guest .section-heading {
         margin-bottom: 42PX;
     }
+
+    #footer-widgets .column {
+        margin-bottom: 42px;
+    }
+
+    #footer-widgets .column:last-child,
+    #footer-widgets .column:nth-last-child(2) {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .list-wrap {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .list-wrap figure,
+    .list-content {
+        width: 100%;
+    }
 
     #footer .newsletter-widgets .widget-title {
         font-size: 32px;
@@ -20,6 +45,18 @@
 
     .banner-sub-heading {
         font-size: 22px;
+    }
+
+    .list-content {
+        padding: 30px;
+    }
+
+    .episode-title {
+        font-size: 22px;
+    }
+
+    #footer-widgets .column:nth-last-child(2) {
+        margin-bottom: 42px;
     }
 
     #footer .newsletter-widgets .tnp-form {
