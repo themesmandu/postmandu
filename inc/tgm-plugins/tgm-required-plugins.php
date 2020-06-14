@@ -75,6 +75,12 @@ function postmandu_register_required_plugins() {
 			'slug'     => 'seriously-simple-podcasting',
 			'required' => false,
 		),
+
+		array(
+			'name'     => esc_html__( 'One Click Demo Import', 'postmandu' ),
+			'slug'     => 'one-click-demo-import',
+			'required' => false,
+		),
 	);
 
 	/*
