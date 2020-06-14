@@ -19,36 +19,36 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 
 		$defaults = array();
 
-		$defaults['menu_bar_bgcolor']                = 'rgba(0,0,0,1)';        //Main Menu Bar Background.
-		$defaults['menu_bar_scroll_bgcolor']         = 'rgba(0,0,0,1)';        //Main Menu Bar Fixed Scroll Background.
-		$defaults['menu_color']                      = 'rgba(255,255,255,1)';        //Main Menu Color.
-		$defaults['menu_hover_color']                = 'rgba(243,202,122,1)';      //Main Menu Hover Color.
-		$defaults['site_title_color']                = 'rgba(255,255,255,1)';      //Site Title Color.
-		$defaults['title_color']                     = '#232323';       //Entry/Post/Page Title Color
-		$defaults['content_color']                   = '#555555';       //Entry/Post/Page content Color
-		$defaults['entry_bgcolor']                   = 'rgba(255,255,255,1)';     //Entry Card Background.
-		$defaults['entry_footer_bgcolor']            = '#ffffff';      //Entry Card: Footer Background.
-		$defaults['wgt_title_color']                 = '#020407';       //Widget Title Color.
-		$defaults['link_color']                      = '#20aa73';        //Text Link Color.
-		$defaults['link_hover_color']                = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
-		$defaults['meta_color']                      = '#555555';        //Meta Text Color.
-		$defaults['postmandu_btn_color']             = '#20aa73';     //postmandu Button Background Color.
-		$defaults['postmandu_btn_hover_color']       = 'rgba(32,170,115,0.7)';      //postmandu Button Background: Hover Color.
-		$defaults['postmandu_btn_text_color']        = 'rgba(255, 255, 255, 1)';       //postmandu Button Text Color.
-		$defaults['postmandu_btn_text_hover_color']  = 'rgba(255, 255, 255, 1)';     //postmandu Button Text: Hover Color.
-		$defaults['footer_overlay']                  = '#232323';      //Footer Background.
-		$defaults['footer_color']                    = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
+		$defaults['menu_bar_bgcolor']               = 'rgba(0,0,0,1)';        //Main Menu Bar Background.
+		$defaults['menu_bar_scroll_bgcolor']        = 'rgba(0,0,0,1)';        //Main Menu Bar Fixed Scroll Background.
+		$defaults['menu_color']                     = 'rgba(255,255,255,1)';        //Main Menu Color.
+		$defaults['menu_hover_color']               = 'rgba(243,202,122,1)';      //Main Menu Hover Color.
+		$defaults['site_title_color']               = 'rgba(255,255,255,1)';      //Site Title Color.
+		$defaults['title_color']                    = '#232323';       //Entry/Post/Page Title Color
+		$defaults['content_color']                  = '#555555';       //Entry/Post/Page content Color
+		$defaults['entry_bgcolor']                  = 'rgba(255,255,255,1)';     //Entry Card Background.
+		$defaults['entry_footer_bgcolor']           = '#ffffff';      //Entry Card: Footer Background.
+		$defaults['wgt_title_color']                = '#020407';       //Widget Title Color.
+		$defaults['link_color']                     = '#20aa73';        //Text Link Color.
+		$defaults['link_hover_color']               = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
+		$defaults['meta_color']                     = '#555555';        //Meta Text Color.
+		$defaults['postmandu_btn_color']            = '#20aa73';     //postmandu Button Background Color.
+		$defaults['postmandu_btn_hover_color']      = 'rgba(32,170,115,0.7)';      //postmandu Button Background: Hover Color.
+		$defaults['postmandu_btn_text_color']       = 'rgba(255, 255, 255, 1)';       //postmandu Button Text Color.
+		$defaults['postmandu_btn_text_hover_color'] = 'rgba(255, 255, 255, 1)';     //postmandu Button Text: Hover Color.
+		$defaults['footer_overlay']                 = '#232323';      //Footer Background.
+		$defaults['footer_color']                   = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
 
 		// Latest Episode Color Settings
 
-		$defaults['episode_section_overlay']         = 'rgba(0, 0, 0, 1)';       //Section Episode Overlay Default color
-		$defaults['episode_section_color']         	 = 'rgba(255, 255, 255, 1)';       //Section Episode Section color
-		$defaults['episode_section_preset_color']    = '#20aa73';       //Section Episode Preset color
+		$defaults['episode_section_overlay']      = 'rgba(0, 0, 0, 1)';       //Section Episode Overlay Default color
+		$defaults['episode_section_color']        = 'rgba(255, 255, 255, 1)';       //Section Episode Section color
+		$defaults['episode_section_preset_color'] = '#20aa73';       //Section Episode Preset color
 
 		// FEature Post Guest Color Settings
 
-		$defaults['users_section_overlay']         = 'rgba(0, 0, 0, 1)';       // Section uSER Overlay Default color
-		$defaults['users_section_color']         	 = 'rgba(255, 255, 255, 1)';       //Section User Section color
+		$defaults['users_section_overlay'] = 'rgba(0, 0, 0, 1)';       // Section uSER Overlay Default color
+		$defaults['users_section_color']   = 'rgba(255, 255, 255, 1)';       //Section User Section color
 
 		//blog defaults
 
@@ -56,19 +56,17 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['blog_sortable_content_list']    = array( 'image', 'content-all' );   //blod content sortable defaults list
 		$defaults['blog_sortable_content_list2']   = array( 'title', 'meta', 'content' );   //blod content sortable defaults list secontd
 
-		//slider defaults
+		// skip link default
+		$defaults['skip_to_content_toggle'] = '1';
 
-		$defaults['slider_animations'] = array( 'linear' );   //blod content sortable defaults list secontd
-		$defaults['slide_duration']    = 2;   //slide duration.
-		$defaults['slide_delay']       = 5;   //slide delay.
-		$defaults['slide_autoplay']    = true;   //slide autoplay.
-		$defaults['slide_pauseplay']   = true;   //slide playpause.
-		$defaults['slide_hover']       = false;   //slide hover.
-		$defaults['slide_loop']        = true;   //slide repeat.
-		$defaults['slide_caption']     = true;   //slide caption.
-		$defaults['slide_control']     = true;   //slide caption.
-		$defaults['slide_bullet']      = true;   //slide caption.
-		$defaults['slide_gesture']     = false;   //slide caption.
+		//menu mode default.
+		$defaults['menubar_mode'] = 'standard';
+
+		//sidebar position default.
+		$defaults['sidebar_position'] = 'right';
+
+		//footer copyright text default.
+		$defaults['footer_copyright'] = 'Here lies copyright text';
 
 		// Pass through filter.
 		$defaults = apply_filters( 'postmandu_get_default_theme_options', $defaults );

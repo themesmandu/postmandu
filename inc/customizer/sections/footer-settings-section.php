@@ -83,19 +83,6 @@ Kirki::add_field(
 );
 
 
-
-// Setting heading.
-Kirki::add_field(
-	'postmandu_kirki_config',
-	array(
-		'type'        => 'text',
-		'settings'    => 'footer_title',
-		'label'       => __( 'Footer Heading', 'postmandu' ),
-		'description' => __( 'Note: If left empty site title will appear.', 'postmandu' ),
-		'section'     => 'footer_options',
-	)
-);
-
 // Setting copyright.
 Kirki::add_field(
 	'postmandu_kirki_config',
@@ -104,7 +91,7 @@ Kirki::add_field(
 		'settings' => 'footer_copyright',
 		'label'    => __( 'Copyright Text', 'postmandu' ),
 		'section'  => 'footer_options',
-		'default'  => '',
+		'default'  => $defaults['footer_copyright'],
 	)
 );
 

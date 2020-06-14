@@ -59,6 +59,11 @@ require get_template_directory() . '/inc/sanitize.php';
  */
 require get_template_directory() . '/inc/helpers.php';
 
+/**
+ * Include tgm required plaugins functionality.
+ */
+require get_template_directory() . '/inc/tgm-plugins/tgm-required-plugins.php';
+
 
 /**
  * Load Jetpack compatibility file.

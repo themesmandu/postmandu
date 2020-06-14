@@ -7,13 +7,13 @@
  * @package Postmandu
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) || get_theme_mod( 'sidebar_position' ) === 'none' ) {
+if ( ! is_active_sidebar( 'sidebar-1' ) || postmandu_get_theme_option( 'sidebar_position' ) === 'none' ) {
 	return;
 }
 
-if ( get_theme_mod( 'sidebar_position' ) === 'right' ) {
+if ( postmandu_get_theme_option( 'sidebar_position' ) === 'right' ) {
 	$postmandu_sidebar_order = 'order-last';
-} elseif ( get_theme_mod( 'sidebar_position' ) === 'left' ) {
+} elseif ( postmandu_get_theme_option( 'sidebar_position' ) === 'left' ) {
 	$postmandu_sidebar_order = 'order-first';
 } else {
 	$postmandu_sidebar_order = 'order-last';
