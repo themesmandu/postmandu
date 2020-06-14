@@ -89,7 +89,9 @@ get_header();
 
 
 			</div>
+			<?php if ( get_theme_mod( 'episode_section_button_link' ) || get_theme_mod( 'episode_section_button_label' ) ) : ?>
 			<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-postmandu"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
+		<?php endif; ?>
 		</div>
 
 		<div class="episode-list">
@@ -138,8 +140,9 @@ get_header();
 			</div>
 			<?php endwhile; ?>
 
-
+		<?php if ( get_theme_mod( 'episode_section_button_link' ) || get_theme_mod( 'episode_section_button_label' ) ) : ?>
 			<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-postmandu"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
+		<?php endif; ?>
 		</div>
 	</div>
 </section>
