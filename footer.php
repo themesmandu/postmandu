@@ -23,17 +23,17 @@
 	</div>
 	<?php endif; ?> <!-- End of div newsletter -->
 	<div class="overlay"></div>
+	<?php
+			$active = array();
+	for ( $i = 1; $i <= 4; $i++ ) {
+		if ( is_active_sidebar( 'footer-' . $i ) ) {
+			$active[] = $i;
+		}
+	}
+	?>
+			<?php if ( 0 !== count( $active ) ) { ?>
 	<div class="widget-content-wrap">
 		<div class="container">
-			<?php
-			$active = array();
-			for ( $i = 1; $i <= 4; $i++ ) {
-				if ( is_active_sidebar( 'footer-' . $i ) ) {
-					$active[] = $i;
-				}
-			}
-			?>
-			<?php if ( 0 !== count( $active ) ) { ?>
 			<div id="footer-widgets" class="row content">
 				<?php foreach ( $active as $footer_widget_id ) : ?>
 				<div class="col-lg-3 col-sm-6 column">
@@ -41,16 +41,16 @@
 				</div>
 				<?php endforeach; ?>
 			</div><!-- #footer-widgets -->
-			<?php } ?>
 
 		</div><!-- .container -->
 	</div><!-- ."widget-content-wrap -->
+	<?php } ?>
 
 	<div class="footer-copyright">
 		<div class="container">
-			<?php if ( get_theme_mod( 'footer_copyright' ) ) : ?>
+			<?php if ( postmandu_get_theme_option( 'footer_copyright' ) ) : ?>
 			<div class="site-info">
-				<?php echo wp_kses_post( get_theme_mod( 'footer_copyright' ) ); ?>
+				<?php echo wp_kses_post( postmandu_get_theme_option( 'footer_copyright' ) ); ?>
 			</div><!-- .site-info -->
 			<?php endif; ?>
 

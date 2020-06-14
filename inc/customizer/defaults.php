@@ -65,6 +65,9 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		//sidebar position default.
 		$defaults['sidebar_position'] = 'right';
 
+		//footer copyright text default.
+		$defaults['footer_copyright'] = 'Here lies copyright text';
+
 		// Pass through filter.
 		$defaults = apply_filters( 'postmandu_get_default_theme_options', $defaults );
 		return $defaults;
