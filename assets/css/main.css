@@ -180,7 +180,6 @@ h6 {
 /* -- Global Styles -- */
 
 .overlay,
-.header-banner:before,
 .latest-episode:before,
 .featured-guest:before {
     position: absolute;
@@ -360,11 +359,6 @@ h6 {
     text-align: center;
     color: #ffffff;
     position: relative;
-}
-
-.header-banner:before {
-    content: '';
-    background-color: rgba(0, 0, 0, .5);
 }
 
 .header-banner .container {
@@ -585,7 +579,7 @@ h6 {
 /* -- Page Styles -- */
 
 .page-content {
-    padding: 200px 0 100px;
+    padding: 100px 0;
     color: #ffffff;
 }
 

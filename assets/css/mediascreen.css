@@ -6,6 +6,11 @@
 }
 
 @media (max-width: 991px) {
+
+    .header-banner {
+        max-height: 500px;
+    }
+    
     .featured-guest .section-heading {
         margin-bottom: 42PX;
     }
@@ -53,7 +58,7 @@
 @media (max-width: 576px) {
 
     .header-banner {
-        max-height: 600px;
+        max-height: 500px;
     }
 
     .banner-heading {

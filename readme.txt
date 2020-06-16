@@ -83,13 +83,53 @@ License: © 2016-2019 FEDERICO ZIVOLO & CONTRIBUTORS,
 license Url: https://github.com/popperjs/popper-core/blob/master/LICENSE.md
 
 * Screenshot
-sea.JPG
-Source: https://stocksnap.io/photo/U4ML8WV1I2
+screenshot.png
+Source: https://stocksnap.io/photo/microphone-music-VIGKZY2P20
 License: CC0 1.0 Universal (CC0 1.0)
 license Url: https://stocksnap.io/license
 
-StockSnap_S4P1EEYET5.JPG
-Source: https://stocksnap.io/photo/S4P1EEYET5
+black-mic-podcast.jpg
+Source: https://stocksnap.io/photo/microphone-music-VIGKZY2P20
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+man-listening-to-podcasts.jpg
+Source: https://stocksnap.io/photo/man-walking-DHHIBEWZLH
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+mic-podcast.jpg
+Source: https://stocksnap.io/photo/mic-microphone-ZHNV9TMT7A
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+girl-listening-to-podcasts.jpg
+Source: https://stocksnap.io/photo/woman-listening-CXVAJQHIMC
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+Child-Singing.jpg
+Source: https://stocksnap.io/photo/people-boy-P62MVB826H
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+mic-blue.jpg
+Source: https://stocksnap.io/photo/microphone-condenser-4C9TCUEARS
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+man-in-podcast.jpg
+Source: https://stocksnap.io/photo/guy-singing-NV1FLKIE9U
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+man-mic-podcast.jpg
+Source: https://stocksnap.io/photo/people-guy-AOG1QEN37V
+License: CC0 1.0 Universal (CC0 1.0)
+license Url: https://stocksnap.io/license
+
+MIC-HEAD-BG.jpg
+Source: https://stocksnap.io/photo/mic-microphone-ZHNV9TMT7A, https://stocksnap.io/photo/microphone-music-VIGKZY2P20
 License: CC0 1.0 Universal (CC0 1.0)
 license Url: https://stocksnap.io/license
 
