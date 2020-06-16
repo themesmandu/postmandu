@@ -703,7 +703,8 @@ article span i {
 }
 
 .entry-meta a,
-.entry-footer a {
+.entry-footer a,
+.bypostauthor {
     font-size: 14px;
     font-weight: 500;
     color: inherit;
