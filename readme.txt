@@ -1,18 +1,18 @@
  
-=== Newsmandu Magazine ===
+=== Postmandu ===
 Contributors: Themesmandu
-Tags: blog, news, custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready
-Requires at least: 5.2.2
-Tested up to: 4.8
-Requires PHP: 5.2.4
+Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Newsmandu Magazine is best suited for blog website.
+Postmandu is best suited for podcast websites.
 
 == Description ==
-Newsmandu Magazine Theme is a clean, modern responsive WordPress theme focused on magazine and news portal sites.  With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Whether you want to have a magazine or newspaper style, this theme works well for both. Documentation http://themesmandu.com/documentation/Newsmandu Magazine/.
+Postmandu Theme is a clean, modern responsive WordPress theme focused on podcast sites.  With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
 
 == Installation ==
 
@@ -24,12 +24,12 @@ Newsmandu Magazine Theme is a clean, modern responsive WordPress theme focused o
 
 = Does this theme support any plugins? =
 
-Newsmandu Magazine includes support for Infinite Scroll in Jetpack.
+Postmandu includes support for Infinite Scroll in Jetpack.
 
 == Copyright ==
 
-Newsmandu Magazine theme WordPress Theme, Copyright 2019 themesmandu.com
-Newsmandu Magazine theme is distributed under the terms of the GNU GPL
+Postmandu theme WordPress Theme, Copyright 2020 themesmandu.com
+Postmandu theme is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@ GNU General Public License for more details.
 
 == Resources ==
 
-Newsmandu Magazine bundles the following third-party resources:
+Postmandu bundles the following third-party resources:
 
 * Underscores, (C) 2012-2019 Automattic, Inc.
 Source: https://underscores.me/
@@ -94,73 +94,7 @@ License: CC0 1.0 Universal (CC0 1.0)
 license Url: https://stocksnap.io/license
 
 
-StockSnap_6JEHS8PBHP.JPG
-Source: https://stocksnap.io/photo/6JEHS8PBHP   
-License: CC0 1.0 Universal (CC0 1.0)
-license Url: https://stocksnap.io/license
-
-
-StockSnap_XT3HZBE9GI.JPG
-Source: https://stocksnap.io/photo/XT3HZBE9GI
-License: CC0 1.0 Universal (CC0 1.0)
-license Url: https://stocksnap.io/license
-
-
 == Changelog ==
 
 = 1.0 - November 13 2019 =
 * Initial release.
-
-== Upgrade Notice ==
-
-= 1.0.1 - November 13 2019 =
-
-* Updated release.
-fixed header title, theme options
-
-== Upgrade Notice ==
-
-= 1.0.2 - February 8 2020 =
-
-* Updated release.
-fixed keyboard navigation, skip-links and bugs fixes.
-
-== Upgrade Notice ==
-
-= 1.0.3 - February 11 2020 =
-
-* Updated release.
-fixed keyboard navigation, skip-links, advertisement text area, code clean and other bugs fixes.
-
-== Upgrade Notice ==
-
-= 1.0.4 - February 13 2020 =
-
-* Updated release.
-fixed keyboard navigation, skip-links and minor bug fixes.
-
-== Upgrade Notice ==
-
-= 1.0.5 - February 20 2020 =
-
-* Updated release.
-fixed keyboard navigation, skip-links, design issues and minor bug fixes.
-
-== Upgrade Notice ==
-
-= 1.0.6 - February 23 2020 =
-
-* Updated release.
-fixed keyboard navigation & skip-links.
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

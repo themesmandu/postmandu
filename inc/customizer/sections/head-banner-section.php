@@ -109,13 +109,15 @@ Kirki::add_field(
 Kirki::add_field(
 	'postmandu_kirki_config',
 	array(
-		'type'     => 'cropped_image',
-		'settings' => 'banner_bg_image',
-		'label'    => esc_html__( 'Background Image', 'postmandu' ),
-		'section'  => 'frontpage_banner',
-		'width'    => 1900,
-		'height'   => 1080,
-		'output'   => array(
+		'type'        => 'cropped_image',
+		'settings'    => 'banner_bg_image',
+		'label'       => esc_html__( 'Background Image', 'postmandu' ),
+		'section'     => 'frontpage_banner',
+		'width'       => 1900,
+		'height'      => 1080,
+		'flex-width'  => true,
+		'flex-height' => true,
+		'output'      => array(
 			array(
 				'element'  => '.header-banner',
 				'property' => 'background-image',
