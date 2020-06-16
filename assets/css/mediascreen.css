@@ -10,6 +10,11 @@
         margin-bottom: 42PX;
     }
 
+    #sidebar {
+        max-width: 100%;
+        margin-top: 42px;
+    }
+
     #footer-widgets .column {
         margin-bottom: 42px;
     }
@@ -32,12 +37,24 @@
         width: 100%;
     }
 
+    .navigation .nav_direction .column {
+        width: 100%;
+    }
+
+    .navigation .nav_direction .column.next_post {
+        margin-top: 22px;
+    }
+
     #footer .newsletter-widgets .widget-title {
         font-size: 32px;
     }
 }
 
 @media (max-width: 576px) {
+
+    .header-banner {
+        max-height: 600px;
+    }
 
     .banner-heading {
         font-size: 58px;
@@ -53,6 +70,16 @@
 
     .episode-title {
         font-size: 22px;
+    }
+
+    .comment-form-author, 
+    .comment-form-email,
+    .comment-form-url {
+        width: 100%;
+    }
+
+    .comment-form-email {
+        margin-left: 0;
     }
 
     #footer-widgets .column:nth-last-child(2) {

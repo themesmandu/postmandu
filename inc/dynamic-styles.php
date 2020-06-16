@@ -75,9 +75,6 @@ function postmandu_main_menu_css() {
 	<?php if ( get_theme_mod( 'mainmenu_style' ) === 'fixed' ) : ?>
 		.main-navigation {max-width: 1920px;transition: all 0.3s;}.main-navigation.fixed {position: fixed;}
 	<?php endif; ?>
-	<?php if ( is_front_page() && get_theme_mod( 'banner_toggle' ) ) : ?>
-		.main-navigation {position: absolute;}
-	<?php endif; ?>
 </style>
 	<?php
 }
