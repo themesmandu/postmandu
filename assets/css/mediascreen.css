@@ -15,6 +15,14 @@
         margin-bottom: 42PX;
     }
 
+    .page-content {
+        padding: 50px 0;
+    }
+
+    .page-content .header-title {
+        font-size: 38px;
+    }
+
     #sidebar {
         max-width: 100%;
         margin-top: 42px;
@@ -85,6 +93,18 @@
 
     .comment-form-email {
         margin-left: 0;
+    }
+
+    .page-content {
+        padding: 40px 0;
+    }
+
+    .page-content .header-title {
+        font-size: 28px;
+    }
+
+    article .post-wrap .entry-title {
+        font-size: 24px;
     }
 
     #footer-widgets .column:nth-last-child(2) {

@@ -84,7 +84,7 @@ license Url: https://github.com/popperjs/popper-core/blob/master/LICENSE.md
 
 * Screenshot
 screenshot.png
-Source: https://stocksnap.io/photo/microphone-music-VIGKZY2P20
+Source: https://stocksnap.io/photo/microphone-music-VIGKZY2P20, https://stocksnap.io/photo/people-boy-P62MVB826H, https://stocksnap.io/photo/microphone-condenser-4C9TCUEARS
 License: CC0 1.0 Universal (CC0 1.0)
 license Url: https://stocksnap.io/license
 
