@@ -47,11 +47,7 @@ if ( ! function_exists( 'postmandu_posted_on' ) ) :
 			esc_html( get_the_date() )
 		);
 
-		$posted_on = sprintf(
-			/* translators: %s: post date. */
-			esc_html_x( ' %s', 'post date', 'postmandu' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-		);
+		$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
@@ -65,11 +61,7 @@ if ( ! function_exists( 'postmandu_posted_by' ) ) :
 	 */
 	function postmandu_posted_by() {
 		$post   = get_post();
-		$byline = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( ' %s', 'post author', 'postmandu' ),
-			'<span class="author vcard"><a class="url fn n bypostauthor" href="' . esc_url( get_author_posts_url( $post->post_author ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post->post_author ) ) . '</a></span>'
-		);
+		$byline = '<span class="author vcard"><a class="url fn n bypostauthor" href="' . esc_url( get_author_posts_url( $post->post_author ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post->post_author ) ) . '</a></span>';
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
@@ -86,15 +78,13 @@ if ( ! function_exists( 'postmandu_entry_footer' ) ) :
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( esc_html__( ' , ', 'postmandu' ) );
 			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( ' %1$s', 'postmandu' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				echo '<span class="cat-links">' . $categories_list . '</span>'; // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ' , ', 'list item separator', 'postmandu' ) );
 			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links"><i class="fas fa-tags"></i>' . esc_html__( ' %1$s', 'postmandu' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				echo '<span class="tags-links"><i class="fas fa-tags"></i>' . $tags_list . '</span>'; // WPCS: XSS OK.
 			}
 		}
 
@@ -143,7 +133,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 			$add_below = 'div-comment';
 		} ?>
 
-<<?php echo $tag; ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
+<<?php echo esc_attr( $tag ); ?> <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>
 	id="comment-<?php comment_ID(); ?>">
 
 		<?php
@@ -157,7 +147,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 				<?php
 				break;
 			default:
-				if ( 'div' != $args['style'] ) {
+				if ( 'div' !== $args['style'] ) {
 					?>
 	<div id="div-comment-<?php comment_ID(); ?>" class="comment-meta">
 		<?php } ?>
@@ -165,7 +155,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 			<figure>
 				<?php
 						// Display avatar unless size is set to 0.
-				if ( $args['avatar_size'] != 0 ) {
+				if ( 0 !== $args['avatar_size'] ) {
 					$avatar_size = ! empty( $args['avatar_size'] ) ? $args['avatar_size'] : 70; // set default avatar size
 					echo get_avatar( $comment, $avatar_size );
 				}
@@ -175,16 +165,16 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 			<div class="comment-metadata">
 				<?php
 						// Display author name.
-						printf( __( '<span class="fn">%s</span> ', 'postmandu' ), get_comment_author_link() );
+						echo '<span class="fn">' . get_comment_author_link() . '</span> ';// WPCS: XSS OK.
 				?>
-				<a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>" class="date">
+				<a href="<?php echo esc_url( htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ); ?>" class="date">
 					<?php
-							/* translators: 1: date, 2: time */
 							printf(
+								/* translators: 1: date, 2: time */
 								__( '%1$s at %2$s', 'postmandu' ),
 								get_comment_date(),
 								get_comment_time()
-							);
+							); // WPCS: XSS OK.
 					?>
 				</a>
 
@@ -192,10 +182,10 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 					<div class="comment-text"><?php comment_text(); ?></div><!-- .comment-text -->
 					<?php
 							// Display comment moderation text.
-					if ( $comment->comment_approved === '0' ) {
+					if ( '0' === $comment->comment_approved ) {
 						?>
 					<em
-						class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'postmandu' ); ?></em><br />
+						class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'postmandu' ); ?></em><br />
 						<?php
 					}
 					?>

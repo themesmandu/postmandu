@@ -32,7 +32,7 @@
 					itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
 				<?php endif; ?>
-				<span><?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); /* WPCS: xss ok. */ ?></span>
+				<span><?php echo esc_html( get_bloginfo( 'description', 'display' ) ); /* WPCS: xss ok. */ ?></span>
 
 					<?php
 				} else {

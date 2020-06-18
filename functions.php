@@ -168,10 +168,10 @@ add_action( 'widgets_init', 'postmandu_widgets_init' );
 function postmandu_scripts() {
 
 	// Bootstrap reboot styles.
-	wp_enqueue_style( 'postmandu-bootstrap-reboot', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap-reboot.min.css', array( 'postmandu-style' ), '4.1.2' );
+	wp_enqueue_style( 'bootstrap-reboot', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap-reboot.min.css', array( 'postmandu-style' ), '4.1.2' );
 
 	// Bootstrap styles.
-	wp_enqueue_style( 'postmandu-bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap.min.css', array( 'postmandu-style' ), '4.1.2' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap.min.css', array( 'postmandu-style' ), '4.1.2' );
 
 	// Theme styles.
 	wp_enqueue_style( 'postmandu-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
@@ -186,15 +186,15 @@ function postmandu_scripts() {
 	wp_enqueue_style( 'mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Add font-awesome fonts, used in the main stylesheet.
-	wp_enqueue_style( 'postmandu-font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'postmandu-style' ), '5.7.2' );
+	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'postmandu-style' ), '5.7.2' );
 
 	// Dashicons Support
 	wp_enqueue_style( 'dashicons' );
 
 	// Bootstrap core JavaScript: jQuery first, then Popper.js, then Bootstrap JS.
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'postmandu-popper', get_template_directory_uri() . '/vendor/bootstrap-src/js/popper.min.js', array(), '1.14.3', true );
-	wp_enqueue_script( 'postmandu-bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/js/bootstrap.min.js', array(), '4.1.2', true );
+	wp_enqueue_script( 'popper', get_template_directory_uri() . '/vendor/bootstrap-src/js/popper.min.js', array(), '1.14.3', true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/js/bootstrap.min.js', array(), '4.1.2', true );
 
 	// Theme added JavaScript: Added by Developers.
 	wp_enqueue_script( 'postmandu-global', get_template_directory_uri() . '/assets/js/global.min.js', array(), wp_get_theme()->get( 'Version' ), true );

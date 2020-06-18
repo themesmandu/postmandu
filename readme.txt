@@ -72,6 +72,11 @@ Source: https://fonts.google.com/
 Fonts — SIL Open Font License, v1.1
 license Url: https://opensource.org/licenses/OFL-1.1
 
+* Kirki Customizer Framework
+Source: https://kirki.org/
+License — MIT
+license Url: https://github.com/kirki-framework/kirki/blob/master/LICENSE
+
 * Stocksnap
 Source: https://stocksnap.io/
 License: CC0 1.0 Universal (CC0 1.0)
