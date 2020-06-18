@@ -2,8 +2,8 @@
 === Postmandu ===
 Contributors: Themesmandu
 Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready
-Requires at least: 5.0
-Tested up to: 5.4
+Requires at least: 5.6
+Tested up to: 7.0
 Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
