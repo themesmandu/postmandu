@@ -20,7 +20,7 @@ if ( ! class_exists( 'postmandu_WP_Bootstrap_Navwalker' ) ) {
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class postmandu_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+	class Postmandu_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.

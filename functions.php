@@ -177,13 +177,13 @@ function postmandu_scripts() {
 	wp_enqueue_style( 'postmandu-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Loading menu dropdown stylesheet.
-	wp_enqueue_style( 'menu-dropdown', get_theme_file_uri( '/assets/css/dropdown.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'postmandu-menu-dropdown', get_theme_file_uri( '/assets/css/dropdown.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Loading main stylesheet.
-	wp_enqueue_style( 'main', get_theme_file_uri( '/assets/css/main.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'postmandu-main', get_theme_file_uri( '/assets/css/main.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Loading mediascreen stylesheet.
-	wp_enqueue_style( 'mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'postmandu-mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Add font-awesome fonts, used in the main stylesheet.
 	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'postmandu-style' ), '5.7.2' );
