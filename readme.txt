@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Postmandu is best suited for podcast websites.
 
 == Description ==
-Postmandu Theme is a clean, modern responsive WordPress theme focused on podcast sites.  With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
+Postmandu is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers.
 
 == Installation ==
 
