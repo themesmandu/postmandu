@@ -45,7 +45,11 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 			?>
 <div class="page-content">
 	<div class="container">
+			<?php if ( is_single() ) : ?>
+		<h1 class="header-title"><?php the_title(); ?></h1>
+		<?php else : ?>
 		<h1 class="header-title"><?php single_post_title(); ?></h1>
+		<?php endif; ?>
 			<?php
 			if ( get_post_type() === 'post' && is_single() ) {
 				?>
