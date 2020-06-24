@@ -1,18 +1,20 @@
  
 === Postmandu ===
 Contributors: Themesmandu
-Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready
+Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
 Requires at least: 5.3
 Tested up to: 5.3
-Requires PHP: 7.0
+Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Postmandu is best suited for podcast websites.
+Postmandu is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
 
 == Description ==
-Postmandu is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers.
+Postmandu is a clean, modern responsive WordPress theme focused on podcast sites. 
+This theme is intended for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
+With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. Postmandu is completely responsive and thus compatible with all kinds of modern browsers. You can easily upload episodes and publish it or schedule it. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
 
 == Installation ==
 
