@@ -166,6 +166,37 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-right: auto;
 }
 
+.wp-block-image .alignright.is-resized,
+.wp-block-image .alignleft.is-resized,
+.wp-block-image .aligncenter.is-resized,
+.alignright.img-fluid,
+.alignleft.img-fluid,
+.aligncenter.img-fluid {
+    display: block;
+    float: none;
+    text-align: right;
+}
+
+.wp-block-image .alignleft.is-resized {
+    text-align: left;
+}
+
+.wp-block-image .aligncenter.is-resized {
+    text-align: center;
+}
+
+.alignright.img-fluid {
+    margin-left: auto;
+}
+
+.alignleft.img-fluid {
+    margin-right: auto;
+}
+
+.aligncenter.img-fluid {
+    margin: 0 auto;
+}
+
 figcaption,
 .wp-caption-text,
 .gallery-caption {
