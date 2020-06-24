@@ -1,18 +1,20 @@
  
 === Postmandu ===
 Contributors: Themesmandu
-Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready
-Requires at least: 5.0
-Tested up to: 5.4
-Requires PHP: 7.0
+Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
+Requires at least: 5.3
+Tested up to: 5.3
+Requires PHP: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Postmandu is best suited for podcast websites.
+Postmandu is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
 
 == Description ==
-Postmandu Theme is a clean, modern responsive WordPress theme focused on podcast sites.  With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
+Postmandu is a clean, modern responsive WordPress theme focused on podcast sites. 
+This theme is intended for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
+With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. Postmandu is completely responsive and thus compatible with all kinds of modern browsers. You can easily upload episodes and publish it or schedule it. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
 
 == Installation ==
 
@@ -71,6 +73,11 @@ license Url: https://github.com/TGMPA/TGM-Plugin-Activation/blob/develop/LICENSE
 Source: https://fonts.google.com/
 Fonts — SIL Open Font License, v1.1
 license Url: https://opensource.org/licenses/OFL-1.1
+
+* Kirki Customizer Framework
+Source: https://kirki.org/
+License — MIT
+license Url: https://github.com/kirki-framework/kirki/blob/master/LICENSE
 
 * Stocksnap
 Source: https://stocksnap.io/

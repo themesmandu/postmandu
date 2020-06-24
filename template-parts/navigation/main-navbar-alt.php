@@ -12,43 +12,43 @@
 <?php if ( get_theme_mod( 'mainmenu_dropdown_mode' ) !== 'bootstrap' ) { ?>
 
 <nav class="navbar navbar-expand-lg main-navigation nav-search appear-left">
-    <?php } else { ?>
-    <nav class="navbar navbar-expand-lg main-navigation nav-search">
-        <?php } ?>
-        <div class="container">
-            <div class="site-branding">
-                <?php if ( ! has_custom_logo() ) { ?>
+	<?php } else { ?>
+	<nav class="navbar navbar-expand-lg main-navigation nav-search">
+		<?php } ?>
+		<div class="container">
+			<div class="site-branding">
+				<?php if ( ! has_custom_logo() ) { ?>
 
-                <?php if ( is_front_page() && is_home() ) : ?>
+					<?php if ( is_front_page() && is_home() ) : ?>
 
-                <h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                        title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-                        itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+						itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
-                <?php else : ?>
+				<?php else : ?>
 
-                <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                    title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-                    itemprop="url"><?php bloginfo( 'name' ); ?></a>
+				<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+					title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+					itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
-                <?php endif; ?>
-                <span><?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); /* WPCS: xss ok. */ ?></span>
+				<?php endif; ?>
+				<span><?php echo esc_html( get_bloginfo( 'description', 'display' ) ); /* WPCS: xss ok. */ ?></span>
 
-                <?php
+					<?php
 				} else {
 					the_custom_logo();
 				}
 				?>
-            </div>
+			</div>
 
-            <button id="menu" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarmenus">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+			<button id="menu" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarmenus">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 
-            <?php
+			<?php
 			if ( has_nav_menu( 'primary' ) ) :
 				wp_nav_menu(
 					array(
@@ -65,8 +65,8 @@
 			endif;
 			?>
 
-            <?php
+			<?php
 			get_template_part( 'template-parts/navigation/add-item', 'search-form' );
-            ?>
-        </div><!-- .container -->
-    </nav><!-- .site-navigation -->
+			?>
+		</div><!-- .container -->
+	</nav><!-- .site-navigation -->

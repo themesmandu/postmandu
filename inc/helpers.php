@@ -45,7 +45,11 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 			?>
 <div class="page-content">
 	<div class="container">
+			<?php if ( is_single() ) : ?>
+		<h1 class="header-title"><?php the_title(); ?></h1>
+		<?php else : ?>
 		<h1 class="header-title"><?php single_post_title(); ?></h1>
+		<?php endif; ?>
 			<?php
 			if ( get_post_type() === 'post' && is_single() ) {
 				?>
@@ -75,8 +79,8 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 			?>
 <div class="page-content">
 	<div class="container">
-			<?php /* translators: %s: search query. */ ?>
 		<h1 class="header-title">
+			<?php /* translators: %s: search query. */ ?>
 			<?php printf( esc_html__( 'Search Results for: %s', 'postmandu' ), get_search_query() ); ?></h1>
 	</div>
 </div>
@@ -86,7 +90,8 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 <div class="page-content">
 	<div class="container">
 		<h1 class="header-title">
-			<span><?php echo __( 'Oops!', 'postmandu' ); ?></span><?php echo esc_html__( ' That page can&#39;t be found.', 'postmandu' ); ?>
+			<?php /* translators: %s: search query. */ ?>
+			<span><?php echo esc_html__( 'Oops!', 'postmandu' ); ?></span><?php echo esc_html__( ' That page can&#39;t be found.', 'postmandu' ); ?>
 		</h1>
 
 		<div class="error-404 not-found">
@@ -132,24 +137,3 @@ if ( ! function_exists( 'postmandu_get_theme_option' ) ) :
 
 endif;
 
-
-
-function postmandu_get_duration( $file ) {
-	$abs_path = str_replace(
-		site_url(),
-		wp_normalize_path( untrailingslashit( ABSPATH ) ),
-		$file
-	);
-	require_once ABSPATH . 'wp-admin/includes/media.php';
-	$metadata    = wp_read_audio_metadata( $abs_path );
-	$duration    = $metadata['length'];
-	$hours       = floor( $duration / 3600 );
-		$minutes = floor( ( $duration - ( $hours * 3600 ) ) / 60 );
-		$seconds = $duration - ( $hours * 3600 ) - ( $minutes * 60 );
-	if ( 0 == $hours ) {
-		return sprintf( '%02d:%02d', $minutes, $seconds );
-	} else {
-		return sprintf( '%02d:%02d:%02d', $hours, $minutes, $seconds );
-	}
-
-}
