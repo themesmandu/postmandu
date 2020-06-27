@@ -2,10 +2,10 @@
 /**
  * General settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 
 /**
  *
@@ -14,17 +14,17 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'general_options',
 	array(
-		'title' => __( 'General Settings', 'postmandu' ),
+		'title' => __( 'General Settings', 'simple-podcast' ),
 	)
 );
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'toggle',
-		'settings' => 'postmandu_theme_options[skip_to_content_toggle]',
-		'label'    => esc_html__( 'Show Skip To Content', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[skip_to_content_toggle]',
+		'label'    => esc_html__( 'Show Skip To Content', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['skip_to_content_toggle'],
 	)
@@ -33,41 +33,41 @@ Kirki::add_field(
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-buttonset',
-		'settings' => 'postmandu_theme_options[menubar_mode]',
-		'label'    => esc_html__( 'Main Menu Bar Mode', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[menubar_mode]',
+		'label'    => esc_html__( 'Main Menu Bar Mode', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['menubar_mode'],
 		'choices'  => array(
-			'standard' => esc_html__( 'Withought Search', 'postmandu' ),
-			'alt'      => esc_html__( 'With Search', 'postmandu' ),
+			'standard' => esc_html__( 'Withought Search', 'simple-podcast' ),
+			'alt'      => esc_html__( 'With Search', 'simple-podcast' ),
 		),
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-buttonset',
 		'settings' => 'mainmenu_style',
-		'label'    => esc_html__( 'Main Menu: Style', 'postmandu' ),
+		'label'    => esc_html__( 'Main Menu: Style', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => 'regular',
 		'choices'  => array(
-			'regular' => esc_html__( 'Regular', 'postmandu' ),
-			'fixed'   => esc_html__( 'Fixed', 'postmandu' ),
+			'regular' => esc_html__( 'Regular', 'simple-podcast' ),
+			'fixed'   => esc_html__( 'Fixed', 'simple-podcast' ),
 		),
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-image',
 		'settings' => 'mainmenu_dropdown_mode',
-		'label'    => esc_html__( 'Main Menu: Appearance(small screen)', 'postmandu' ),
+		'label'    => esc_html__( 'Main Menu: Appearance(small screen)', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => 'default',
 		'choices'  => array(
@@ -78,11 +78,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-image',
-		'settings' => 'postmandu_theme_options[sidebar_position]',
-		'label'    => esc_html__( 'Sidebar Displays', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[sidebar_position]',
+		'label'    => esc_html__( 'Sidebar Displays', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => $defaults['sidebar_position'],
 		'choices'  => array(
@@ -95,11 +95,11 @@ Kirki::add_field(
 
 // Setting sidebar bg.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'sidebar_bg',
-		'label'     => __( 'Sidebar Background Color', 'postmandu' ),
+		'label'     => __( 'Sidebar Background Color', 'simple-podcast' ),
 		'section'   => 'general_options',
 		'default'   => '#101010',
 		'choices'   => array(
@@ -117,11 +117,11 @@ Kirki::add_field(
 
 // Setting sidebar color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'sidebar_color',
-		'label'     => __( 'Sidebar Color', 'postmandu' ),
+		'label'     => __( 'Sidebar Color', 'simple-podcast' ),
 		'section'   => 'general_options',
 		'default'   => '#ffffff',
 		'choices'   => array(
@@ -138,11 +138,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'slider',
 		'settings' => 'sidebar_bs_blur',
-		'label'    => esc_html__( 'Sidebar Box Shadow Blur(px)', 'postmandu' ),
+		'label'    => esc_html__( 'Sidebar Box Shadow Blur(px)', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => 0,
 		'choices'  => array(
@@ -165,11 +165,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'slider',
 		'settings' => 'sidebar_bs_spread',
-		'label'    => esc_html__( 'Sidebar Box Shadow Spread(px)', 'postmandu' ),
+		'label'    => esc_html__( 'Sidebar Box Shadow Spread(px)', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => 0,
 		'choices'  => array(
@@ -192,11 +192,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'color',
 		'settings' => 'sidebar_bs_color',
-		'label'    => __( 'Sidebar Box Shadow Color', 'postmandu' ),
+		'label'    => __( 'Sidebar Box Shadow Color', 'simple-podcast' ),
 		'section'  => 'general_options',
 		'default'  => 'rgba(0,0,0,0)',
 		'choices'  => array(

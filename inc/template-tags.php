@@ -1,18 +1,18 @@
 <?php
 /**
- * Postmandu Standalone Functions.
+ * Simple Podcast Standalone Functions.
  *
  * Some of the functionality here could be replaced by core features.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-if ( ! function_exists( 'postmandu_entry_summary' ) ) :
+if ( ! function_exists( 'simple_podcast_entry_summary' ) ) :
 	/**
 	 *
 	 * Template part which displays post excerpts on the posts page.
 	 */
-	function postmandu_entry_summary() {
+	function simple_podcast_entry_summary() {
 
 		global $post;
 		$has_more = strpos( $post->post_content, '<!--more' );
@@ -25,18 +25,18 @@ if ( ! function_exists( 'postmandu_entry_summary' ) ) :
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'postmandu' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'simple-podcast' ),
 				'after'  => '</div>',
 			)
 		);
 	}
 endif;
 
-if ( ! function_exists( 'postmandu_posted_on' ) ) :
+if ( ! function_exists( 'simple_podcast_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function postmandu_posted_on() {
+	function simple_podcast_posted_on() {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) ) {
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
@@ -55,11 +55,11 @@ if ( ! function_exists( 'postmandu_posted_on' ) ) :
 
 endif;
 
-if ( ! function_exists( 'postmandu_posted_by' ) ) :
+if ( ! function_exists( 'simple_podcast_posted_by' ) ) :
 	/**
 	 * Prints HTML with meta information for the current author.
 	 */
-	function postmandu_posted_by() {
+	function simple_podcast_posted_by() {
 		$post   = get_post();
 		$byline = '<span class="author vcard"><a class="url fn n bypostauthor" href="' . esc_url( get_author_posts_url( $post->post_author ) ) . '">' . esc_html( get_the_author_meta( 'display_name', $post->post_author ) ) . '</a></span>';
 
@@ -68,21 +68,21 @@ if ( ! function_exists( 'postmandu_posted_by' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'postmandu_entry_footer' ) ) :
+if ( ! function_exists( 'simple_podcast_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function postmandu_entry_footer() {
+	function simple_podcast_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ' , ', 'postmandu' ) );
+			$categories_list = get_the_category_list( esc_html__( ' , ', 'simple-podcast' ) );
 			if ( $categories_list ) {
 				echo '<span class="cat-links">' . $categories_list . '</span>'; // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ' , ', 'list item separator', 'postmandu' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ' , ', 'list item separator', 'simple-podcast' ) );
 			if ( $tags_list ) {
 				echo '<span class="tags-links"><i class="fas fa-tags"></i>' . $tags_list . '</span>'; // WPCS: XSS OK.
 			}
@@ -99,7 +99,7 @@ if ( ! function_exists( 'postmandu_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'postmandu' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'simple-podcast' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -115,7 +115,7 @@ if ( ! function_exists( 'postmandu_entry_footer' ) ) :
 endif;
 
 
-if ( ! function_exists( 'postmandu_comment' ) ) :
+if ( ! function_exists( 'simple_podcast_comment' ) ) :
 	/**
 	 * Used as a callback by wp_list_comments() for displaying the comments.
 	 *
@@ -123,7 +123,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 	 * @param string $args arguments.
 	 * @param string $depth depth.
 	 */
-	function postmandu_comment( $comment, $args, $depth ) {
+	function simple_podcast_comment( $comment, $args, $depth ) {
 		// Get correct tag used for the comments.
 		if ( 'div' === $args['style'] ) {
 			$tag       = 'div';
@@ -142,7 +142,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 			case 'pingback':
 			case 'trackback':
 				?>
-	<div class="pingback-entry"><span class="pingback-heading"><?php esc_html_e( 'Pingback:', 'postmandu' ); ?></span>
+	<div class="pingback-entry"><span class="pingback-heading"><?php esc_html_e( 'Pingback:', 'simple-podcast' ); ?></span>
 				<?php comment_author_link(); ?></div>
 				<?php
 				break;
@@ -171,7 +171,7 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 					<?php
 							printf(
 								/* translators: 1: date, 2: time */
-								__( '%1$s at %2$s', 'postmandu' ),
+								__( '%1$s at %2$s', 'simple-podcast' ),
 								get_comment_date(),
 								get_comment_time()
 							); // WPCS: XSS OK.
@@ -185,14 +185,14 @@ if ( ! function_exists( 'postmandu_comment' ) ) :
 					if ( '0' === $comment->comment_approved ) {
 						?>
 					<em
-						class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'postmandu' ); ?></em><br />
+						class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'simple-podcast' ); ?></em><br />
 						<?php
 					}
 					?>
 
 				</div><!-- .comment-details -->
 				<?php
-						edit_comment_link( __( '(Edit)', 'postmandu' ), '  ', '' );
+						edit_comment_link( __( '(Edit)', 'simple-podcast' ), '  ', '' );
 				?>
 
 				<div class="reply">
@@ -230,9 +230,9 @@ endif;
  *
  * @param array $classes One or more classes to add to the class list.
  */
-function postmandu_layout_class( $classes = '' ) {
+function simple_podcast_layout_class( $classes = '' ) {
 	// Separates classes with a single space.
-	echo 'class="' . join( ' ', postmandu_set_layout_class( $classes ) ) . '"'; // WPCS: XSS OK.
+	echo 'class="' . join( ' ', simple_podcast_set_layout_class( $classes ) ) . '"'; // WPCS: XSS OK.
 }
 
 /**
@@ -241,7 +241,7 @@ function postmandu_layout_class( $classes = '' ) {
  * @param array $class Classes for the div element.
  * @return array
  */
-function postmandu_set_layout_class( $class = '' ) {
+function simple_podcast_set_layout_class( $class = '' ) {
 
 	// Define classes array.
 	$classes = array();
@@ -254,7 +254,7 @@ function postmandu_set_layout_class( $class = '' ) {
 	$classes = array_map( 'esc_attr', $classes );
 
 	// Apply filters to entry post class for child theming.
-	$classes = apply_filters( 'postmandu_set_layout_class', $classes );
+	$classes = apply_filters( 'simple_podcast_set_layout_class', $classes );
 
 	// Classes array.
 	return array_unique( $classes );
@@ -265,9 +265,9 @@ function postmandu_set_layout_class( $class = '' ) {
  *
  * @param array $classes One or more classes to add to the class list.
  */
-function postmandu_content_class( $classes = '' ) {
+function simple_podcast_content_class( $classes = '' ) {
 	// Separates classes with a single space.
-	echo ' ' . join( ' ', postmandu_set_content_class( $classes ) );// WPCS: XSS OK.
+	echo ' ' . join( ' ', simple_podcast_set_content_class( $classes ) );// WPCS: XSS OK.
 }
 
 /**
@@ -276,7 +276,7 @@ function postmandu_content_class( $classes = '' ) {
  * @param array $class Classes for the div element.
  * @return array
  */
-function postmandu_set_content_class( $class = '' ) {
+function simple_podcast_set_content_class( $class = '' ) {
 
 	// Define classes array.
 	$classes = array();
@@ -284,14 +284,14 @@ function postmandu_set_content_class( $class = '' ) {
 	$classes[] = 'col-lg-8';
 
 	// Centered.
-	if ( ! is_active_sidebar( 'sidebar-1' ) || postmandu_get_theme_option( 'sidebar_position' ) === 'none' ) {
+	if ( ! is_active_sidebar( 'sidebar-1' ) || simple_podcast_get_theme_option( 'sidebar_position' ) === 'none' ) {
 		$classes[] = 'col-lg-12 no-sidebar';
 	}
 
 	$classes = array_map( 'esc_attr', $classes );
 
 	// Apply filters to entry post class for child theming.
-	$classes = apply_filters( 'postmandu_set_content_class', $classes );
+	$classes = apply_filters( 'simple_podcast_set_content_class', $classes );
 
 	// Classes array.
 	return array_unique( $classes );
@@ -301,6 +301,6 @@ function postmandu_set_content_class( $class = '' ) {
  * Condition function.
  * This is a static front page and not the latest posts page.
  */
-function postmandu_is_frontpage() {
+function simple_podcast_is_frontpage() {
 	return ( is_front_page() && ! is_home() );
 }

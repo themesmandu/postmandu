@@ -1,5 +1,5 @@
  
-=== Postmandu ===
+=== Simple Podcast ===
 Contributors: Themesmandu
 Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
 Requires at least: 5.3
@@ -9,12 +9,12 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Postmandu is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
+Simple Podcast is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
 
 == Description ==
-Postmandu is a clean, modern responsive WordPress theme focused on podcast sites. 
+Simple Podcast is a clean, modern responsive WordPress theme focused on podcast sites. 
 This theme is intended for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
-With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. Postmandu is completely responsive and thus compatible with all kinds of modern browsers. You can easily upload episodes and publish it or schedule it. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/postmandu/.
+With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. Simple Podcast is completely responsive and thus compatible with all kinds of modern browsers. You can easily upload episodes and publish it or schedule it. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/simple-podcast/.
 
 == Installation ==
 
@@ -26,12 +26,12 @@ With the organized and attractive layouts, it is much easier to display your rob
 
 = Does this theme support any plugins? =
 
-Postmandu includes support for Infinite Scroll in Jetpack.
+Simple Podcast includes support for Infinite Scroll in Jetpack.
 
 == Copyright ==
 
-Postmandu theme WordPress Theme, Copyright 2020 themesmandu.com
-Postmandu theme is distributed under the terms of the GNU GPL
+Simple Podcast theme WordPress Theme, Copyright 2020 themesmandu.com
+Simple Podcast theme is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ GNU General Public License for more details.
 
 == Resources ==
 
-Postmandu bundles the following third-party resources:
+Simple Podcast bundles the following third-party resources:
 
 * Underscores, (C) 2012-2019 Automattic, Inc.
 Source: https://underscores.me/

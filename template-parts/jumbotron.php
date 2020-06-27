@@ -5,7 +5,7 @@
  * @link https://getbootstrap.com/docs/4.3/components/jumbotron/
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 $heading    = get_theme_mod( 'banner_title' );
@@ -35,7 +35,7 @@ if ( empty( $heading ) && empty( $subheading ) && empty( $bg_img ) && empty( $bt
 			</h4>
 
 			<?php if ( ! empty( $btn_label ) ) { ?>
-			<a href="<?php echo esc_url( $btn_link ); ?>" class="btn-postmandu btn-podcast">
+			<a href="<?php echo esc_url( $btn_link ); ?>" class="btn-simple-podcast btn-podcast">
 				<?php echo esc_html( $btn_label ); ?>
 			</a>
 			<?php } ?>

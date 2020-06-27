@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -12,9 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'list-view' ); ?>>
 	<div class="row">
 	<?php
-		$postmandu_list_sortables = postmandu_get_theme_option( 'blog_sortable_content_list' );
-	foreach ( $postmandu_list_sortables as $postmandu_list_sortable ) {
-			get_template_part( 'template-parts/post/sortable/list/' . $postmandu_list_sortable );
+		$simple_podcast_list_sortables = simple_podcast_get_theme_option( 'blog_sortable_content_list' );
+	foreach ( $simple_podcast_list_sortables as $simple_podcast_list_sortable ) {
+			get_template_part( 'template-parts/post/sortable/list/' . $simple_podcast_list_sortable );
 	}
 	?>
 

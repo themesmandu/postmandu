@@ -1,10 +1,10 @@
 <?php
 /**
- * Postmandu Theme Customizer
+ * Simple Podcast Theme Customizer
  *
  * @param WP_Customize_Manager $wp_customize the Customizer object.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function postmandu_customize_register( $wp_customize ) {
+function simple_podcast_customize_register( $wp_customize ) {
 
 	/**
 	 *
@@ -27,35 +27,35 @@ function postmandu_customize_register( $wp_customize ) {
 			'blogname',
 			array(
 				'selector'        => '.navbar-brand',
-				'render_callback' => 'postmandu_customize_partial_blogname',
+				'render_callback' => 'simple_podcast_customize_partial_blogname',
 			)
 		);
 	}
 
 	// END Options.
 }
-add_action( 'customize_register', 'postmandu_customize_register' );
+add_action( 'customize_register', 'simple_podcast_customize_register' );
 
 
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function postmandu_customize_preview_js() {
-	wp_enqueue_script( 'postmandu-customizer', get_template_directory_uri() . '/js/customizer.min.js', array( 'customize-preview' ), '25032018', true );
+function simple_podcast_customize_preview_js() {
+	wp_enqueue_script( 'simple-podcast-customizer', get_template_directory_uri() . '/js/customizer.min.js', array( 'customize-preview' ), '25032018', true );
 }
-add_action( 'customize_preview_init', 'postmandu_customize_preview_js' );
+add_action( 'customize_preview_init', 'simple_podcast_customize_preview_js' );
 
 
-function postmandu_post_page_setting_js() {
-	wp_enqueue_script( 'postmandu-post-page-setting-js', get_template_directory_uri() . '/assets/admin/customizer/js/post-page-setting.min.js', array( 'customize-controls' ), wp_get_theme()->get( 'Version' ), true );
+function simple_podcast_post_page_setting_js() {
+	wp_enqueue_script( 'simple-podcast-post-page-setting-js', get_template_directory_uri() . '/assets/admin/customizer/js/post-page-setting.min.js', array( 'customize-controls' ), wp_get_theme()->get( 'Version' ), true );
 }
-add_action( 'customize_controls_enqueue_scripts', 'postmandu_post_page_setting_js' );
+add_action( 'customize_controls_enqueue_scripts', 'simple_podcast_post_page_setting_js' );
 
-function postmandu_kirki_multicheck_css() {
-	wp_enqueue_style( 'postmandu-multickeck', get_template_directory_uri() . '/assets/admin/customizer/css/kirki-multicheck.min.css', array(), wp_get_theme()->get( 'Version' ) );
+function simple_podcast_kirki_multicheck_css() {
+	wp_enqueue_style( 'simple-podcast-multickeck', get_template_directory_uri() . '/assets/admin/customizer/css/kirki-multicheck.min.css', array(), wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'customize_controls_print_styles', 'postmandu_kirki_multicheck_css' );
+add_action( 'customize_controls_print_styles', 'simple_podcast_kirki_multicheck_css' );
 
 
 
@@ -67,7 +67,7 @@ Kirki::add_panel(
 	'typography_options',
 	array(
 		'priority' => 190,
-		'title'    => esc_html__( 'Typography', 'postmandu' ),
+		'title'    => esc_html__( 'Typography', 'simple-podcast' ),
 	)
 );
 
@@ -99,7 +99,7 @@ require get_template_directory() . '/inc/customizer/sections/header-background.p
 Kirki::add_panel(
 	'front_page_options',
 	array(
-		'title' => esc_html__( 'Front Page Settings', 'postmandu' ),
+		'title' => esc_html__( 'Front Page Settings', 'simple-podcast' ),
 	)
 );
 /**

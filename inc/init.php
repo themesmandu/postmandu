@@ -2,13 +2,13 @@
 /**
  * Load files
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
  * Load WordPress nav walker.
  */
-require get_template_directory() . '/inc/class-postmandu-wp-bootstrap-navwalker.php';
+require get_template_directory() . '/inc/class-simple-podcast-wp-bootstrap-navwalker.php';
 
 /**
  * Custom template tags for this theme.

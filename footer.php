@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -15,10 +15,10 @@
 
 
 <footer id="footer">
-<?php if ( is_active_sidebar( 'postmandu_newsletter' ) ) : ?>
+<?php if ( is_active_sidebar( 'simple-podcast_newsletter' ) ) : ?>
 	<div class="newsletter-widgets">
 		<div class="container">
-			<?php dynamic_sidebar( 'postmandu_newsletter' ); ?>
+			<?php dynamic_sidebar( 'simple-podcast_newsletter' ); ?>
 		</div>
 	</div>
 	<?php endif; ?> <!-- End of div newsletter -->
@@ -48,9 +48,9 @@
 
 	<div class="footer-copyright">
 		<div class="container">
-			<?php if ( postmandu_get_theme_option( 'footer_copyright' ) ) : ?>
+			<?php if ( simple_podcast_get_theme_option( 'footer_copyright' ) ) : ?>
 			<div class="site-info">
-				<?php echo wp_kses_post( postmandu_get_theme_option( 'footer_copyright' ) ); ?>
+				<?php echo wp_kses_post( simple_podcast_get_theme_option( 'footer_copyright' ) ); ?>
 			</div><!-- .site-info -->
 			<?php endif; ?>
 
@@ -67,7 +67,7 @@
 			?>
 		</div>
 	</div><!-- .footer-copyright -->
-	<button class="up-btn btn-postmandu" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'postmandu' ) ); ?>"
+	<button class="up-btn btn-simple-podcast" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'simple-podcast' ) ); ?>"
 		style="display: block;">&uarr;</button>
 </footer>
 

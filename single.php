@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 get_header();
@@ -13,7 +13,7 @@ get_header();
 <div class="container">
 	<div class="row">
 
-		<div id="primary" class="content-area<?php postmandu_content_class(); ?>">
+		<div id="primary" class="content-area<?php simple_podcast_content_class(); ?>">
 			<main id="main" class="site-main">
 
 				<?php

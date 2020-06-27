@@ -2,10 +2,10 @@
 /**
  * Template part for displaying content Posts page
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
 <div class="entry-summary">
-	<?php postmandu_entry_summary(); ?>
+	<?php simple_podcast_entry_summary(); ?>
 </div>

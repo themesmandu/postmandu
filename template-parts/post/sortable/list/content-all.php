@@ -2,7 +2,7 @@
 /**
  * Template part for displaying content Posts page
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -10,9 +10,9 @@
     <div class="column">
 
         <?php
-	$postmandu_list2_sortables = postmandu_get_theme_option( 'blog_sortable_content_list2' );
-foreach ( $postmandu_list2_sortables as $postmandu_list2_sortable ) {
-	get_template_part( 'template-parts/post/sortable/list/' . $postmandu_list2_sortable );
+	$simple_podcast_list2_sortables = simple_podcast_get_theme_option( 'blog_sortable_content_list2' );
+foreach ( $simple_podcast_list2_sortables as $simple_podcast_list2_sortable ) {
+	get_template_part( 'template-parts/post/sortable/list/' . $simple_podcast_list2_sortable );
 }
 ?>
     </div>

@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 if ( post_password_required() ) {
@@ -28,11 +28,11 @@ if ( have_comments() ) :
 
 	<h2 class="comments-title">
 		<?php
-			$postmandu_comment_count = get_comments_number();
+			$simple_podcast_comment_count = get_comments_number();
 			printf( // WPCS: XSS OK.
 				/* translators: 1: comment count number, 2: title. */
-				esc_html( _nx( '%1$s comment', '%1$s comments', $postmandu_comment_count, 'comments title', 'postmandu' ) ),
-				number_format_i18n( $postmandu_comment_count ),
+				esc_html( _nx( '%1$s comment', '%1$s comments', $simple_podcast_comment_count, 'comments title', 'simple-podcast' ) ),
+				number_format_i18n( $simple_podcast_comment_count ),
 				'<span>' . get_the_title() . '</span>'
 			);
 		?>
@@ -42,7 +42,7 @@ if ( have_comments() ) :
 		<?php
 		wp_list_comments(
 			array(
-				'callback'    => 'postmandu_comment',
+				'callback'    => 'simple_podcast_comment',
 				'avatar_size' => 55,
 			)
 		);
@@ -56,8 +56,8 @@ if ( have_comments() ) :
 			paginate_comments_links(
 				array(
 					'mid_size'  => 2,
-					'prev_text' => '<span class="previous">' . __( 'Prev', 'postmandu' ),
-					'next_text' => '<span class="next">' . __( 'Next', 'postmandu' ),
+					'prev_text' => '<span class="previous">' . __( 'Prev', 'simple-podcast' ),
+					'next_text' => '<span class="next">' . __( 'Next', 'simple-podcast' ),
 				)
 			);
 		?>
@@ -69,7 +69,7 @@ if ( have_comments() ) :
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() ) :
 		?>
-	<p class="no-comment Postmandu-notice"><?php esc_html_e( 'Comments are closed.', 'postmandu' ); ?></p>
+	<p class="no-comment Simple-Podcast-notice"><?php esc_html_e( 'Comments are closed.', 'simple-podcast' ); ?></p>
 		<?php
 		endif;
 	?>

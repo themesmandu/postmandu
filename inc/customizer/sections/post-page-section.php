@@ -2,10 +2,10 @@
 /**
  * Post page settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 /**
  *
  * Add Section
@@ -13,18 +13,18 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'blog_options',
 	array(
-		'title'    => __( 'Posts Page Settings', 'postmandu' ),
+		'title'    => __( 'Posts Page Settings', 'simple-podcast' ),
 		'priority' => 170,
 	)
 );
 
 // Settings.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-image',
 		'settings' => 'blog_pagination_mode',
-		'label'    => esc_html__( 'Posts page navigation', 'postmandu' ),
+		'label'    => esc_html__( 'Posts page navigation', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => 'numeric',
 		'choices'  => array(
@@ -35,36 +35,36 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'        => 'text',
 		'settings'    => 'more_link',
-		'label'       => __( 'Read More button', 'postmandu' ),
-		'description' => __( 'Enter the button name which is a link to the full post. You can leave this blank if you want to hide the button.', 'postmandu' ),
+		'label'       => __( 'Read More button', 'simple-podcast' ),
+		'description' => __( 'Enter the button name which is a link to the full post. You can leave this blank if you want to hide the button.', 'simple-podcast' ),
 		'section'     => 'blog_options',
 	)
 );
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'        => 'select',
 		'settings'    => 'post_dropdown_setting',
-		'label'       => esc_html__( 'Featured Post', 'postmandu' ),
+		'label'       => esc_html__( 'Featured Post', 'simple-podcast' ),
 		'section'     => 'blog_options',
-		'placeholder' => esc_html__( 'Select post...', 'postmandu' ),
+		'placeholder' => esc_html__( 'Select post...', 'simple-podcast' ),
 		'choices'     => Kirki_Helper::get_posts( array( 'post_type' => 'post' ) ),
 	)
 );
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'slider',
 		'settings' => 'post_bs_blur',
-		'label'    => esc_html__( 'Post Box Shadow Blur(px)', 'postmandu' ),
+		'label'    => esc_html__( 'Post Box Shadow Blur(px)', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => 0,
 		'choices'  => array(
@@ -87,11 +87,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'slider',
 		'settings' => 'post_bs_spread',
-		'label'    => esc_html__( 'Post Box Shadow Spread(px)', 'postmandu' ),
+		'label'    => esc_html__( 'Post Box Shadow Spread(px)', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => 0,
 		'choices'  => array(
@@ -114,11 +114,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'color',
 		'settings' => 'post_bs_color',
-		'label'    => __( 'Post Box Shadow Color', 'postmandu' ),
+		'label'    => __( 'Post Box Shadow Color', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => 'rgba(0,0,0,0)',
 		'choices'  => array(
@@ -140,11 +140,11 @@ Kirki::add_field(
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'radio-image',
 		'settings' => 'blog_layout',
-		'label'    => esc_html__( 'Layout Style', 'postmandu' ),
+		'label'    => esc_html__( 'Layout Style', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => 'standard',
 		'choices'  => array(
@@ -156,49 +156,49 @@ Kirki::add_field(
 
 // sotarble content setting
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'sortable',
-		'settings' => 'postmandu_theme_options[blog_sortable_content_sandard]',
-		'label'    => esc_html__( 'Blog Content Layout(standard)', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[blog_sortable_content_sandard]',
+		'label'    => esc_html__( 'Blog Content Layout(standard)', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => $defaults['blog_sortable_content_sandard'],
 		'choices'  => array(
-			'title'     => esc_html__( 'Title', 'postmandu' ),
-			'thumbnail' => esc_html__( 'Thumbnail', 'postmandu' ),
-			'meta'      => esc_html__( 'Meta', 'postmandu' ),
-			'content'   => esc_html__( 'Content', 'postmandu' ),
+			'title'     => esc_html__( 'Title', 'simple-podcast' ),
+			'thumbnail' => esc_html__( 'Thumbnail', 'simple-podcast' ),
+			'meta'      => esc_html__( 'Meta', 'simple-podcast' ),
+			'content'   => esc_html__( 'Content', 'simple-podcast' ),
 		),
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'sortable',
-		'settings' => 'postmandu_theme_options[blog_sortable_content_list]',
-		'label'    => esc_html__( 'Blog Content Layout(list)', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[blog_sortable_content_list]',
+		'label'    => esc_html__( 'Blog Content Layout(list)', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => $defaults['blog_sortable_content_list'],
 		'choices'  => array(
-			'image'       => esc_html__( 'Image', 'postmandu' ),
-			'content-all' => esc_html__( 'Other Content', 'postmandu' ),
+			'image'       => esc_html__( 'Image', 'simple-podcast' ),
+			'content-all' => esc_html__( 'Other Content', 'simple-podcast' ),
 		),
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'sortable',
-		'settings' => 'postmandu_theme_options[blog_sortable_content_list2]',
-		'label'    => esc_html__( 'Blog Content Layout(list meta)', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[blog_sortable_content_list2]',
+		'label'    => esc_html__( 'Blog Content Layout(list meta)', 'simple-podcast' ),
 		'section'  => 'blog_options',
 		'default'  => $defaults['blog_sortable_content_list2'],
 		'choices'  => array(
-			'title'   => esc_html__( 'Title', 'postmandu' ),
-			'meta'    => esc_html__( 'Meta', 'postmandu' ),
-			'content' => esc_html__( 'Content', 'postmandu' ),
+			'title'   => esc_html__( 'Title', 'simple-podcast' ),
+			'meta'    => esc_html__( 'Meta', 'simple-podcast' ),
+			'content' => esc_html__( 'Content', 'simple-podcast' ),
 
 		),
 	)
@@ -206,11 +206,11 @@ Kirki::add_field(
 
 // Entry/Post/Page Title Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'title_color',
-		'label'     => __( 'Entry/Post/Page Title Color', 'postmandu' ),
+		'label'     => __( 'Entry/Post/Page Title Color', 'simple-podcast' ),
 		'section'   => 'blog_options',
 		'default'   => $defaults['title_color'],
 		'choices'   => array(
@@ -228,11 +228,11 @@ Kirki::add_field(
 
 // Entry/Post/Page Content Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'content_color',
-		'label'     => __( 'Entry/Post/Page Content Color', 'postmandu' ),
+		'label'     => __( 'Entry/Post/Page Content Color', 'simple-podcast' ),
 		'section'   => 'blog_options',
 		'default'   => $defaults['content_color'],
 		'choices'   => array(
@@ -250,11 +250,11 @@ Kirki::add_field(
 
 // Blog Post Background.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'entry_bgcolor',
-		'label'     => __( 'Blog Post Background', 'postmandu' ),
+		'label'     => __( 'Blog Post Background', 'simple-podcast' ),
 		'section'   => 'blog_options',
 		'default'   => $defaults['entry_bgcolor'],
 		'choices'   => array(
@@ -272,11 +272,11 @@ Kirki::add_field(
 
 // Blog Post: Footer Background.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'entry_footer_bgcolor',
-		'label'     => __( 'Blog Post: Footer Background', 'postmandu' ),
+		'label'     => __( 'Blog Post: Footer Background', 'simple-podcast' ),
 		'section'   => 'blog_options',
 		'default'   => $defaults['entry_footer_bgcolor'],
 		'choices'   => array(
@@ -294,11 +294,11 @@ Kirki::add_field(
 
 // Meta Text Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'meta_color',
-		'label'     => __( 'Meta Text Color', 'postmandu' ),
+		'label'     => __( 'Meta Text Color', 'simple-podcast' ),
 		'section'   => 'blog_options',
 		'default'   => $defaults['meta_color'],
 		'choices'   => array(

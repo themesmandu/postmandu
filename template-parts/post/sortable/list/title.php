@@ -2,7 +2,7 @@
 /**
  * Template part for displaying content Posts page
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 

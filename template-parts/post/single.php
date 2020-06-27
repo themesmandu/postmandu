@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -22,14 +22,14 @@
 			the_content(
 				sprintf(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					esc_html__( 'Continue reading%s', 'postmandu' ),
+					esc_html__( 'Continue reading%s', 'simple-podcast' ),
 					'<span class="screen-reader-text">' . get_the_title() . '</span>'
 				)
 			);
 
 			wp_link_pages(
 				array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'postmandu' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'simple-podcast' ),
 					'after'  => '</div>',
 				)
 			);

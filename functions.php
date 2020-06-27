@@ -1,13 +1,13 @@
 <?php
 /**
- * Postmandu functions and definitions
+ * Simple Podcast functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-if ( ! function_exists( 'postmandu_setup' ) ) :
+if ( ! function_exists( 'simple_podcast_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'postmandu_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function postmandu_setup() {
+	function simple_podcast_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Postmandu, use a find and replace
-		 * to change 'postmandu' to the name of your theme in all the template files.
+		 * If you're building a theme based on Simple Podcast, use a find and replace
+		 * to change 'simple-podcast' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'postmandu', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'simple-podcast', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -43,16 +43,16 @@ if ( ! function_exists( 'postmandu_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// Custom Image Sizes.
-		add_image_size( 'postmandu-thumb-750-300', 750, 300, true ); // crop.
-		add_image_size( 'postmandu-featured-900-600', 900, 600, true ); // crop.
-		add_image_size( 'postmandu-cover-image', 1200, 9999 );
+		add_image_size( 'simple-podcast-thumb-750-300', 750, 300, true ); // crop.
+		add_image_size( 'simple-podcast-featured-900-600', 900, 600, true ); // crop.
+		add_image_size( 'simple-podcast-cover-image', 1200, 9999 );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary Menu', 'postmandu' ),
-				'social'  => esc_html__( 'Social Menu', 'postmandu' ),
-				'footer'  => esc_html__( 'Footer Menu', 'postmandu' ),
+				'primary' => esc_html__( 'Primary Menu', 'simple-podcast' ),
+				'social'  => esc_html__( 'Social Menu', 'simple-podcast' ),
+				'footer'  => esc_html__( 'Footer Menu', 'simple-podcast' ),
 			)
 		);
 
@@ -100,7 +100,7 @@ if ( ! function_exists( 'postmandu_setup' ) ) :
 		);
 	}
 endif;
-add_action( 'after_setup_theme', 'postmandu_setup' );
+add_action( 'after_setup_theme', 'simple_podcast_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,23 +109,23 @@ add_action( 'after_setup_theme', 'postmandu_setup' );
  *
  * @global int $content_width
  */
-function postmandu_content_width() {
+function simple_podcast_content_width() {
 	// This variable is intended to be overruled from themes.
-	$GLOBALS['content_width'] = apply_filters( 'postmandu_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'simple-podcast_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'postmandu_content_width', 0 );
+add_action( 'after_setup_theme', 'simple_podcast_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function postmandu_widgets_init() {
+function simple_podcast_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'postmandu' ),
+			'name'          => esc_html__( 'Sidebar', 'simple-podcast' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'postmandu' ),
+			'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h5 class="widget-title">',
@@ -135,9 +135,9 @@ function postmandu_widgets_init() {
 
 		register_sidebar(
 			array(
-				'name'          => esc_html__( 'Newsletter-widget', 'postmandu' ),
-				'id'            => 'postmandu_newsletter',
-				'description'   => esc_html__( 'Add widgets here.', 'postmandu' ),
+				'name'          => esc_html__( 'Newsletter-widget', 'simple-podcast' ),
+				'id'            => 'simple-podcast_newsletter',
+				'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h5 class="widget-title">',
@@ -149,9 +149,9 @@ function postmandu_widgets_init() {
 		register_sidebar(
 			array(
 				/* translators: %d: footer widget number. */
-				'name'          => sprintf( esc_html__( 'Footer Widgets %d', 'postmandu' ), $i ),
+				'name'          => sprintf( esc_html__( 'Footer Widgets %d', 'simple-podcast' ), $i ),
 				'id'            => 'footer-' . $i,
-				'description'   => esc_html__( 'Add widgets here.', 'postmandu' ),
+				'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -160,33 +160,33 @@ function postmandu_widgets_init() {
 		);
 	}
 }
-add_action( 'widgets_init', 'postmandu_widgets_init' );
+add_action( 'widgets_init', 'simple_podcast_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function postmandu_scripts() {
+function simple_podcast_scripts() {
 
 	// Bootstrap reboot styles.
-	wp_enqueue_style( 'bootstrap-reboot', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap-reboot.min.css', array( 'postmandu-style' ), '4.1.2' );
+	wp_enqueue_style( 'bootstrap-reboot', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap-reboot.min.css', array( 'simple-podcast-style' ), '4.1.2' );
 
 	// Bootstrap styles.
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap.min.css', array( 'postmandu-style' ), '4.1.2' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/css/bootstrap.min.css', array( 'simple-podcast-style' ), '4.1.2' );
 
 	// Theme styles.
-	wp_enqueue_style( 'postmandu-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'simple-podcast-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Loading menu dropdown stylesheet.
-	wp_enqueue_style( 'postmandu-menu-dropdown', get_theme_file_uri( '/assets/css/dropdown.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'simple-podcast-menu-dropdown', get_theme_file_uri( '/assets/css/dropdown.min.css' ), array( 'simple-podcast-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Loading main stylesheet.
-	wp_enqueue_style( 'postmandu-main', get_theme_file_uri( '/assets/css/main.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'simple-podcast-main', get_theme_file_uri( '/assets/css/main.min.css' ), array( 'simple-podcast-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Loading mediascreen stylesheet.
-	wp_enqueue_style( 'postmandu-mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'postmandu-style' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'simple-podcast-mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'simple-podcast-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Add font-awesome fonts, used in the main stylesheet.
-	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'postmandu-style' ), '5.7.2' );
+	wp_enqueue_style( 'font-awesome', get_theme_file_uri( '/assets/font-awesome-5.7.2/css/all.css' ), array( 'simple-podcast-style' ), '5.7.2' );
 
 	// Dashicons Support
 	wp_enqueue_style( 'dashicons' );
@@ -197,13 +197,13 @@ function postmandu_scripts() {
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/js/bootstrap.min.js', array(), '4.1.2', true );
 
 	// Theme added JavaScript: Added by Developers.
-	wp_enqueue_script( 'postmandu-global', get_template_directory_uri() . '/assets/js/global.min.js', array(), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'simple-podcast-global', get_template_directory_uri() . '/assets/js/global.min.js', array(), wp_get_theme()->get( 'Version' ), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'postmandu_scripts' );
+add_action( 'wp_enqueue_scripts', 'simple_podcast_scripts' );
 
 
 

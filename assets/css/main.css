@@ -31,7 +31,7 @@ input[type="submit"]:focus {
     outline: 1px dotted;
 }
 
-.btn-postmandu:focus,
+.btn-simple-podcast:focus,
 input[type="submit"]:focus {
     opacity: .7;
 }
@@ -123,7 +123,7 @@ table caption {
     line-height: 1.5;
 }
 
-.btn-postmandu,
+.btn-simple-podcast,
 button {
     font-size: inherit;
     border: none;
@@ -201,7 +201,7 @@ h6 {
     margin: 0;
 }
 
-.postmandu-notice,
+.simple-podcast-notice,
 .comment-awaiting-moderation {
     background: #4460af;
     color: #ffffff;
@@ -210,7 +210,7 @@ h6 {
     margin: 15px 0 0 !important;
 }
 
-.postmandu-success,
+.simple-podcast-success,
 .edd-cart-added-alert {
     background: #00c06a;
     color: #ffffff;
@@ -292,7 +292,7 @@ h6 {
     border-radius: 0;
 }
 
-.postmandu-search input::placeholder {
+.simple-podcast-search input::placeholder {
     font-size: 14px;
 }
 
@@ -336,7 +336,7 @@ h6 {
     padding: 250px 0;
 }
 
-.header_jumbotron .postmandu-heading {
+.header_jumbotron .simple-podcast-heading {
     margin: 0;
 }
 
@@ -347,7 +347,7 @@ h6 {
     margin: 0 auto;
 }
 
-.header_jumbotron .btn-postmandu {
+.header_jumbotron .btn-simple-podcast {
     padding: 10px 25px;
     margin: 42px 0 0;
 }
@@ -485,7 +485,7 @@ h6 {
     text-align: left;
 }
 
-.more-link-btn.btn-postmandu {
+.more-link-btn.btn-simple-podcast {
     margin: 70px 0 0;
     display: inline-block;
 }
@@ -1487,7 +1487,7 @@ footer .paragraph span:last-child:after,
     text-align: center;
 }
 
-.error404 .postmandu-search {
+.error404 .simple-podcast-search {
     max-width: 640px;
     margin: 22px auto 0;
     text-align: left;

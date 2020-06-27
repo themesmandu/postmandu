@@ -2,7 +2,7 @@
 /**
  * Typography headings settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 
@@ -14,17 +14,17 @@
 Kirki::add_section(
 	'typography_headings_options',
 	array(
-		'title' => __( 'Headings', 'postmandu' ),
+		'title' => __( 'Headings', 'simple-podcast' ),
 		'panel' => 'typography_options',
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h1',
-		'label'     => esc_html__( 'H1', 'postmandu' ),
+		'label'     => esc_html__( 'H1', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',
@@ -44,11 +44,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h2',
-		'label'     => esc_html__( 'H2', 'postmandu' ),
+		'label'     => esc_html__( 'H2', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',
@@ -68,11 +68,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h3',
-		'label'     => esc_html__( 'H3', 'postmandu' ),
+		'label'     => esc_html__( 'H3', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',
@@ -92,11 +92,11 @@ Kirki::add_field(
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h4',
-		'label'     => esc_html__( 'H4', 'postmandu' ),
+		'label'     => esc_html__( 'H4', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',
@@ -117,11 +117,11 @@ Kirki::add_field(
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h5',
-		'label'     => esc_html__( 'H5', 'postmandu' ),
+		'label'     => esc_html__( 'H5', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',
@@ -142,11 +142,11 @@ Kirki::add_field(
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_headings_h6',
-		'label'     => esc_html__( 'H6', 'postmandu' ),
+		'label'     => esc_html__( 'H6', 'simple-podcast' ),
 		'section'   => 'typography_headings_options',
 		'default'   => array(
 			'font-family'    => 'Montserrat',

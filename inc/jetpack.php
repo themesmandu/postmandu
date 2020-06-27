@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function postmandu_jetpack_setup() {
+function simple_podcast_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'postmandu_infinite_scroll_render',
+			'render'    => 'simple_podcast_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function postmandu_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details'    => array(
-				'stylesheet' => 'postmandu-style',
+				'stylesheet' => 'simple-podcast-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,12 +48,12 @@ function postmandu_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'postmandu_jetpack_setup' );
+add_action( 'after_setup_theme', 'simple_podcast_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function postmandu_infinite_scroll_render() {
+function simple_podcast_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

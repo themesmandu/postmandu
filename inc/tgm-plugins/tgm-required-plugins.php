@@ -10,7 +10,7 @@
  *
  * @package    TGM-Plugin-Activation
  * @subpackage Example
- * @version    2.6.1 for parent theme Postmandu for publication on WordPress.org
+ * @version    2.6.1 for parent theme Simple Podcast for publication on WordPress.org
  * @author     Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright  Copyright (c) 2011, Thomas Griffin
  * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
@@ -33,7 +33,7 @@
  */
 require_once get_template_directory() . '/inc/tgm-plugins/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'postmandu_register_required_plugins' );
+add_action( 'tgmpa_register', 'simple_podcast_register_required_plugins' );
 
 /**
  * Register the required plugins for this theme.
@@ -52,32 +52,32 @@ add_action( 'tgmpa_register', 'postmandu_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function postmandu_register_required_plugins() {
+function simple_podcast_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
 		array(
-			'name'     => esc_html__( 'Contact Form 7', 'postmandu' ),
+			'name'     => esc_html__( 'Contact Form 7', 'simple-podcast' ),
 			'slug'     => 'contact-form-7',
 			'required' => false,
 		),
 
 		array(
-			'name'     => esc_html__( 'Newsletter', 'postmandu' ),
+			'name'     => esc_html__( 'Newsletter', 'simple-podcast' ),
 			'slug'     => 'newsletter',
 			'required' => false,
 		),
 
 		array(
-			'name'     => esc_html__( 'Seriously Simple Podcasting', 'postmandu' ),
+			'name'     => esc_html__( 'Seriously Simple Podcasting', 'simple-podcast' ),
 			'slug'     => 'seriously-simple-podcasting',
 			'required' => false,
 		),
 
 		array(
-			'name'     => esc_html__( 'One Click Demo Import', 'postmandu' ),
+			'name'     => esc_html__( 'One Click Demo Import', 'simple-podcast' ),
 			'slug'     => 'one-click-demo-import',
 			'required' => false,
 		),
@@ -93,7 +93,7 @@ function postmandu_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'postmandu',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'simple-podcast',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.

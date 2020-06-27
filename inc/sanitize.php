@@ -2,7 +2,7 @@
 /**
  * Sanitize functions.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @return void
  */
-function postmandu_customize_partial_blogname() {
+function simple_podcast_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -19,10 +19,10 @@ function postmandu_customize_partial_blogname() {
  *
  * @param string $input Menu bar layout.
  */
-function postmandu_sanitize_menubar_mode( $input ) {
+function simple_podcast_sanitize_menubar_mode( $input ) {
 	$valid = array(
-		'standard' => __( 'Standard', 'postmandu' ),
-		'alt'      => __( 'Alternative', 'postmandu' ),
+		'standard' => __( 'Standard', 'simple-podcast' ),
+		'alt'      => __( 'Alternative', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -37,10 +37,10 @@ function postmandu_sanitize_menubar_mode( $input ) {
  *
  * @param string $input options.
  */
-function postmandu_sanitize_mainmenu_dropdown_mode( $input ) {
+function simple_podcast_sanitize_mainmenu_dropdown_mode( $input ) {
 	$valid = array(
-		'default'   => __( 'Default', 'postmandu' ),
-		'bootstrap' => __( 'Bootstrap', 'postmandu' ),
+		'default'   => __( 'Default', 'simple-podcast' ),
+		'bootstrap' => __( 'Bootstrap', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -55,10 +55,10 @@ function postmandu_sanitize_mainmenu_dropdown_mode( $input ) {
  *
  * @param string $input options.
  */
-function postmandu_sanitize_mainmenu_style( $input ) {
+function simple_podcast_sanitize_mainmenu_style( $input ) {
 	$valid = array(
-		'regular' => __( 'Regular', 'postmandu' ),
-		'fixed'   => __( 'Fixed', 'postmandu' ),
+		'regular' => __( 'Regular', 'simple-podcast' ),
+		'fixed'   => __( 'Fixed', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -73,11 +73,11 @@ function postmandu_sanitize_mainmenu_style( $input ) {
  *
  * @param string $input Sidebar position options.
  */
-function postmandu_sanitize_( $input ) {
+function simple_podcast_sanitize_( $input ) {
 	$valid = array(
-		'right' => __( 'Right sidebar', 'postmandu' ),
-		'left'  => __( 'Left sidebar', 'postmandu' ),
-		'none'  => __( 'No sidebar', 'postmandu' ),
+		'right' => __( 'Right sidebar', 'simple-podcast' ),
+		'left'  => __( 'Left sidebar', 'simple-podcast' ),
+		'none'  => __( 'No sidebar', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -92,10 +92,10 @@ function postmandu_sanitize_( $input ) {
  *
  * @param string $input navigation mode options.
  */
-function postmandu_sanitize_blog_pagination_mode( $input ) {
+function simple_podcast_sanitize_blog_pagination_mode( $input ) {
 	$valid = array(
-		'standard' => __( 'Standard', 'postmandu' ),
-		'numeric'  => __( 'Numeric', 'postmandu' ),
+		'standard' => __( 'Standard', 'simple-podcast' ),
+		'numeric'  => __( 'Numeric', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -110,10 +110,10 @@ function postmandu_sanitize_blog_pagination_mode( $input ) {
  *
  * @param string $input blog layout options.
  */
-function postmandu_sanitize_blog_layout( $input ) {
+function simple_podcast_sanitize_blog_layout( $input ) {
 	$valid = array(
-		'list'     => esc_html__( 'List', 'postmandu' ),
-		'standard' => esc_html__( 'Standard', 'postmandu' ),
+		'list'     => esc_html__( 'List', 'simple-podcast' ),
+		'standard' => esc_html__( 'Standard', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -132,7 +132,7 @@ function postmandu_sanitize_blog_layout( $input ) {
  * @param bool $checked Whether the checkbox is checked.
  * @return bool Whether the checkbox is checked.
  */
-function postmandu_sanitize_checkbox( $checked ) {
+function simple_podcast_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true === $checked ) ? true : false );
 }
@@ -143,8 +143,8 @@ function postmandu_sanitize_checkbox( $checked ) {
  * @param  string       Switch value
  * @return integer  Sanitized value
  */
-if ( ! function_exists( 'postmandu_switch_sanitize' ) ) {
-	function postmandu_switch_sanitize( $input ) {
+if ( ! function_exists( 'simple_podcast_switch_sanitize' ) ) {
+	function simple_podcast_switch_sanitize( $input ) {
 		if ( true === $input ) {
 			return 1;
 		} else {
@@ -159,8 +159,8 @@ if ( ! function_exists( 'postmandu_switch_sanitize' ) ) {
  * @param  string   Input to be sanitized
  * @return string   Sanitized input
  */
-if ( ! function_exists( 'postmandu_hex_rgba_sanitization' ) ) {
-	function postmandu_hex_rgba_sanitization( $input, $setting ) {
+if ( ! function_exists( 'simple_podcast_hex_rgba_sanitization' ) ) {
+	function simple_podcast_hex_rgba_sanitization( $input, $setting ) {
 		if ( empty( $input ) || is_array( $input ) ) {
 			return $setting->default;
 		}
@@ -172,7 +172,7 @@ if ( ! function_exists( 'postmandu_hex_rgba_sanitization' ) ) {
 			// Sanitize as RGBa color
 			$input = str_replace( ' ', '', $input );
 			sscanf( $input, 'rgba(%d,%d,%d,%f)', $red, $green, $blue, $alpha );
-			$input = 'rgba(' . postmandu_in_range( $red, 0, 255 ) . ',' . postmandu_in_range( $green, 0, 255 ) . ',' . postmandu_in_range( $blue, 0, 255 ) . ',' . postmandu_in_range( $alpha, 0, 1 ) . ')';
+			$input = 'rgba(' . simple_podcast_in_range( $red, 0, 255 ) . ',' . simple_podcast_in_range( $green, 0, 255 ) . ',' . simple_podcast_in_range( $blue, 0, 255 ) . ',' . simple_podcast_in_range( $alpha, 0, 1 ) . ')';
 		}
 		return $input;
 	}
@@ -184,8 +184,8 @@ if ( ! function_exists( 'postmandu_hex_rgba_sanitization' ) ) {
  * @param  number   Input to be sanitized
  * @return number   Sanitized input
  */
-if ( ! function_exists( 'postmandu_in_range' ) ) {
-	function postmandu_in_range( $input, $min, $max ) {
+if ( ! function_exists( 'simple_podcast_in_range' ) ) {
+	function simple_podcast_in_range( $input, $min, $max ) {
 		if ( $input < $min ) {
 			$input = $min;
 		}
@@ -202,10 +202,10 @@ if ( ! function_exists( 'postmandu_in_range' ) ) {
  *
  * @param string $input options.
  */
-function postmandu_sanitize_player_atc_style( $input ) {
+function simple_podcast_sanitize_player_atc_style( $input ) {
 	$valid = array(
-		'dropdown' => __( 'Dropdown', 'postmandu' ),
-		'popup'    => __( 'Popup', 'postmandu' ),
+		'dropdown' => __( 'Dropdown', 'simple-podcast' ),
+		'popup'    => __( 'Popup', 'simple-podcast' ),
 	);
 
 	if ( array_key_exists( $input, $valid ) ) {
@@ -221,27 +221,27 @@ function postmandu_sanitize_player_atc_style( $input ) {
  * @param  string   Input to be sanitized (either a string containing a single string or multiple, separated by commas)
  * @return string   Sanitized input
  */
-if ( ! function_exists( 'postmandu_sortable_checkboxes_sanitization' ) ) {
-	function postmandu_sortable_checkboxes_sanitization( $input ) {
+if ( ! function_exists( 'simple_podcast_sortable_checkboxes_sanitization' ) ) {
+	function simple_podcast_sortable_checkboxes_sanitization( $input ) {
 		/* Var */
 		$output = array();
 		/* Get valid choices */
 		$valid_inputs = array(
 			'thumbnail' => array(
 				'id'    => 'thumbnail',
-				'label' => __( 'Thumbnail', 'postmandu' ),
+				'label' => __( 'Thumbnail', 'simple-podcast' ),
 			),
 			'title'     => array(
 				'id'    => 'title',
-				'label' => __( 'Title', 'postmandu' ),
+				'label' => __( 'Title', 'simple-podcast' ),
 			),
 			'meta'      => array(
 				'id'    => 'meta',
-				'label' => __( 'Meta', 'postmandu' ),
+				'label' => __( 'Meta', 'simple-podcast' ),
 			),
 			'content'   => array(
 				'id'    => 'id',
-				'label' => __( 'Content', 'postmandu' ),
+				'label' => __( 'Content', 'simple-podcast' ),
 			),
 		);
 		/* Make array */
@@ -271,7 +271,7 @@ if ( ! function_exists( 'postmandu_sortable_checkboxes_sanitization' ) ) {
  * @param  string   Input to be sanitized
  * @return string   Sanitized input
  */
-function postmandu_repeater_sanitize( $input ) {
+function simple_podcast_repeater_sanitize( $input ) {
 	$input_decoded = json_decode( $input, true );
 
 	if ( ! empty( $input_decoded ) ) {

@@ -2,7 +2,7 @@
 /**
  * Theme specific dynamic styles.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
@@ -14,7 +14,7 @@
  *
  * @see add_action('wp_head',$func)
  */
-function postmandu_header_background_css() {
+function simple_podcast_header_background_css() {
 	?>
 <!--Header background CSS-->
 <style type="text/css">
@@ -48,7 +48,7 @@ function postmandu_header_background_css() {
 </style>
 	<?php
 }
-add_action( 'wp_head', 'postmandu_header_background_css' );
+add_action( 'wp_head', 'simple_podcast_header_background_css' );
 
 
 /**
@@ -60,7 +60,7 @@ add_action( 'wp_head', 'postmandu_header_background_css' );
  *
  * @see add_action('wp_head',$func)
  */
-function postmandu_main_menu_css() {
+function simple_podcast_main_menu_css() {
 	?>
 <!--main menu CSS-->
 
@@ -71,5 +71,5 @@ function postmandu_main_menu_css() {
 </style>
 	<?php
 }
-add_action( 'wp_head', 'postmandu_main_menu_css' );
+add_action( 'wp_head', 'simple_podcast_main_menu_css' );
 

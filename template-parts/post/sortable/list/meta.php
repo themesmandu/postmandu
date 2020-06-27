@@ -2,15 +2,15 @@
 /**
  * Template part for displaying content Posts page
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 
 if ( get_post_type() === 'post' ) {
 	?>
 	<div class="entry-meta">
-	<?php postmandu_posted_on(); ?>
-		<?php postmandu_posted_by(); ?>
+	<?php simple_podcast_posted_on(); ?>
+		<?php simple_podcast_posted_by(); ?>
 	</div>
 		<?php
 }

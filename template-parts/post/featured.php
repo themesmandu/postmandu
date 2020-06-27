@@ -4,23 +4,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
 
 <?php
 // Get featured post ID.
-$postmandu_featured_id = absint( get_theme_mod( 'post_dropdown_setting' ) );
+$simple_podcast_featured_id = absint( get_theme_mod( 'post_dropdown_setting' ) );
 
-if ( empty( $postmandu_featured_id ) ) {
+if ( empty( $simple_podcast_featured_id ) ) {
 	return;
 }
 
-$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $postmandu_featured_id ), 'full' );
+$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $simple_podcast_featured_id ), 'full' );
 
 	// Getting post by ID.
-	$query = new WP_Query( 'p=' . $postmandu_featured_id );
+	$query = new WP_Query( 'p=' . $simple_podcast_featured_id );
 while ( $query->have_posts() ) :
 	$query->the_post();
 	?>

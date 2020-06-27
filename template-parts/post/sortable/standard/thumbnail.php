@@ -2,7 +2,7 @@
 /**
  * Template part for displaying thumbnail Posts page
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>

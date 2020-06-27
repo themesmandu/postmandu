@@ -2,23 +2,23 @@
 /**
  * The template for displaying search forms
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
 
 <!-- Search Form Widget -->
-<div class="postmandu-search">
-	<h2 class="form-title"><?php esc_html_e( 'Search ', 'postmandu' ); ?></h2>
+<div class="simple-podcast-search">
+	<h2 class="form-title"><?php esc_html_e( 'Search ', 'simple-podcast' ); ?></h2>
 	<div class="content">
 		<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 			<div class="input-group">
 				<input class="field form-control" id="s" name="s" type="text"
-					placeholder="<?php esc_attr_e( 'Search &hellip;', 'postmandu' ); ?>"
+					placeholder="<?php esc_attr_e( 'Search &hellip;', 'simple-podcast' ); ?>"
 					value="<?php the_search_query(); ?>">
 				<span class="input-group-append">
 					<input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit"
-						value="<?php esc_attr_e( 'Search', 'postmandu' ); ?>">
+						value="<?php esc_attr_e( 'Search', 'simple-podcast' ); ?>">
 				</span>
 			</div>
 		</form>

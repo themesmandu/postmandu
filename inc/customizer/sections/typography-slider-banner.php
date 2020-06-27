@@ -2,7 +2,7 @@
 /**
  * Typography slider and banner settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /**
@@ -12,17 +12,17 @@
 Kirki::add_section(
 	'typography_slider_banner_options',
 	array(
-		'title' => __( 'Slider And Banner Headings', 'postmandu' ),
+		'title' => __( 'Slider And Banner Headings', 'simple-podcast' ),
 		'panel' => 'typography_options',
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'typography',
 		'settings'  => 'typography_slider_banner',
-		'label'     => esc_html__( 'Typography(Slider And Banner Headings)', 'postmandu' ),
+		'label'     => esc_html__( 'Typography(Slider And Banner Headings)', 'simple-podcast' ),
 		'section'   => 'typography_slider_banner_options',
 		'default'   => array(
 			'font-family'    => '',
@@ -33,7 +33,7 @@ Kirki::add_field(
 		),
 		'output'    => array(
 			array(
-				'element' => '.postmandu-heading',
+				'element' => '.simple-podcast-heading',
 			),
 		),
 		'transport' => 'auto',

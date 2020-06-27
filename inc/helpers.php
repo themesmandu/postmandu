@@ -2,7 +2,7 @@
 /**
  * Helper functions.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 
@@ -12,7 +12,7 @@
  * Whether the static page is set to a front displays
  * https://developer.wordpress.org/reference/classes/wp_customize_control/active_callback/
  */
-function postmandu_set_front_page() {
+function simple_podcast_set_front_page() {
 	if ( 'page' === get_option( 'show_on_front' ) ) {
 		return true;
 	}
@@ -22,7 +22,7 @@ function postmandu_set_front_page() {
  *
  * Helper function for checking plugin status
  */
-function postmandu_is_active_ssp() {
+function simple_podcast_is_active_ssp() {
 	// check for plugin using plugin name.
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 	if ( is_plugin_active( 'seriously-simple-podcasting/seriously-simple-podcasting.php' ) ) {
@@ -31,14 +31,14 @@ function postmandu_is_active_ssp() {
 }
 
 
-if ( ! function_exists( 'postmandu_header_page_title' ) ) :
+if ( ! function_exists( 'simple_podcast_header_page_title' ) ) :
 
 	/**
 	 * Display page title on header.
 	 *
 	 * @since 1.0.0
 	 */
-	function postmandu_header_page_title() {
+	function simple_podcast_header_page_title() {
 		if ( is_front_page() ) :
 			return;
 		elseif ( is_home() || is_singular() ) :
@@ -55,9 +55,9 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 				?>
 		<div class="entry-meta">
 				<?php
-				postmandu_posted_on();
-				postmandu_posted_by();
-				postmandu_entry_footer();
+				simple_podcast_posted_on();
+				simple_podcast_posted_by();
+				simple_podcast_entry_footer();
 				?>
 
 		</div>
@@ -81,7 +81,7 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 	<div class="container">
 		<h1 class="header-title">
 			<?php /* translators: %s: search query. */ ?>
-			<?php printf( esc_html__( 'Search Results for: %s', 'postmandu' ), get_search_query() ); ?></h1>
+			<?php printf( esc_html__( 'Search Results for: %s', 'simple-podcast' ), get_search_query() ); ?></h1>
 	</div>
 </div>
 			<?php
@@ -91,7 +91,7 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 	<div class="container">
 		<h1 class="header-title">
 			<?php /* translators: %s: search query. */ ?>
-			<span><?php echo esc_html__( 'Oops!', 'postmandu' ); ?></span><?php echo esc_html__( ' That page can&#39;t be found.', 'postmandu' ); ?>
+			<span><?php echo esc_html__( 'Oops!', 'simple-podcast' ); ?></span><?php echo esc_html__( ' That page can&#39;t be found.', 'simple-podcast' ); ?>
 		</h1>
 
 		<div class="error-404 not-found">
@@ -105,7 +105,7 @@ if ( ! function_exists( 'postmandu_header_page_title' ) ) :
 
 endif;
 
-if ( ! function_exists( 'postmandu_get_theme_option' ) ) :
+if ( ! function_exists( 'simple_podcast_get_theme_option' ) ) :
 
 	/**
 	 * Get theme option.
@@ -115,15 +115,15 @@ if ( ! function_exists( 'postmandu_get_theme_option' ) ) :
 	 * @param string $key Option key.
 	 * @return mixed Option value.
 	 */
-	function postmandu_get_theme_option( $key = '' ) {
+	function simple_podcast_get_theme_option( $key = '' ) {
 
-		$default_options = postmandu_get_default_theme_options();
+		$default_options = simple_podcast_get_default_theme_options();
 
 		if ( empty( $key ) ) {
 			return;
 		}
 
-		$theme_options = (array) get_theme_mod( 'postmandu_theme_options' );
+		$theme_options = (array) get_theme_mod( 'simple-podcast_theme_options' );
 		$theme_options = wp_parse_args( $theme_options, $default_options );
 
 		$value = null;

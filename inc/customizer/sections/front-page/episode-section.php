@@ -2,10 +2,10 @@
 /**
  * episode settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 
 /**
  *
@@ -14,18 +14,18 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'episode_section',
 	array(
-		'title' => __( 'Episodes Section', 'postmandu' ),
+		'title' => __( 'Episodes Section', 'simple-podcast' ),
 		'panel' => 'front_page_options',
 	)
 );
 
 // Setting background image
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'image',
 		'settings' => 'episode_section_bg',
-		'label'    => esc_html__( 'Section Background Image', 'postmandu' ),
+		'label'    => esc_html__( 'Section Background Image', 'simple-podcast' ),
 		'section'  => 'episode_section',
 		'output'   => array(
 			array(
@@ -41,11 +41,11 @@ Kirki::add_field(
 
 // Setting gradient overlay.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'episode_section_overlay',
-		'label'     => esc_html__( 'Section Background Overlay', 'postmandu' ),
+		'label'     => esc_html__( 'Section Background Overlay', 'simple-podcast' ),
 		'section'   => 'episode_section',
 		'default'   => $defaults['episode_section_overlay'],
 		'choices'   => array(
@@ -63,11 +63,11 @@ Kirki::add_field(
 
 // Section Text Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'episode_section_color',
-		'label'     => __( 'Section Text Color', 'postmandu' ),
+		'label'     => __( 'Section Text Color', 'simple-podcast' ),
 		'section'   => 'episode_section',
 		'default'   => $defaults['episode_section_color'],
 		'choices'   => array(
@@ -85,12 +85,12 @@ Kirki::add_field(
 
 // Section preset Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'        => 'color',
 		'settings'    => 'episode_section_preset_color',
-		'label'       => __( 'Section Preset Color', 'postmandu' ),
-		'description' => __( 'Includes title,button,sort colors', 'postmandu' ),
+		'label'       => __( 'Section Preset Color', 'simple-podcast' ),
+		'description' => __( 'Includes title,button,sort colors', 'simple-podcast' ),
 		'section'     => 'episode_section',
 		'default'     => $defaults['episode_section_preset_color'],
 		'choices'     => array(
@@ -104,7 +104,7 @@ Kirki::add_field(
 			),
 
 			array(
-				'element'  => '.latest-episode .btn-postmandu',
+				'element'  => '.latest-episode .btn-simple-podcast',
 				'property' => 'background-color',
 			),
 		),
@@ -115,32 +115,32 @@ Kirki::add_field(
 
 // Setting heading.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'text',
 		'settings' => 'episode_section_title',
-		'label'    => __( 'Section Heading', 'postmandu' ),
+		'label'    => __( 'Section Heading', 'simple-podcast' ),
 		'section'  => 'episode_section',
 	)
 );
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'text',
 		'settings' => 'episode_section_button_label',
-		'label'    => esc_html__( 'Button Label', 'postmandu' ),
+		'label'    => esc_html__( 'Button Label', 'simple-podcast' ),
 		'section'  => 'episode_section',
 	)
 );
 
 
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'link',
 		'settings' => 'episode_section_button_link',
-		'label'    => __( 'Button Link', 'postmandu' ),
+		'label'    => __( 'Button Link', 'simple-podcast' ),
 		'section'  => 'episode_section',
 	)
 );

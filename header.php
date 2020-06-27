@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -25,8 +25,8 @@
 	<div id="page" class="site">
 		<header id="top-header" class="site-header" role="banner">
 			<div class="header-wrap">
-				<?php if ( postmandu_get_theme_option( 'skip_to_content_toggle' ) ) : ?>
-				<a class="skip-link" href="#content"><?php esc_html_e( 'To the content', 'postmandu' ); ?></a>
+				<?php if ( simple_podcast_get_theme_option( 'skip_to_content_toggle' ) ) : ?>
+				<a class="skip-link" href="#content"><?php esc_html_e( 'To the content', 'simple-podcast' ); ?></a>
 				<?php endif; ?>
 
 				<?php
@@ -41,7 +41,7 @@
 				}
 
 				//header page title.
-				postmandu_header_page_title();
+				simple_podcast_header_page_title();
 				?>
 			<?php
 			if ( is_front_page() && ! is_home() && get_theme_mod( 'banner_toggle' ) ) {

@@ -2,11 +2,11 @@
 /**
  * Customizer default options
  *
- * @package Postmandu
+ * @package Simple Podcast
  * @return array An array of default values
  */
 
-if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
+if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 
 	/**
 	 * Get default theme options.
@@ -15,7 +15,7 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 	 *
 	 * @return array Default theme options.
 	 */
-	function postmandu_get_default_theme_options() {
+	function simple_podcast_get_default_theme_options() {
 
 		$defaults = array();
 
@@ -32,10 +32,10 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['link_color']                     = '#20aa73';        //Text Link Color.
 		$defaults['link_hover_color']               = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
 		$defaults['meta_color']                     = '#555555';        //Meta Text Color.
-		$defaults['postmandu_btn_color']            = '#20aa73';     //postmandu Button Background Color.
-		$defaults['postmandu_btn_hover_color']      = 'rgba(32,170,115,0.7)';      //postmandu Button Background: Hover Color.
-		$defaults['postmandu_btn_text_color']       = 'rgba(255, 255, 255, 1)';       //postmandu Button Text Color.
-		$defaults['postmandu_btn_text_hover_color'] = 'rgba(255, 255, 255, 1)';     //postmandu Button Text: Hover Color.
+		$defaults['simple-podcast_btn_color']            = '#20aa73';     //simple-podcast Button Background Color.
+		$defaults['simple-podcast_btn_hover_color']      = 'rgba(32,170,115,0.7)';      //simple-podcast Button Background: Hover Color.
+		$defaults['simple-podcast_btn_text_color']       = 'rgba(255, 255, 255, 1)';       //simple-podcast Button Text Color.
+		$defaults['simple-podcast_btn_text_hover_color'] = 'rgba(255, 255, 255, 1)';     //simple-podcast Button Text: Hover Color.
 		$defaults['footer_overlay']                 = '#232323';      //Footer Background.
 		$defaults['footer_color']                   = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
 
@@ -72,7 +72,7 @@ if ( ! function_exists( 'postmandu_get_default_theme_options' ) ) :
 		$defaults['banner_toggle'] = '0';
 
 		// Pass through filter.
-		$defaults = apply_filters( 'postmandu_get_default_theme_options', $defaults );
+		$defaults = apply_filters( 'simple-podcast_get_default_theme_options', $defaults );
 		return $defaults;
 	}
 

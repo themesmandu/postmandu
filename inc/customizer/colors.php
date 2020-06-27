@@ -2,10 +2,10 @@
 /**
  * Additional color settings.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 
 /**
  *
@@ -14,7 +14,7 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'nav_menu_colors',
 	array(
-		'title'    => __( 'Menu Color Settings', 'postmandu' ),
+		'title'    => __( 'Menu Color Settings', 'simple-podcast' ),
 		'panel'    => 'nav_menus',
 		'priority' => 99,
 	)
@@ -22,11 +22,11 @@ Kirki::add_section(
 
 // menu bg color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'menu_bar_bgcolor',
-		'label'     => __( 'Main Menu Bar Background', 'postmandu' ),
+		'label'     => __( 'Main Menu Bar Background', 'simple-podcast' ),
 		'section'   => 'nav_menu_colors',
 		'default'   => $defaults['menu_bar_bgcolor'],
 		'choices'   => array(
@@ -44,11 +44,11 @@ Kirki::add_field(
 
 // menu fixed bg color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'menu_bar_scroll_bgcolor',
-		'label'     => __( 'Main Menu Bar Background(fixed scroll)', 'postmandu' ),
+		'label'     => __( 'Main Menu Bar Background(fixed scroll)', 'simple-podcast' ),
 		'section'   => 'nav_menu_colors',
 		'default'   => $defaults['menu_bar_scroll_bgcolor'],
 		'choices'   => array(
@@ -66,11 +66,11 @@ Kirki::add_field(
 
 // menu color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'menu_color',
-		'label'     => __( 'Main Menu Color', 'postmandu' ),
+		'label'     => __( 'Main Menu Color', 'simple-podcast' ),
 		'section'   => 'nav_menu_colors',
 		'default'   => $defaults['menu_color'],
 		'choices'   => array(
@@ -92,11 +92,11 @@ Kirki::add_field(
 
 // menu hover color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'menu_hover_color',
-		'label'     => __( 'Main Menu Hover Color', 'postmandu' ),
+		'label'     => __( 'Main Menu Hover Color', 'simple-podcast' ),
 		'section'   => 'nav_menu_colors',
 		'default'   => $defaults['menu_hover_color'],
 		'choices'   => array(
@@ -114,11 +114,11 @@ Kirki::add_field(
 
 // site ttle color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'site_title_color',
-		'label'     => __( 'Site Title Color', 'postmandu' ),
+		'label'     => __( 'Site Title Color', 'simple-podcast' ),
 		'section'   => 'title_tagline',
 		'default'   => $defaults['site_title_color'],
 		'choices'   => array(
@@ -140,11 +140,11 @@ Kirki::add_field(
 
 // Text Link Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'link_color',
-		'label'     => __( 'Text Link Color', 'postmandu' ),
+		'label'     => __( 'Text Link Color', 'simple-podcast' ),
 		'section'   => 'colors',
 		'default'   => $defaults['link_color'],
 		'choices'   => array(
@@ -162,11 +162,11 @@ Kirki::add_field(
 
 // Text Link Hover Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'link_hover_color',
-		'label'     => __( 'Text Link Hover Color', 'postmandu' ),
+		'label'     => __( 'Text Link Hover Color', 'simple-podcast' ),
 		'section'   => 'colors',
 		'default'   => $defaults['link_hover_color'],
 		'choices'   => array(
@@ -184,20 +184,20 @@ Kirki::add_field(
 
 // Button Background Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
-		'settings'  => 'postmandu_btn_color',
-		'label'     => __( 'Button Background Color', 'postmandu' ),
+		'settings'  => 'simple-podcast_btn_color',
+		'label'     => __( 'Button Background Color', 'simple-podcast' ),
 		'section'   => 'colors',
-		'default'   => $defaults['postmandu_btn_color'],
+		'default'   => $defaults['simple-podcast_btn_color'],
 		'choices'   => array(
 			'alpha' => true,
 		),
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-postmandu, .postmandu-span, #menu span, .skip-link, .tnp-widget-minimal input.tnp-submit, .tnp-field input[type="submit"], input[type="submit"]',
+				'element'  => 'button, .btn-simple-podcast, .simple-podcast-span, #menu span, .skip-link, .tnp-widget-minimal input.tnp-submit, .tnp-field input[type="submit"], input[type="submit"]',
 				'property' => 'background-color',
 			),
 			array(
@@ -231,20 +231,20 @@ Kirki::add_field(
 
 // Button Background: Hover Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
-		'settings'  => 'postmandu_btn_hover_color',
-		'label'     => __( 'Button Background: Hover Color', 'postmandu' ),
+		'settings'  => 'simple-podcast_btn_hover_color',
+		'label'     => __( 'Button Background: Hover Color', 'simple-podcast' ),
 		'section'   => 'colors',
-		'default'   => $defaults['postmandu_btn_hover_color'],
+		'default'   => $defaults['simple-podcast_btn_hover_color'],
 		'choices'   => array(
 			'alpha' => true,
 		),
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover',
+				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover',
 				'property' => 'background-color',
 			),
 			array(
@@ -257,24 +257,24 @@ Kirki::add_field(
 
 // Button Text Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
-		'settings'  => 'postmandu_btn_text_color',
-		'label'     => __( 'Button Text Color', 'postmandu' ),
+		'settings'  => 'simple-podcast_btn_text_color',
+		'label'     => __( 'Button Text Color', 'simple-podcast' ),
 		'section'   => 'colors',
-		'default'   => $defaults['postmandu_btn_text_color'],
+		'default'   => $defaults['simple-podcast_btn_text_color'],
 		'choices'   => array(
 			'alpha' => true,
 		),
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-postmandu, .postmandu-span, .skip-link, span.page-numbers.current',
+				'element'  => 'button, .btn-simple-podcast, .simple-podcast-span, .skip-link, span.page-numbers.current',
 				'property' => 'color',
 			),
 			array(
-				'element'  => 'input[type="submit"], .more-link-btn.btn-postmandu a',
+				'element'  => 'input[type="submit"], .more-link-btn.btn-simple-podcast a',
 				'property' => 'color',
 			),
 		),
@@ -283,20 +283,20 @@ Kirki::add_field(
 
 // Button Text: Hover Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
-		'settings'  => 'postmandu_btn_text_hover_color',
-		'label'     => __( 'Button Text: Hover Color', 'postmandu' ),
+		'settings'  => 'simple-podcast_btn_text_hover_color',
+		'label'     => __( 'Button Text: Hover Color', 'simple-podcast' ),
 		'section'   => 'colors',
-		'default'   => $defaults['postmandu_btn_text_hover_color'],
+		'default'   => $defaults['simple-podcast_btn_text_hover_color'],
 		'choices'   => array(
 			'alpha' => true,
 		),
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-postmandu:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-postmandu a:hover',
+				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-simple-podcast a:hover',
 				'property' => 'color',
 			),
 		),

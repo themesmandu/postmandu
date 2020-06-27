@@ -2,10 +2,10 @@
 /**
  * Footer settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 
 /**
  *
@@ -14,17 +14,17 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'footer_options',
 	array(
-		'title' => __( 'Footer Settings', 'postmandu' ),
+		'title' => __( 'Footer Settings', 'simple-podcast' ),
 	)
 );
 
 // Setting background image
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'image',
 		'settings' => 'footer_bg',
-		'label'    => esc_html__( 'Footer Background Image', 'postmandu' ),
+		'label'    => esc_html__( 'Footer Background Image', 'simple-podcast' ),
 		'section'  => 'footer_options',
 		'output'   => array(
 			array(
@@ -40,11 +40,11 @@ Kirki::add_field(
 
 // Setting gradient overlay.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'footer_overlay',
-		'label'     => esc_html__( 'Footer Background Overlay', 'postmandu' ),
+		'label'     => esc_html__( 'Footer Background Overlay', 'simple-podcast' ),
 		'section'   => 'footer_options',
 		'default'   => $defaults['footer_overlay'],
 		'choices'   => array(
@@ -62,11 +62,11 @@ Kirki::add_field(
 
 // Footer Text Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'footer_color',
-		'label'     => __( 'Footer Text Color', 'postmandu' ),
+		'label'     => __( 'Footer Text Color', 'simple-podcast' ),
 		'section'   => 'footer_options',
 		'default'   => $defaults['footer_color'],
 		'choices'   => array(
@@ -85,11 +85,11 @@ Kirki::add_field(
 
 // Setting copyright.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'editor',
-		'settings' => 'postmandu_theme_options[footer_copyright]',
-		'label'    => __( 'Copyright Text', 'postmandu' ),
+		'settings' => 'simple-podcast_theme_options[footer_copyright]',
+		'label'    => __( 'Copyright Text', 'simple-podcast' ),
 		'section'  => 'footer_options',
 		'default'  => $defaults['footer_copyright'],
 	)

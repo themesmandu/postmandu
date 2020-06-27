@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 ?>
@@ -59,7 +59,7 @@
 						'menu_id'         => false,
 						'depth'           => 8,
 						'menu_class'      => 'navbar-nav',
-						'fallback_cb'     => 'postmandu_WP_Bootstrap_Navwalker::fallback',
+						'fallback_cb'     => 'simple_podcast_WP_Bootstrap_Navwalker::fallback',
 					)
 				);
 			endif;

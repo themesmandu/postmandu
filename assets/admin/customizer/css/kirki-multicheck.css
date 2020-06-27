@@ -4,24 +4,24 @@
     margin-bottom: 28px;
 }
 
-#customize-control-postmandu_player_color_start,
-#customize-control-postmandu_player_navbar_bg,
-#customize-control-postmandu_player_navbar_text_color,
-#customize-control-postmandu_player_navbar_btn_color,
-#customize-control-postmandu_player_navbar_btn_text_color,
-#customize-control-postmandu_player_bg,
-#customize-control-postmandu_player_text_color,
-#customize-control-postmandu_player_btn_assets,
-#customize-control-postmandu_player_btn_text_color,
-#customize-control-postmandu_player_btn_added,
-#customize-control-postmandu_player_btn_added_text_color,
-#customize-control-postmandu_player_now_playing_bg,
+#customize-control-simple-podcast_player_color_start,
+#customize-control-simple-podcast_player_navbar_bg,
+#customize-control-simple-podcast_player_navbar_text_color,
+#customize-control-simple-podcast_player_navbar_btn_color,
+#customize-control-simple-podcast_player_navbar_btn_text_color,
+#customize-control-simple-podcast_player_bg,
+#customize-control-simple-podcast_player_text_color,
+#customize-control-simple-podcast_player_btn_assets,
+#customize-control-simple-podcast_player_btn_text_color,
+#customize-control-simple-podcast_player_btn_added,
+#customize-control-simple-podcast_player_btn_added_text_color,
+#customize-control-simple-podcast_player_now_playing_bg,
 #customize-control-now_playing_text_color,
-#customize-control-postmandu_player_shared_bg_color,
+#customize-control-simple-podcast_player_shared_bg_color,
 #customize-control-now_playing_btn_color,
 #customize-control-now_playing_btn_text_color,
-#customize-control-postmandu_player_shared_btn_color,
-#customize-control-postmandu_player_shared_btn_text_color {
+#customize-control-simple-podcast_player_shared_btn_color,
+#customize-control-simple-podcast_player_shared_btn_text_color {
     margin-bottom: 12px;
 }
 
@@ -29,11 +29,11 @@
     margin-bottom: 12px;
 }
 
-#customize-control-postmandu_theme_options-slider_animations ul {
+#customize-control-simple-podcast_theme_options-slider_animations ul {
     column-count: 3;
 }
 
-#customize-control-postmandu_player_color_start {
+#customize-control-simple-podcast_player_color_start {
     margin: 0;
 }
 

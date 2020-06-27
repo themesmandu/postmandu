@@ -4,10 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$postmandu_content = get_theme_mod( 'blog_layout' ) === 'list' ? '-list' : '';
+$simple_podcast_content = get_theme_mod( 'blog_layout' ) === 'list' ? '-list' : '';
 ?>
 
 <?php
@@ -17,7 +17,7 @@ $postmandu_content = get_theme_mod( 'blog_layout' ) === 'list' ? '-list' : '';
 	 */
 
 	get_template_part(
-		'template-parts/post/preview' . $postmandu_content,
+		'template-parts/post/preview' . $simple_podcast_content,
 		get_post_format()
 	);
 

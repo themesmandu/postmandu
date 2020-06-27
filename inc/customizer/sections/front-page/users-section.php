@@ -2,10 +2,10 @@
 /**
  * users settings section.
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
-$defaults = postmandu_get_default_theme_options();
+$defaults = simple_podcast_get_default_theme_options();
 
 /**
  *
@@ -14,18 +14,18 @@ $defaults = postmandu_get_default_theme_options();
 Kirki::add_section(
 	'users_section',
 	array(
-		'title' => __( 'Guests Section', 'postmandu' ),
+		'title' => __( 'Guests Section', 'simple-podcast' ),
 		'panel' => 'front_page_options',
 	)
 );
 
 // Setting background image
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'image',
 		'settings' => 'users_section_bg',
-		'label'    => esc_html__( 'Section Background Image', 'postmandu' ),
+		'label'    => esc_html__( 'Section Background Image', 'simple-podcast' ),
 		'section'  => 'users_section',
 		'output'   => array(
 			array(
@@ -41,11 +41,11 @@ Kirki::add_field(
 
 // Setting gradient overlay.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'users_section_overlay',
-		'label'     => esc_html__( 'Section Background Overlay', 'postmandu' ),
+		'label'     => esc_html__( 'Section Background Overlay', 'simple-podcast' ),
 		'section'   => 'users_section',
 		'default'   => $defaults['users_section_overlay'],
 		'choices'   => array(
@@ -63,11 +63,11 @@ Kirki::add_field(
 
 // Section Text Color.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'users_section_color',
-		'label'     => __( 'Section Text Color', 'postmandu' ),
+		'label'     => __( 'Section Text Color', 'simple-podcast' ),
 		'section'   => 'users_section',
 		'default'   => $defaults['users_section_color'],
 		'choices'   => array(
@@ -87,11 +87,11 @@ Kirki::add_field(
 
 // Setting heading.
 Kirki::add_field(
-	'postmandu_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'     => 'text',
 		'settings' => 'users_section_title',
-		'label'    => __( 'Section Heading', 'postmandu' ),
+		'label'    => __( 'Section Heading', 'simple-podcast' ),
 		'section'  => 'users_section',
 	)
 );
