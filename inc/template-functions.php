@@ -124,10 +124,13 @@ add_filter( 'previous_posts_link_attributes', 'simple_podcast_posts_link_attribu
 /**
  * Custom Excerpt lengths.
  */
-function simple_podcast_custom_excerpt_length() {
+function simple_podcast_custom_excerpt_length( $length ) {
+	if ( is_admin() ) {
+		return $length;
+	}
 	return 16;
 }
-add_filter( 'excerpt_length', 'simple_podcast_custom_excerpt_length' );
+add_filter( 'excerpt_length', 'simple_podcast_custom_excerpt_length',999 );
 
 /**
  * Use front-page.php when Front page displays is set to a static page.
