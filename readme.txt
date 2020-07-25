@@ -58,11 +58,12 @@ Source: https://getbootstrap.com/
 License: MIT
 license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
 
-* Font Awesome
+* Font Awesome Free
 Source: https://fontawesome.com/
-License: Icons — CC BY 4.0 License
-Fonts — SIL OFL 1.1 License
-license Url: https://fontawesome.com/v5.7.2/license/
+License: Icons — CC BY 4.0
+Fonts: SIL OFL 1.1
+Code: MIT License
+license Url: https://fontawesome.com/license/free
 
 * TGM-Plugin-Activation, Copyright (c) 2011, Thomas Griffin
 Source: http://tgmpluginactivation.com/
