@@ -3,7 +3,7 @@
     wp.customize.bind('ready', function () {
         wp.customize('blog_layout', function (setting) {
             var value = setting.get();
-            toggleLayoutSettings(value);
+            simplePodcastToggleLayoutSettings(value);
         });
 
 
@@ -16,7 +16,7 @@
 
             /*On layout change*/
             var chagedLayout = jQuery(this).val()
-            toggleLayoutSettings(chagedLayout)
+            simplePodcastToggleLayoutSettings(chagedLayout)
 
         });
 
@@ -26,22 +26,22 @@
 
 })(wp, jQuery);
 
-function toggleLayoutSettings(setting) {
+function simplePodcastToggleLayoutSettings(setting) {
     if (setting == 'standard') {
-        showStandardLayoutOptions()
+        simplePodcastShowStandardLayoutOptions()
     } else {
-        showListLayoutOptions()
+        simplePodcastShowListLayoutOptions()
     }
 }
 
-function showStandardLayoutOptions() {
+function simplePodcastShowStandardLayoutOptions() {
     jQuery('#customize-control-simple-podcast_theme_options-blog_sortable_content_sandard').fadeIn(1000);
     jQuery('#customize-control-entry_footer_bgcolor').fadeIn(1000);
     jQuery('#customize-control-simple-podcast_theme_options-blog_sortable_content_list').hide();
     jQuery('#customize-control-simple-podcast_theme_options-blog_sortable_content_list2').hide();
 }
 
-function showListLayoutOptions() {
+function simplePodcastShowListLayoutOptions() {
     jQuery('#customize-control-simple-podcast_theme_options-blog_sortable_content_sandard').hide();
     jQuery('#customize-control-entry_footer_bgcolor').hide();
     jQuery('#customize-control-simple-podcast_theme_options-blog_sortable_content_list').fadeIn(1000);
