@@ -62,7 +62,7 @@ license Url: https://github.com/twbs/bootstrap/blob/master/LICENSE
 Source: https://fontawesome.com/
 License: Icons — CC BY 4.0 License
 Fonts — SIL OFL 1.1 License
-license Url: https://fontawesome.com/v4.7.0/license/
+license Url: https://fontawesome.com/v5.7.2/license/
 
 * TGM-Plugin-Activation, Copyright (c) 2011, Thomas Griffin
 Source: http://tgmpluginactivation.com/
