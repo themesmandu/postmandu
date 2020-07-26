@@ -27,8 +27,17 @@ a:active,
 input:focus,
 textarea:focus,
 select:focus,
-input[type="submit"]:focus {
+input[type="submit"]:focus
+button:focus {
     outline: 1px dotted;
+}
+
+/* -- Player Focus Styles -- */
+
+.mejs-play>button:focus,
+.mejs-mute>button:focus,
+.mejs-controls a.mejs-horizontal-volume-slider:focus {
+    outline: 1px dotted !important;
 }
 
 .btn-simple-podcast:focus,
@@ -179,6 +188,10 @@ h6 {
 
 /* -- Global Styles -- */
 
+#top-header {
+    overflow: hidden;
+}
+
 .overlay,
 .latest-episode:before,
 .featured-guest:before {
@@ -197,7 +210,7 @@ h6 {
     background-size: cover;
 }
 
-.action span:last-child {
+.action button:last-child {
     margin: 0;
 }
 
@@ -417,9 +430,21 @@ h6 {
     margin: 0 0 15px;
 }
 
-.action span {
+.action button {
     cursor: pointer;
     margin: 0 10px 0 0;
+    padding: 0;
+    line-height: 1;
+    background-color: transparent;
+    outline: none;
+}
+
+.action button:hover {
+    background-color: transparent;
+}
+
+.action button:focus {
+    outline: 1px dotted;
 }
 
 .action i {

@@ -20,28 +20,29 @@ jQuery(document).ready(function ($) {
     });
 
     // Menu show and hide in focus attributes
-    if ($(document).width() > 991) {
-        $('.main-navigation ul li a').focus(function(){
-            $(this).parent().addClass('focus');
-        });
+    $('.main-navigation ul li a').focus(function(){
+        $(this).parent().addClass('focus');
+    });
 
-        $('.main-navigation ul li a').focusout(function(){
-            if(!$(this).parent().hasClass('menu-item-has-children')) {
-                $(this).parent().removeClass('focus');
-            }
-        });
+    $('.main-navigation ul li a').focusout(function(){
+        if(!$(this).parent().hasClass('menu-item-has-children')) {
+            $(this).parent().removeClass('focus');
+        }
+    });
 
-        $('.main-navigation ul .sub-menu .menu-item:last-child').focusout(function() {
-            if(!$(this).hasClass('focus')) {
-                $(this).parent().parent().removeClass('focus');
-            }
-        });
+    $('.main-navigation ul .sub-menu .menu-item:last-child').focusout(function() {
+        if(!$(this).hasClass('focus')) {
+            $(this).parent().parent().removeClass('focus');
+        }
+    });
 
+    if ($(document).width() > 1200) {
         $(window).click(function(){
             $('.main-navigation ul li').removeClass('focus');
             $('#navbarmenus').removeClass('show');
         });
     }
+
 
 
     // Add class in navigation bar
@@ -56,15 +57,35 @@ jQuery(document).ready(function ($) {
 
     // Added class on dropdown menu span
     if ($(document).width() < 1200) {
-        $('.main-navigation .menu-item-has-children').append('<span class="caret"></span>');
+        $('<button class="caret"></button>').insertBefore( ".main-navigation .menu-item-has-children .sub-menu" );
 
         $('.caret').click(function () {
             $(this).parent().toggleClass('menu-open').siblings().removeClass('menu-open');
         });
+
+        $(document).click(function (e) {
+            if ($(e.target).is() === false) {
+                $('.share_wrap').removeClass('share_show');
+            }
+        });
     }
 
+    if ($(document).width() < 991) {
+        $('.main-navigation .menu-item').focusout(function() {
+            $('.menu-item').removeClass('focus');
+        });
+
+        $('<button class="close-btn">&#x2715;</button>').insertAfter( ".main-navigation .navbar-nav" );
+
+        $('#navbarmenus .close-btn, .appear-left #navbarmenus.show:before').click(function() {
+            $('#navbarmenus').removeClass('show');
+        });
+
+    }
+
+
     // Selection oflist and grid view
-    $('.action span').click(function () {
+    $('.action button').click(function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
 

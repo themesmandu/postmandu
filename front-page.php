@@ -36,8 +36,8 @@ get_header();
 		<h2 class="section-heading"><?php echo esc_html( get_theme_mod( 'episode_section_title' ) ); ?></h2>
 		<?php endif; ?>
 		<div class="action to-right-align">
-			<span class="active"><i class="fas fa-th-large view-grid"></i></span>
-			<span><i class="fas fa-th-list view-list"></i></span>
+			<button class="active view-grid"><i class="fas fa-th-large"></i></button>
+			<button class="view-list"><i class="fas fa-th-list"></i></button>
 		</div>
 
 		<div class="episode-grid show-grid">
