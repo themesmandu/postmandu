@@ -14,7 +14,7 @@
  */
 
 /* Check if Class Exists. */
-if ( ! class_exists( 'simple_podcast_WP_Bootstrap_Navwalker' ) ) {
+if ( ! class_exists( 'Simple_Podcast_WP_Bootstrap_Navwalker' ) ) {
 	/**
 	 * simple_podcast_WP_Bootstrap_Navwalker class.
 	 *

@@ -1,6 +1,6 @@
 <?php
 /**
- * Class Name: postmandu_WP_Bootstrap_Navwalker
+ * Class Name: simple-podcast_WP_Bootstrap_Navwalker
  * Description: A custom WordPress nav walker class to implement the Bootstrap 4 navigation style in a custom theme using the WordPress built in menu manager.
  * Modified to make the parent link of the drop-down menu clickable, line 178 And fixed function name separate > separate.
  * Author: Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz
@@ -10,17 +10,17 @@
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  *
- * @package Postmandu
+ * @package Simple Podcast
  */
 
 /* Check if Class Exists. */
-if ( ! class_exists( 'postmandu_WP_Bootstrap_Navwalker' ) ) {
+if ( ! class_exists( 'Simple_Podcast_WP_Bootstrap_Navwalker' ) ) {
 	/**
-	 * postmandu_WP_Bootstrap_Navwalker class.
+	 * simple-podcast_WP_Bootstrap_Navwalker class.
 	 *
 	 * @extends Walker_Nav_Menu
 	 */
-	class Postmandu_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
+	class Simple_Podcast_WP_Bootstrap_Navwalker extends Walker_Nav_Menu {
 
 		/**
 		 * Starts the list before the elements are added.
@@ -358,7 +358,7 @@ if ( ! class_exists( 'postmandu_WP_Bootstrap_Navwalker' ) ) {
 				if ( $menu_class ) {
 					$fallback_output .= ' class="' . esc_attr( $menu_class ) . '"'; }
 				$fallback_output .= '>';
-				$fallback_output .= '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', 'postmandu' ) . '">' . esc_html__( 'Add a menu', 'postmandu' ) . '</a></li>';
+				$fallback_output .= '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" title="' . esc_attr__( 'Add a menu', 'simple-podcast' ) . '">' . esc_html__( 'Add a menu', 'simple-podcast' ) . '</a></li>';
 				$fallback_output .= '</ul>';
 				if ( $container ) {
 					$fallback_output .= '</' . esc_attr( $container ) . '>';
