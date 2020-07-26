@@ -222,7 +222,7 @@ Kirki::add_field(
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.single-post .navigation .column h4:hover',
+				'element'  => '.single-post .navigation .column h4:hover, #navbarmenus .btn-close',
 				'property' => 'color',
 			),
 		),
