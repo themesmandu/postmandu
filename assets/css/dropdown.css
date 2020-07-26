@@ -102,7 +102,7 @@
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
     .main-navigation .dropdown-toggle {
         display: inline-block;
     }
@@ -113,6 +113,15 @@
 
     .menu-item-has-children::after {
         display: none;
+    }
+
+    .menu-item-has-children .caret {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .menu-item-has-children .caret:focus {
+        outline: 1px dotted;
     }
 
     .caret:after {
@@ -164,6 +173,10 @@
         background: transparent;
     }
 
+    #menu:focus {
+        outline: 1px dotted;
+    }
+
     #menu span {
         display: block;
         position: absolute;
@@ -181,30 +194,11 @@
         top: 12px;
     }
 
-    #menu.navbar-toggler span:nth-child(1),
-    #menu.navbar-toggler span:nth-child(3) {
-        transition: transform .3s ease-in-out;
-    }
-
-    #menu.navbar-toggler:not(.collapsed) span:nth-child(1) {
-        top: 6px;
-        transform: rotate(135deg);
-    }
-
-    #menu.navbar-toggler:not(.collapsed) span:nth-child(2) {
-        height: 12px;
-        visibility: hidden;
-    }
-
-    #menu.navbar-toggler:not(.collapsed) span:nth-child(3) {
-        top: 6px;
-        transform: rotate(-135deg);
-    }
-
     #navbarmenus {
         background-color: #000000;
         padding: 0 15px;
         margin: 0 -15px;
+        position: relative;
     }
 
     .appear-left #navbarmenus {
@@ -219,11 +213,38 @@
         margin: 0;
         z-index: 99;
         transition: all 0.2s ease;
+        padding-top: 55px;
     }
 
     .appear-left #navbarmenus.show {
         left: 0;
     }
+
+    .appear-left #navbarmenus.show:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 250px;
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    #navbarmenus .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.15);
+        line-height: 1;
+        padding: 10px 15px;
+        width: 92%;
+    }
+
+    #navbarmenus .close-btn:focus {
+        outline: 1px dotted;
+    }
+
     #navbarmenus .navbar-nav .menu-item {
         margin: 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -247,10 +268,6 @@
 
     .appear-left #navbarmenus .navbar-nav .menu-item .nav-link {
         padding: 20px;
-    }
-
-    .appear-left #navbarmenus .navbar-nav .menu-item .sub-menu .nav-link{
-        padding: 12px;
     }
     
     .navbar-drop #navbarmenus .navbar-nav .menu-item .sub-menu .nav-link {
@@ -292,6 +309,8 @@
         top: 15px;
         right: 15px;
         left: unset;
+        background-color: transparent;
+        padding: 0;
     }
 
     .sub-menu .caret:after {
