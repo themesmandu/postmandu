@@ -3,10 +3,10 @@
 Contributors: Themesmandu
 Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
 Requires at least: 5.3
-Tested up to: 5.3
+Tested up to: 5.4.2
 Requires PHP: 5.6
-Stable tag: 1.0.0
-License: GNU General Public License v2 or later
+Stable tag: 1.0.1
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Simple Podcast is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
@@ -144,5 +144,10 @@ license Url: https://stocksnap.io/license
 
 == Changelog ==
 
-= 1.0 - November 13 2019 =
+= 1.0.0 - November 13 2019 =
 * Initial release.
+
+
+= 1.0.1 - July 27 2020 =
+* Fixed accessibility issue
+* Fixed minor bugs
