@@ -201,6 +201,10 @@
         position: relative;
     }
 
+    .main-navigation .navbar-nav {
+        padding-top: 55px;
+    }
+
     .appear-left #navbarmenus {
         overflow-y: auto;
         position: fixed;
@@ -213,7 +217,6 @@
         margin: 0;
         z-index: 99;
         transition: all 0.2s ease;
-        padding-top: 55px;
     }
 
     .appear-left #navbarmenus.show {
@@ -233,16 +236,28 @@
     #navbarmenus .close-btn {
         position: absolute;
         top: 10px;
-        right: 10px;
-        left: 10px;
         background-color: rgba(255, 255, 255, 0.15);
         line-height: 1;
         padding: 10px 15px;
-        width: 92%;
+        width: 93%;
     }
 
     #navbarmenus .close-btn:focus {
         outline: 1px dotted;
+    }
+
+    .appear-left #navbarmenus .close-btn {
+        right: 10px;
+        left: 10px;
+        width: 92%;
+    }
+
+    .admin-bar .main-navigation.appear-left .navbar-nav {
+        padding-top: 90px;
+    }
+
+    .admin-bar .appear-left #navbarmenus .close-btn {
+        top: 54px;
     }
 
     #navbarmenus .navbar-nav .menu-item {
