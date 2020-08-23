@@ -211,6 +211,3 @@ add_action( 'wp_enqueue_scripts', 'simple_podcast_scripts' );
  * Load theme required files.
  */
 require get_template_directory() . '/inc/init.php';
-
-
-echo get_theme_mod( 'header_title_color' );
