@@ -140,7 +140,7 @@ Kirki::add_field(
 
 // body Color.
 Kirki::add_field(
-	'simple-postcast_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'body_color',
@@ -162,7 +162,7 @@ Kirki::add_field(
 
 // header Color.
 Kirki::add_field(
-	'simple-postcast_kirki_config',
+	'simple-podcast_kirki_config',
 	array(
 		'type'      => 'color',
 		'settings'  => 'header_title_color',
