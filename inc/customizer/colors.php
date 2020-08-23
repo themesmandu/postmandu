@@ -160,7 +160,7 @@ Kirki::add_field(
 	)
 );
 
-// heading Color.
+// header Color.
 Kirki::add_field(
 	'simple-postcast_kirki_config',
 	array(
