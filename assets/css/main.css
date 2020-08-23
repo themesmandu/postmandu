@@ -188,10 +188,6 @@ h6 {
 
 /* -- Global Styles -- */
 
-#top-header {
-    overflow: hidden;
-}
-
 .overlay,
 .latest-episode:before,
 .featured-guest:before {
