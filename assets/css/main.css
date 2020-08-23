@@ -188,10 +188,6 @@ h6 {
 
 /* -- Global Styles -- */
 
-#top-header {
-    overflow: hidden;
-}
-
 .overlay,
 .latest-episode:before,
 .featured-guest:before {
@@ -619,7 +615,7 @@ h6 {
     margin-top: 15px;
 }
 
-.page-content .header-title span {
+.error404 .page-content .header-title span {
     font-family: vontens, sans-serif;
     font-size: 100px;
     font-weight: 400;
@@ -668,6 +664,24 @@ article {
     margin: 0 0 52px;
     border: none;
     border-radius: 0;
+}
+
+article h2,
+article h3,
+article h4,
+article h5 {
+    margin: 28px 0 20px;
+}
+
+article .entry-summary a,
+article .entry-summary a:hover,
+.entry-content a,
+.entry-content a:hover {
+    text-decoration: underline;
+}
+
+.entry-content table a {
+    text-decoration: none;
 }
 
 article:last-child,
@@ -785,6 +799,10 @@ article .post-wrap .entry-summary {
 article.post .more-link {
     background-color: transparent;
     padding: 0;
+}
+
+article li {
+    margin-bottom: 15px;
 }
 
 /* -- Post Navigation -- */
@@ -1144,6 +1162,11 @@ span.page-numbers.current {
     margin-bottom: 20px;
 }
 
+#sidebar a,
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
 section.widget p {
     color: inherit
 }
@@ -1182,6 +1205,10 @@ section.widget p {
 
 .widget li a {
     padding: 0;
+}
+
+#sidebar .widget li a {
+    text-decoration: none;
 }
 
 .sidebar .widget li a {
@@ -1261,10 +1288,6 @@ section span.wpcf7-not-valid-tip {
 #footer .column:last-child,
 #footer .column:nth-last-child(2) {
     margin-bottom: 0;
-}
-
-#footer a {
-    color: inherit;
 }
 
 #footer .paragraph span:after {
