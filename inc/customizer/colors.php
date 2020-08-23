@@ -138,6 +138,50 @@ Kirki::add_field(
 	)
 );
 
+// body Color.
+Kirki::add_field(
+	'simple-postcast_kirki_config',
+	array(
+		'type'      => 'color',
+		'settings'  => 'body_color',
+		'label'     => __( 'Color', 'simple-postcast' ),
+		'section'   => 'colors',
+		'default'   => $defaults['body_color'],
+		'choices'   => array(
+			'alpha' => true,
+		),
+		'transport' => 'auto',
+		'output'    => array(
+			array(
+				'element'  => 'body',
+				'property' => 'color',
+			),
+		),
+	)
+);
+
+// heading Color.
+Kirki::add_field(
+	'simple-postcast_kirki_config',
+	array(
+		'type'      => 'color',
+		'settings'  => 'header_title_color',
+		'label'     => __( 'Header Title Color', 'simple-postcast' ),
+		'section'   => 'colors',
+		'default'   => $defaults['header_title_color'],
+		'choices'   => array(
+			'alpha' => true,
+		),
+		'transport' => 'auto',
+		'output'    => array(
+			array(
+				'element'  => '.page-content .header-title',
+				'property' => 'color',
+			),
+		),
+	)
+);
+
 // Text Link Color.
 Kirki::add_field(
 	'simple-podcast_kirki_config',

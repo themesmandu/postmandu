@@ -19,25 +19,27 @@ if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 
 		$defaults = array();
 
-		$defaults['menu_bar_bgcolor']               = 'rgba(0,0,0,1)';        //Main Menu Bar Background.
-		$defaults['menu_bar_scroll_bgcolor']        = 'rgba(0,0,0,1)';        //Main Menu Bar Fixed Scroll Background.
-		$defaults['menu_color']                     = 'rgba(255,255,255,1)';        //Main Menu Color.
-		$defaults['menu_hover_color']               = 'rgba(243,202,122,1)';      //Main Menu Hover Color.
-		$defaults['site_title_color']               = 'rgba(255,255,255,1)';      //Site Title Color.
-		$defaults['title_color']                    = '#232323';       //Entry/Post/Page Title Color
-		$defaults['content_color']                  = '#555555';       //Entry/Post/Page content Color
-		$defaults['entry_bgcolor']                  = 'rgba(255,255,255,1)';     //Entry Card Background.
-		$defaults['entry_footer_bgcolor']           = '#ffffff';      //Entry Card: Footer Background.
-		$defaults['wgt_title_color']                = '#020407';       //Widget Title Color.
-		$defaults['link_color']                     = '#20aa73';        //Text Link Color.
-		$defaults['link_hover_color']               = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
-		$defaults['meta_color']                     = '#555555';        //Meta Text Color.
+		$defaults['menu_bar_bgcolor']                    = 'rgba(0,0,0,1)';        //Main Menu Bar Background.
+		$defaults['menu_bar_scroll_bgcolor']             = 'rgba(0,0,0,1)';        //Main Menu Bar Fixed Scroll Background.
+		$defaults['menu_color']                          = 'rgba(255,255,255,1)';        //Main Menu Color.
+		$defaults['menu_hover_color']                    = 'rgba(243,202,122,1)';      //Main Menu Hover Color.
+		$defaults['site_title_color']                    = 'rgba(255,255,255,1)';      //Site Title Color.
+		$defaults['title_color']                         = '#232323';       //Entry/Post/Page Title Color
+		$defaults['content_color']                       = '#555555';       //Entry/Post/Page content Color
+		$defaults['entry_bgcolor']                       = 'rgba(255,255,255,1)';     //Entry Card Background.
+		$defaults['entry_footer_bgcolor']                = '#ffffff';      //Entry Card: Footer Background.
+		$defaults['wgt_title_color']                     = '#020407';       //Widget Title Color.
+		$defaults['body_color']                          = '#212121';        //body color Color.
+		$defaults['header_title_color']                  = '#232323';        //header title color Color.
+		$defaults['link_color']                          = '#20aa73';        //Text Link Color.
+		$defaults['link_hover_color']                    = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
+		$defaults['meta_color']                          = '#555555';        //Meta Text Color.
 		$defaults['simple-podcast_btn_color']            = '#20aa73';     //simple-podcast Button Background Color.
 		$defaults['simple-podcast_btn_hover_color']      = 'rgba(32,170,115,0.7)';      //simple-podcast Button Background: Hover Color.
 		$defaults['simple-podcast_btn_text_color']       = 'rgba(255, 255, 255, 1)';       //simple-podcast Button Text Color.
 		$defaults['simple-podcast_btn_text_hover_color'] = 'rgba(255, 255, 255, 1)';     //simple-podcast Button Text: Hover Color.
-		$defaults['footer_overlay']                 = '#232323';      //Footer Background.
-		$defaults['footer_color']                   = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
+		$defaults['footer_overlay']                      = '#232323';      //Footer Background.
+		$defaults['footer_color']                        = 'rgba(255, 255, 255, 1)';       //Footer Text Color.
 
 		// Latest Episode Color Settings
 
