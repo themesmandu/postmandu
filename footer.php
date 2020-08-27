@@ -14,7 +14,7 @@
 </div><!-- #content -->
 
 
-<footer id="footer">
+<footer id="footer" role="contentinfo">
 <?php if ( is_active_sidebar( 'simple-podcast_newsletter' ) ) : ?>
 	<div class="newsletter-widgets">
 		<div class="container">

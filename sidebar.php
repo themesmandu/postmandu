@@ -20,7 +20,7 @@ if ( simple_podcast_get_theme_option( 'sidebar_position' ) === 'right' ) {
 }
 ?>
 
-<aside id="sidebar" class="widget-area col-lg-4 <?php echo esc_attr( $simple_podcast_sidebar_order ); ?>">
+<aside id="sidebar" class="widget-area col-lg-4 <?php echo esc_attr( $simple_podcast_sidebar_order ); ?>" role="complementary">
 	<div class="sidebar">
 		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>
