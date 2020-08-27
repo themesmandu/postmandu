@@ -62,20 +62,6 @@ Kirki::add_field(
 	)
 );
 
-Kirki::add_field(
-	'simple-podcast_kirki_config',
-	array(
-		'type'     => 'radio-image',
-		'settings' => 'mainmenu_dropdown_mode',
-		'label'    => esc_html__( 'Main Menu: Appearance(small screen)', 'simple-podcast' ),
-		'section'  => 'general_options',
-		'default'  => 'default',
-		'choices'  => array(
-			'default'   => get_template_directory_uri() . '/assets/images/menu-left.png',
-			'bootstrap' => get_template_directory_uri() . '/assets/images/menu-top.png',
-		),
-	)
-);
 
 Kirki::add_field(
 	'simple-podcast_kirki_config',

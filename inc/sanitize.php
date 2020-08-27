@@ -32,23 +32,6 @@ function simple_podcast_sanitize_menubar_mode( $input ) {
 	return '';
 }
 
-/**
- * Sanitize the main menu drop-down mode option.
- *
- * @param string $input options.
- */
-function simple_podcast_sanitize_mainmenu_dropdown_mode( $input ) {
-	$valid = array(
-		'default'   => __( 'Default', 'simple-podcast' ),
-		'bootstrap' => __( 'Bootstrap', 'simple-podcast' ),
-	);
-
-	if ( array_key_exists( $input, $valid ) ) {
-		return $input;
-	}
-
-	return '';
-}
 
 /**
  * Sanitize the main menu style mode option.

@@ -9,12 +9,7 @@
  */
 
 ?>
-<?php if ( get_theme_mod( 'mainmenu_dropdown_mode' ) !== 'bootstrap' ) { ?>
-
-<nav class="navbar navbar-expand-lg main-navigation nav-search appear-left">
-	<?php } else { ?>
 	<nav class="navbar navbar-expand-lg main-navigation nav-search">
-		<?php } ?>
 		<div class="container">
 			<div class="site-branding">
 				<?php if ( ! has_custom_logo() ) { ?>
