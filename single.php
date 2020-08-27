@@ -42,7 +42,7 @@ get_header();
 							</figure>
 							<div class="prev_title">
 								<span>Prev Post</span>
-								<?php previous_post_link( '%link', "<div class='detials'><h4>%title</h4></div>" ); ?>
+								<?php previous_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
 
@@ -60,7 +60,7 @@ get_header();
 
 							<div class="next_title">
 								<span>Next Post</span>
-								<?php next_post_link( '%link', "<div class='detials'><h4>%title</h4></div>" ); ?>
+								<?php next_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
 						<?php } ?>

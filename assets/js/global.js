@@ -19,32 +19,6 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    // Menu show and hide in focus attributes
-    $('.main-navigation ul li a').focus(function(){
-        $(this).parent().addClass('focus');
-    });
-
-    $('.main-navigation ul li a').focusout(function(){
-        if(!$(this).parent().hasClass('menu-item-has-children')) {
-            $(this).parent().removeClass('focus');
-        }
-    });
-
-    $('.main-navigation ul .sub-menu .menu-item:last-child').focusout(function() {
-        if(!$(this).hasClass('focus')) {
-            $(this).parent().parent().removeClass('focus');
-        }
-    });
-
-    if ($(document).width() > 1200) {
-        $(window).click(function(){
-            $('.main-navigation ul li').removeClass('focus');
-            $('#navbarmenus').removeClass('show');
-        });
-    }
-
-
-
     // Add class in navigation bar
     $(window).scroll(function () {
         var height = $(window).scrollTop();
@@ -55,12 +29,34 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    // Menu show and hide in focus attributes
+
+    if ($(document).width() > 1200) {
+        $('.menu-item-has-children').children().focusin(function(){
+            $(this).parent().addClass('focus');
+        });
+
+        $('.menu-item-has-children').children().focusout(function(){
+            $(this).parent().removeClass('focus');
+        });
+        
+        $(window).click(function(){
+            $('.menu-item-has-children').removeClass('focus');
+        });
+    }
+
     // Added class on dropdown menu span
     if ($(document).width() < 1200) {
-        $('<button class="caret"></button>').insertBefore( ".main-navigation .menu-item-has-children .sub-menu" );
+        $('<button class="caret"><span class="screen-reader-text">Show sub menu</span><i class="fas fa-chevron-down"></i></button>').insertBefore( ".main-navigation .menu-item-has-children .sub-menu" );
 
         $('.caret').click(function () {
             $(this).parent().toggleClass('menu-open').siblings().removeClass('menu-open');
+        });
+
+        $(document).click(function (e) {
+            if ($(e.target).is('.caret, screen-reader-text, .fa-chevron-down, .menu-item, .sub-menu, .nav-link') === false) {
+                $('.main-navigation .menu-item').removeClass('menu-open');
+            }
         });
 
         $(document).click(function (e) {
@@ -71,16 +67,7 @@ jQuery(document).ready(function ($) {
     }
 
     if ($(document).width() < 991) {
-        $('.main-navigation .menu-item').focusout(function() {
-            $('.menu-item').removeClass('focus');
-        });
-
-        $('<button class="close-btn">&#x2715;</button>').insertAfter( ".main-navigation .navbar-nav" );
-
-        $('#navbarmenus .close-btn, .appear-left #navbarmenus.show:before').click(function() {
-            $('#navbarmenus').removeClass('show');
-        });
-
+        
     }
 
 

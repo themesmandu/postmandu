@@ -128,8 +128,8 @@ function simple_podcast_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h5 class="widget-title">',
-			'after_title'   => '</h5>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
 		)
 	);
 
@@ -140,8 +140,8 @@ function simple_podcast_widgets_init() {
 				'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 				'before_widget' => '<section id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</section>',
-				'before_title'  => '<h5 class="widget-title">',
-				'after_title'   => '</h5>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
 			)
 		);
 
@@ -154,8 +154,8 @@ function simple_podcast_widgets_init() {
 				'description'   => esc_html__( 'Add widgets here.', 'simple-podcast' ),
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>',
+				'before_title'  => '<h2 class="widget-title">',
+				'after_title'   => '</h2>',
 			)
 		);
 	}

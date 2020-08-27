@@ -68,7 +68,7 @@
 		</div>
 	</div><!-- .footer-copyright -->
 	<button class="up-btn btn-simple-podcast" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'simple-podcast' ) ); ?>"
-		style="display: block;">&uarr;</button>
+		style="display: block;"><span class="screen-reader-text">to the top</span>&uarr;</button>
 </footer>
 
 </div><!-- #page -->

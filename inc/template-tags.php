@@ -90,7 +90,7 @@ if ( ! function_exists( 'simple_podcast_entry_footer' ) ) :
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';
-			comments_popup_link( 'Leave a Comment', '<i class="far fa-comment"></i> 1', '<i class="far fa-comments"></i> %', '', 'Comments are off for this post' );
+			comments_popup_link( 'Leave a Comment', '<span class="screen-reader-text">comment count</span><i class="far fa-comment"></i> 1', '<span class="screen-reader-text">comments count</span><i class="far fa-comments"></i> %', '', 'Comments are off for this post' );
 
 			echo '</span>';
 		}
