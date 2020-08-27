@@ -66,10 +66,6 @@ jQuery(document).ready(function ($) {
         });
     }
 
-    if ($(document).width() < 991) {
-        
-    }
-
 
     // Selection oflist and grid view
     $('.action button').click(function () {
