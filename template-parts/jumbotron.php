@@ -30,9 +30,9 @@ if ( empty( $heading ) && empty( $subheading ) && empty( $bg_img ) && empty( $bt
 				<?php echo esc_html( $heading ); ?>
 			</h1>
 
-			<h4 class="banner-sub-heading">
+			<span class="banner-sub-heading">
 				<?php echo esc_html( $subheading ); ?>
-			</h4>
+			</span>
 
 			<?php if ( ! empty( $btn_label ) ) { ?>
 			<a href="<?php echo esc_url( $btn_link ); ?>" class="btn-simple-podcast btn-podcast">

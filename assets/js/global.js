@@ -66,6 +66,12 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    if ($(document).width() <= 991) {
+        $('<button class="close-menu"><span class="screen-reader-text">Close menu</span><span>&#10005;</span></button>').insertAfter( ".main-navigation .menu-item:last-child" );
+        $('.close-menu').click(function() {
+            $('#navbarmenus').removeClass('show');
+        })
+    }
 
     // Selection oflist and grid view
     $('.action button').click(function () {
