@@ -174,7 +174,7 @@ get_header();
 			<div class="col-lg-3 col-md-6">
 				<div class="column">
 					<figure>
-						<img src="<?php echo esc_url( get_avatar_url( $simple_podcast_user->ID ) ); ?>" />
+						<img src="<?php echo esc_url( get_avatar_url( $simple_podcast_user->ID ) ); ?>" alt="<?php echo esc_url( get_avatar_url( $simple_podcast_user->ID ) ); ?>" />
 					</figure>
 					<h5 class="guest-name"><?php echo esc_html( $simple_podcast_user->display_name ); ?></h5>
 					<?php foreach ( $simple_podcast_user_roles as $posmandu_user_role ) : ?>
