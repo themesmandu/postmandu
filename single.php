@@ -38,10 +38,10 @@ get_header();
 							<?php $prevthumbnail = get_the_post_thumbnail_url( $prevpost->ID, 'prev-next-link-image' ); ?>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $prevpost->ID ) ); ?>"><img
-										src="<?php echo esc_url( $prevthumbnail ); ?>" alt=""></a>
+										src="<?php echo esc_url( $prevthumbnail ); ?>" alt="<?php echo esc_url( $prevthumbnail ); ?>"></a>
 							</figure>
 							<div class="prev_title">
-								<span>Prev Post</span>
+								<span><?php echo esc_html__( 'Prev Post', 'Prev Post' ); ?></span>
 								<?php previous_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
@@ -55,11 +55,11 @@ get_header();
 							<?php $nextthumbnail = get_the_post_thumbnail_url( $nextpost->ID, 'prev-next-link-image' ); ?>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $nextpost->ID ) ); ?>"><img
-										src="<?php echo esc_url( $nextthumbnail ); ?>" alt=""></a>
+										src="<?php echo esc_url( $nextthumbnail ); ?>" alt="<?php echo esc_url( $nextthumbnail ); ?>"></a>
 							</figure>
 
 							<div class="next_title">
-								<span>Next Post</span>
+								<span><?php echo esc_html__( 'Next Post', 'Prev Post' ); ?></span>
 								<?php next_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
