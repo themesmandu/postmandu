@@ -36,8 +36,14 @@ get_header();
 		<h2 class="section-heading"><?php echo esc_html( get_theme_mod( 'episode_section_title' ) ); ?></h2>
 		<?php endif; ?>
 		<div class="action to-right-align">
-			<button class="active view-grid"><i class="fas fa-th-large"></i></button>
-			<button class="view-list"><i class="fas fa-th-list"></i></button>
+			<button class="active view-grid">
+				<span class="screen-reader-text">grid view</span>
+				<i class="fas fa-th-large"></i>
+			</button>
+			<button class="view-list">
+				<span class="screen-reader-text">list view</span>
+				<i class="fas fa-th-list"></i>
+			</button>
 		</div>
 
 		<div class="episode-grid show-grid">
@@ -54,7 +60,7 @@ get_header();
 					<?php endif; ?>
 
 					<div class="grid-content">
-						<?php the_title( sprintf( '<h4 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
+						<?php the_title( sprintf( '<h3 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 						<div class="episode-meta">
 							<?php simple_podcast_posted_on(); ?>
 							<?php simple_podcast_posted_by(); ?>
@@ -86,12 +92,10 @@ get_header();
 					</div>
 				</div>
 				<?php endwhile; ?>
-
-
 			</div>
 			<?php if ( get_theme_mod( 'episode_section_button_link' ) || get_theme_mod( 'episode_section_button_label' ) ) : ?>
-			<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-simple-podcast"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
-		<?php endif; ?>
+				<a href="<?php echo esc_url( get_theme_mod( 'episode_section_button_link' ) ); ?>" class="more-link-btn btn-simple-podcast"><?php echo esc_html( get_theme_mod( 'episode_section_button_label' ) ); ?></a>
+			<?php endif; ?>
 		</div>
 
 		<div class="episode-list">
@@ -107,7 +111,7 @@ get_header();
 				<?php endif; ?>
 
 				<div class="column list-content">
-					<?php the_title( sprintf( '<h4 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
+					<?php the_title( sprintf( '<h3 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
 					<div class="episode-meta">
 						<?php simple_podcast_posted_on(); ?>
 						<?php simple_podcast_posted_by(); ?>
@@ -176,7 +180,7 @@ get_header();
 					<figure>
 						<img src="<?php echo esc_url( get_avatar_url( $simple_podcast_user->ID ) ); ?>" alt="<?php echo esc_url( get_avatar_url( $simple_podcast_user->ID ) ); ?>" />
 					</figure>
-					<h5 class="guest-name"><?php echo esc_html( $simple_podcast_user->display_name ); ?></h5>
+					<span class="guest-name"><?php echo esc_html( $simple_podcast_user->display_name ); ?></span>
 					<?php foreach ( $simple_podcast_user_roles as $posmandu_user_role ) : ?>
 					<span class="guest-post"><?php echo esc_html( $posmandu_user_role ); ?></span>
 					<?php endforeach; ?>

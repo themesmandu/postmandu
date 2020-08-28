@@ -16,9 +16,9 @@
 
 					<?php if ( is_front_page() && is_home() ) : ?>
 
-				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+				<span class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
 						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-						itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+						itemprop="url"><?php bloginfo( 'name' ); ?></a></span>
 
 				<?php else : ?>
 
@@ -38,6 +38,7 @@
 
 			<button id="menu" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 				data-target="#navbarmenus">
+				<span class="screen-reader-text">Menu</span>
 				<span></span>
 				<span></span>
 				<span></span>
