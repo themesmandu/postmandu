@@ -144,7 +144,7 @@ Kirki::add_field(
 	array(
 		'type'      => 'color',
 		'settings'  => 'body_color',
-		'label'     => __( 'Color', 'simple-postcast' ),
+		'label'     => __( 'Color', 'simple-podcast' ),
 		'section'   => 'colors',
 		'default'   => $defaults['body_color'],
 		'choices'   => array(
@@ -166,7 +166,7 @@ Kirki::add_field(
 	array(
 		'type'      => 'color',
 		'settings'  => 'header_title_color',
-		'label'     => __( 'Header Title Color', 'simple-postcast' ),
+		'label'     => __( 'Header Title Color', 'simple-podcast' ),
 		'section'   => 'colors',
 		'default'   => $defaults['header_title_color'],
 		'choices'   => array(

@@ -41,7 +41,7 @@ get_header();
 										src="<?php echo esc_url( $prevthumbnail ); ?>" alt="<?php echo esc_url( $prevthumbnail ); ?>"></a>
 							</figure>
 							<div class="prev_title">
-								<span><?php echo esc_html__( 'Prev Post', 'Prev Post' ); ?></span>
+								<span><?php echo esc_html__( 'Prev Post', 'simple-podcast' ); ?></span>
 								<?php previous_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
@@ -59,7 +59,7 @@ get_header();
 							</figure>
 
 							<div class="next_title">
-								<span><?php echo esc_html__( 'Next Post', 'Prev Post' ); ?></span>
+								<span><?php echo esc_html__( 'Next Post', 'simple-podcast' ); ?></span>
 								<?php next_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
 						</div>
