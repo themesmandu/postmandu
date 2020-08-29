@@ -57,7 +57,6 @@ h6{font-size:18px;}
 #searchform input[type="submit"]:focus{box-shadow:none;}
 /* -- Navbar With Search Bar [Alternative Option] -- */
 .navbar #searchform{margin-left:15px;}
-.navbar #searchform label{display:none;}
 .navbar #searchform input{font-size:14px;border-radius:0;border:none;}
 .navbar #searchform input[type="submit"]{font-weight:600;padding:13px 25px;}
 /* -- Background Image Jumbotron Styles -- */
