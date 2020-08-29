@@ -294,6 +294,7 @@ footer .paragraph span:last-child:after,#footer .paragraph span span:after{displ
 .search-results li:last-child{margin-bottom:0;}
 /* -- Plugins Styles -- */
 .tnp-field label{font-weight:400;}
+.wp-block-button__link{color:#ffffff !important;}
 /* -- All Animation Styles -- */
 @keyframes fade{0%{opacity:0;transform:translateY(20px);}
 100%{opacity:1;transform:translateY(0);}

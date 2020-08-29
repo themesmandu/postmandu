@@ -28,7 +28,7 @@ get_header();
 					get_template_part( 'template-parts/post/single', get_post_format() );
 					?>
 					<?php if ( ! is_attachment() ) { ?>
-				<nav class="navigation card-footer">
+				<nav class="navigation card-footer" role="navigation" aria-label="<?php _e('Post', 'simple-podcast'); ?>">
 					<div class="nav_direction">
 						<?php
 						$prevpost = get_previous_post();

@@ -9,7 +9,7 @@
  */
 
 ?>
-	<nav class="navbar navbar-expand-lg main-navigation nav-search">
+	<nav class="navbar navbar-expand-lg main-navigation nav-search" role="navigation">
 		<div class="container">
 			<div class="site-branding">
 				<?php if ( ! has_custom_logo() ) { ?>
