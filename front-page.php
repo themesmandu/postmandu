@@ -111,7 +111,7 @@ get_header();
 				<?php endif; ?>
 
 				<div class="column list-content">
-					<?php the_title( sprintf( '<h3 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+				<?php the_title( sprintf( '<h2 class="episode-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 					<div class="episode-meta">
 						<?php simple_podcast_posted_on(); ?>
 						<?php simple_podcast_posted_by(); ?>
