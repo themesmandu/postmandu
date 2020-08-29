@@ -262,9 +262,9 @@ footer .paragraph span:last-child:after,#footer .paragraph span span:after{displ
 .footer-copyright .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;}
 .site-info p{font-size:14px;}
 #footer .footer-social-nav{display:flex;flex-wrap:wrap;list-style-type:none;padding:0;}
-#footer .footer-social-nav a{height:34px;width:34px;background-color:#ffffff;color:#101010;margin-right:10px;border-radius:100%;display:flex;align-items:center;justify-content:center;}
-#footer .footer-social-nav a:focus{transform:scale(1.1);}
-#footer .footer-social-nav menu-item:last-child a{margin-right:0;}
+#footer .footer-social-nav a{margin-right:24px;padding:0;}
+#footer .footer-social-nav a:hover,#footer .footer-social-nav a:focus{transform:scale(1.1);opacity:.75;}
+#footer .footer-social-nav .menu-item:last-child a{margin-right:0;}
 /* -- Footer Widget Styles -- */
 #footer-widgets{text-align:left;}
 #footer-widgets .column{margin:0 auto;}
@@ -284,21 +284,6 @@ footer .paragraph span:last-child:after,#footer .paragraph span span:after{displ
 #footer .newsletter-widgets .tnp-widget .tnp-field input{height:45px;}
 #footer .newsletter-widgets .tnp-widget .tnp-field input[type='text'],#footer .newsletter-widgets .tnp-widget .tnp-field input[type='email']{border:1px solid #777777;background-color:#ffffff;}
 #footer .newsletter-widgets .tnp-widget .tnp-field input[type='checkbox']{height:auto;margin-right:5px;cursor:pointer;}
-/* -- Social Icons Styles -- */
-.menu-social-menu-container .menu{margin:0;}
-.menu-social-menu-container .menu-item{display:inline-block;margin:0 25px 0 0;text-align:center;border:none;padding:0;}
-.menu-social-menu-container .menu-item:last-child{margin:0;}
-.menu-social-menu-container .nav-link{font-size:0;color:#ffffff;transition:.3s;padding:0;}
-.menu-social-menu-container .nav-link:hover{color:#ffd02b;}
-.menu-social-menu-container .menu-item a[href]:before{font-family:'Font Awesome 5 Brands';content:"";font-size:10px;font-weight:900;}
-.menu-social-menu-container .menu-item a[href*="facebook.com"]:before{content:"\f39e";}
-.menu-social-menu-container .menu-item a[href*="twitter.com"]:before{content:"\f099";}
-.menu-social-menu-container .menu-item a[href*="instagram.com"]:before{content:"\f16d";}
-.menu-social-menu-container .menu-item a[href*="youtube.com"]:before{content:"\f167";}
-.menu-social-menu-container .menu-item a[href*="linkedin.com"]:before{content:"\f0e1";}
-.menu-social-menu-container .menu-item a[href*="google.com"]:before{content:"\f0d5";}
-.menu-social-menu-container .menu-item a[href*="tumblr.com"]:before{content:"\f173";}
-.menu-social-menu-container .menu-item a[href*="pinterest.com"]:before{content:"\f231";}
 /* -- 404 Error Page Styles -- */
 .error404 #content{display:none;}
 .error404 .page-content{text-align:center;}

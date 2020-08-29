@@ -249,7 +249,7 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '#footer .footer-social-nav a:hover, .input-group>.input-group-append>.btn',
+				'element'  => '.input-group>.input-group-append>.btn',
 				'property' => 'background-color',
 			),
 			array(
