@@ -17,7 +17,7 @@ input[type="submit"]{width:auto;border:none;border-radius:0;padding:15px 25px;li
 input[type="submit"]:hover{cursor:pointer;}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0;}
 select{padding-left:8px;}
-blockquote{border-left:10px solid transparent;padding:20px;background-color:#f1f1f1;}
+blockquote{border-left:10px solid transparent;padding:20px;}
 table{font-size:13px;color:#556378;width:100%;line-height:2;}
 table th{color:#27b0ff;}
 table caption{font-size:19px;color:#153f7b;caption-side:top;padding:0 0 10px;line-height:1.5;}
