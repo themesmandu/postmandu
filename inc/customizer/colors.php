@@ -197,7 +197,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a, .page-numbers.dots',
+				'element'  => 'a, .page-numbers.dots, .navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link',
 				'property' => 'color',
 			),
 		),
@@ -219,7 +219,11 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a:hover',
+				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.sidebar .widget li a:hover',
 				'property' => 'color',
 			),
 		),
@@ -261,16 +265,12 @@ Kirki::add_field(
 				'property' => 'border-color',
 			),
 			array(
-				'element'  => 'a:hover, blockquote p, .current-menu-item.menu-item-has-children .caret,
-				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, .guest-post, article.post .more-link, .sidebar .widget li a:hover',
+				'element'  => '#navbarmenus .close-btn, .current-menu-item.menu-item-has-children .caret,
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, article.post .more-link, .action .active i',
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.single-post .navigation .column h4:hover, #navbarmenus .close-btn',
-				'property' => 'color',
-			),
-			array(
-				'element'  => '.navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link, .main-navigation .sub-menu .menu-item.current-menu-item> .caret',
+				'element'  => '.main-navigation .sub-menu .menu-item.current-menu-item> .caret',
 				'property' => 'color',
 			),
 		),

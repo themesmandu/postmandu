@@ -32,10 +32,10 @@ if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 		$defaults['body_color']                          = '#212121';        //body color Color.
 		$defaults['header_title_color']                  = '#232323';        //header title color Color.
 		$defaults['link_color']                          = '#20aa73';        //Text Link Color.
-		$defaults['link_hover_color']                    = 'rgba(32,170,115,.6)';      //Text Link Hover Color.
+		$defaults['link_hover_color']                    = '#f3ca7a';      //Text Link Hover Color.
 		$defaults['meta_color']                          = '#555555';        //Meta Text Color.
 		$defaults['simple-podcast_btn_color']            = '#20aa73';     //simple-podcast Button Background Color.
-		$defaults['simple-podcast_btn_hover_color']      = 'rgba(32,170,115,0.7)';      //simple-podcast Button Background: Hover Color.
+		$defaults['simple-podcast_btn_hover_color']      = '#f3ca7a';      //simple-podcast Button Background: Hover Color.
 		$defaults['simple-podcast_btn_text_color']       = 'rgba(255, 255, 255, 1)';       //simple-podcast Button Text Color.
 		$defaults['simple-podcast_btn_text_hover_color'] = 'rgba(255, 255, 255, 1)';     //simple-podcast Button Text: Hover Color.
 		$defaults['footer_overlay']                      = '#232323';      //Footer Background.
