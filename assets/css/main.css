@@ -8,7 +8,7 @@ a:focus,a:active,input:focus,textarea:focus,select:focus,input[type="submit"]:fo
 .mejs-play>button:focus,.mejs-mute>button:focus,.mejs-controls a.mejs-horizontal-volume-slider:focus{outline:1px dotted !important;}
 .btn-simple-podcast:focus,input[type="submit"]:focus{opacity:.7;}
 a:hover{text-decoration:none;}
-a:link:hover{text-decoration:underline !important;}
+a:link:hover,.entry-content a{text-decoration:underline !important;}
 p{line-height:1.7;}
 p:last-child{margin:0;}
 figure,img,iframe{max-width:100%;object-fit:cover;}
