@@ -197,7 +197,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a, .page-numbers.dots, .navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link',
+				'element'  => 'a, .page-numbers.dots, .navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link, .wp-block-cover-text a',
 				'property' => 'color',
 			),
 		),
@@ -219,7 +219,8 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover',
+				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover,
+				.wp-block-cover-text a:hover',
 				'property' => 'color',
 			),
 			array(
