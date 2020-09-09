@@ -197,7 +197,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a, .page-numbers.dots, .navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link',
+				'element'  => 'a, .page-numbers.dots, .navbar-expand-lg .navbar-nav .menu-item.current-menu-item>.nav-link, .wp-block-cover-text a',
 				'property' => 'color',
 			),
 		),
@@ -219,7 +219,8 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover',
+				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover,
+				.wp-block-cover-text a:hover',
 				'property' => 'color',
 			),
 			array(
@@ -253,7 +254,7 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '.input-group>.input-group-append>.btn',
+				'element'  => '.input-group>.input-group-append>.btn, .wp-block-button__link',
 				'property' => 'background-color',
 			),
 			array(
@@ -292,7 +293,8 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover',
+				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover,
+				.input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover, .wp-block-button__link:hover',
 				'property' => 'background-color',
 			),
 			array(
@@ -318,7 +320,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button, .btn-simple-podcast, .simple-podcast-span, .skip-link, span.page-numbers.current',
+				'element'  => 'button, .btn-simple-podcast, .simple-podcast-span, .skip-link, span.page-numbers.current, .wp-block-button__link:not([href]):not([tabindex])',
 				'property' => 'color',
 			),
 			array(
@@ -344,7 +346,8 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-simple-podcast a:hover',
+				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-simple-podcast a:hover,
+				.wp-block-button__link:not([href]):not([tabindex]):hover',
 				'property' => 'color',
 			),
 		),

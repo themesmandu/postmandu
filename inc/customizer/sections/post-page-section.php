@@ -241,8 +241,13 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'article.post,article.page, article.post p, article.page p, article.podcast, article.podcast p',
+				'element'  => 'article.post,article.page, article.post p, article.page p, article.podcast, article.podcast p,
+				.comment-respond .comment-form-comment textarea, .comment-respond input[type=email], .comment-respond input[type=text], input, select, textarea',
 				'property' => 'color',
+			),
+			array(
+				'element'  => '.comment-respond .comment-form-comment textarea, .comment-respond input[type=email], .comment-respond input[type=text], input, select, textarea',
+				'property' => 'border-color',
 			),
 		),
 	)
