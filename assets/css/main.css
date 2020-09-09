@@ -236,9 +236,10 @@ h6 {
 	border-radius:0;
 	border:none;
 }
-.navbar #searchform input[type="submit"] {
-	font-weight:600;
-	padding:13px 25px;
+.navbar #searchform input[type="submit"],
+#searchform input[type="submit"] {
+    padding:13px 25px;
+    letter-spacing: 1px;
 }
 /* -- Background Image Jumbotron Styles -- */
 .jumbotron {
@@ -522,7 +523,7 @@ article .entry-summary a:hover,article .entry-summary a:hover,.entry-content a:h
 	text-decoration:underline;
 }
 article .entry-title a,.entry-content table a,.entry-footer a,.entry-meta a,.entry-footer a,.navigation.pagination a,#footer .footer-social-nav a, .comment-metadata .date,
-#comments .reply a, #cancel-comment-reply-link, .navigation .nav_direction a, .header-banner .btn-podcast {
+#comments .reply a, #cancel-comment-reply-link, .navigation .nav_direction a, .header-banner .btn-podcast, .episode-title a {
 	text-decoration:none !important;
 }
 article:last-child,.entry-meta span:last-child,.entry-footer span:last-child,.entry-footer a:nth-child(2),article time.updated.published {
