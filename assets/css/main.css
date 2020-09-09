@@ -2,12 +2,11 @@
 html,body{margin:0;padding:0;word-break:break-word;line-height:1.5;}
 #page{max-width:1920px;margin:0 auto;}
 a{color:#27b0ff;transition:.3s;}
-a:link{cursor:pointer;}
+a:link{cursor:pointer;text-decoration:underline !important;}
 a:focus,a:active,input:focus,textarea:focus,select:focus,input[type="submit"]:focus,button:focus,.main-navigation .nav-link:focus{outline:1px dotted !important;}
 /* -- Player Focus Styles -- */
 .mejs-play>button:focus,.mejs-mute>button:focus,.mejs-controls a.mejs-horizontal-volume-slider:focus{outline:1px dotted !important;}
 .btn-simple-podcast:focus,input[type="submit"]:focus{opacity:.7;}
-a:hover{text-decoration:none;}
 a:link:hover,.entry-content a{text-decoration:underline !important;}
 p{line-height:1.7;}
 p:last-child{margin:0;}
@@ -51,7 +50,7 @@ h6{font-size:18px;}
 .main-navigation .navbar-nav{display:flex;flex-wrap:wrap;align-items:center;}
 .main-navigation .menu-item{display:inline-block;margin:0 10px;padding:0;}
 .main-navigation .menu-item:last-child{margin-right:-12px;}
-.main-navigation .navbar-nav .nav-link{padding:8px 12px;}
+.main-navigation .navbar-nav .nav-link{padding:8px 12px;text-decoration:none !important;}
 .main-navigation .navbar-nav .nav-link:hover{text-decoration:none !important;}
 /* -- Search Form Styles -- */
 .form-control{font-size:14px;border:none;border-radius:0;}
@@ -139,7 +138,7 @@ h6{font-size:18px;}
 article{margin:0 0 52px;border:none;border-radius:0;}
 article h2,article h3,article h4,article h5{margin:28px 0 20px;}
 article .entry-summary a:hover,article .entry-summary a:hover,.entry-content a:hover,.entry-content a:hover{text-decoration:underline;}
-.entry-content table a{text-decoration:none;}
+article .entry-title a,.entry-content table a,.entry-footer a,.entry-meta a,.entry-footer a,.navigation.pagination a,#footer .footer-social-nav a{text-decoration:none !important;}
 article:last-child,.entry-meta span:last-child,.entry-footer span:last-child,.entry-footer a:nth-child(2),article time.updated.published{margin:0;}
 article .content{margin:20px 0 0;}
 article .post-wrap figure{padding:0 0 30px;margin:0;}
@@ -238,7 +237,7 @@ section.widget p{color:inherit}
 .widget li:before{font-family:'Font Awesome\ 5 Free';content:"\f054";font-weight:800;font-size:10px;margin-right:10px;line-height:27px;}
 .widget li:last-child{border:none;margin:0;padding:0;}
 .widget li a{padding:0;}
-#sidebar .widget li a{text-decoration:none;}
+.widget li a{text-decoration:none !important;}
 #sidebar .widget .nav-link{display:inline;}
 .sidebar .widget li a{color:inherit;}
 .widget li .post-date,.widget li .comment-author-link{font-size:13px;color:inherit;text-transform:capitalize;display:block;margin:8px 0 0;opacity:.5;text-indent:0;}
