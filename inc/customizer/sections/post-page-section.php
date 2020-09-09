@@ -245,6 +245,10 @@ Kirki::add_field(
 				.comment-respond .comment-form-comment textarea, .comment-respond input[type=email], .comment-respond input[type=text], input, select, textarea',
 				'property' => 'color',
 			),
+			array(
+				'element'  => '.comment-respond .comment-form-comment textarea, .comment-respond input[type=email], .comment-respond input[type=text], input, select, textarea',
+				'property' => 'border-color',
+			),
 		),
 	)
 );
