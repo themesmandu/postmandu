@@ -70,6 +70,14 @@ if ( ! function_exists( 'simple_podcast_setup' ) ) :
 			)
 		);
 
+		// Custom background color.
+		add_theme_support(
+			'custom-background',
+			array(
+				'default-color' => 'f5efe0',
+			)
+		);
+
 		/**
 		 * Add support for core custom background feature.
 		 *
