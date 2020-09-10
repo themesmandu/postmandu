@@ -54,7 +54,7 @@ if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 
 		//blog defaults
 
-		$defaults['blog_sortable_content_sandard'] = array( 'title', 'thumbnail', 'meta', 'content' );   //blod content sortable defaults standard
+		$defaults['blog_sortable_content_sandard'] = array( 'thumbnail', 'title', 'meta', 'content' );   //blod content sortable defaults standard
 		$defaults['blog_sortable_content_list']    = array( 'image', 'content-all' );   //blod content sortable defaults list
 		$defaults['blog_sortable_content_list2']   = array( 'title', 'meta', 'content' );   //blod content sortable defaults list secontd
 
