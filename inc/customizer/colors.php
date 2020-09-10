@@ -258,7 +258,7 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => 'blockquote',
+				'element'  => 'blockquote, .is-style-outline .wp-block-button__link',
 				'property' => 'border-color',
 			),
 			array(
@@ -267,7 +267,8 @@ Kirki::add_field(
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.main-navigation .sub-menu .menu-item.current-menu-item> .caret',
+				'element'  => '.main-navigation .sub-menu .menu-item.current-menu-item> .caret,
+				.is-style-outline .wp-block-button__link, .is-style-outline .wp-block-button__link:not([href]):not([tabindex]), .is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:not([href]):not([tabindex]):hover',
 				'property' => 'color',
 			),
 		),
@@ -289,8 +290,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover,
-				.input-group>.input-group-append>.btn:hover, #cancel-comment-reply-link:hover, .wp-block-button__link:hover',
+				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover',
 				'property' => 'background-color',
 			),
 			array(
@@ -320,7 +320,7 @@ Kirki::add_field(
 				'property' => 'color',
 			),
 			array(
-				'element'  => 'input[type="submit"], .more-link-btn.btn-simple-podcast a',
+				'element'  => 'input[type="submit"], .more-link-btn.btn-simple-podcast a, .wp-block-button__link',
 				'property' => 'color',
 			),
 		),
@@ -343,7 +343,11 @@ Kirki::add_field(
 		'output'    => array(
 			array(
 				'element'  => 'button:hover, .btn-simple-podcast:hover, .skip-link:hover, input[type="submit"]:hover, .more-link-btn.btn-simple-podcast a:hover,
-				.wp-block-button__link:not([href]):not([tabindex]):hover',
+				.wp-block-button__link, .wp-block-button__link:not([href]):not([tabindex]):hover',
+				'property' => 'color',
+			),
+			array(
+				'element'  => '.wp-block-button__link:active, .wp-block-button__link:focus, .wp-block-button__link:hover, .wp-block-button__link:visited',
 				'property' => 'color',
 			),
 		),

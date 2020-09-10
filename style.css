@@ -219,7 +219,7 @@ figcaption,
 .wp-caption-text,
 .gallery-caption {
     font-size: 14px;
-    color: #6d7683;
+    color: inherit;
     margin-top: 4px;
     text-align: center;
 }
