@@ -1,19 +1,19 @@
- 
+
 === Simple Podcast ===
 Contributors: Themesmandu
 Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
 Requires at least: 5.3
 Tested up to: 5.4.2
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple Podcast is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
+Simple Podcast is best suited for podcast websites. Perfect for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers.
 
 == Description ==
-Simple Podcast is a clean, modern responsive WordPress theme focused on podcast sites. 
-This theme is intended for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers. 
+Simple Podcast is a clean, modern responsive WordPress theme focused on podcast sites.
+This theme is intended for podcasters, youtubers, streamers, radio hosts, comedians, influencers, motivational speaker and bloggers.
 With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. Simple Podcast is completely responsive and thus compatible with all kinds of modern browsers. You can easily upload episodes and publish it or schedule it. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Documentation http://themesmandu.com/documentation/simple-podcast/.
 
 == Installation ==
@@ -87,7 +87,7 @@ license Url: https://stocksnap.io/license
 
 * Popper.js
 Source: https://popper.js.org/
-License: © 2016-2019 FEDERICO ZIVOLO & CONTRIBUTORS, 
+License: © 2016-2019 FEDERICO ZIVOLO & CONTRIBUTORS,
 license Url: https://github.com/popperjs/popper-core/blob/master/LICENSE.md
 
 * Screenshot
@@ -147,7 +147,16 @@ license Url: https://stocksnap.io/license
 = 1.0.0 - November 13 2019 =
 * Initial release.
 
-
 = 1.0.1 - July 27 2020 =
 * Fixed accessibility issue
 * Fixed minor bugs
+
+= 1.0.2 - July 30 2020 =
+* Fixed menu in mobile view
+
+= 1.0.3 - August 29 2020 =
+* Fixed accessibility issues
+
+= 1.0.4 - August 10 2020 =
+* Fixed color contrast
+* Fixed link hover and normal state
