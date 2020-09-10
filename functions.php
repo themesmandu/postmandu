@@ -74,7 +74,7 @@ if ( ! function_exists( 'simple_podcast_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			array(
-				'default-color' => 'f5efe0',
+				'default-color' => '212121',
 			)
 		);
 

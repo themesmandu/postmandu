@@ -105,7 +105,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.navbar .navbar-nav .nav-link:hover',
+				'element'  => '.navbar .navbar-nav .nav-link:hover, .action i:hover',
 				'property' => 'color',
 			),
 		),
@@ -258,16 +258,12 @@ Kirki::add_field(
 				'property' => 'background-color',
 			),
 			array(
-				'element'  => '.podcast_player .mejs-container, .podcast_player .mejs-container .mejs-controls, .podcast_player .mejs-embed, .podcast_player .mejs-embed body',
-				'property' => 'background',
-			),
-			array(
 				'element'  => 'blockquote',
 				'property' => 'border-color',
 			),
 			array(
 				'element'  => '#navbarmenus .close-btn, .current-menu-item.menu-item-has-children .caret,
-				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, article.post .more-link, .action .active i',
+				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, article.post .more-link, .action .active i, .action .active i:hover',
 				'property' => 'color',
 			),
 			array(
