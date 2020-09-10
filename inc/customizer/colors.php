@@ -220,7 +220,7 @@ Kirki::add_field(
 		'output'    => array(
 			array(
 				'element'  => 'a:hover, .page-content .entry-meta a:hover, .navigation .nav_direction a:hover, .single-post .navigation .column h4:hover, .entry-title a:hover,
-				.wp-block-cover-text a:hover',
+				.wp-block-cover-text a:hover, article.post .more-link:hover',
 				'property' => 'color',
 			),
 			array(
