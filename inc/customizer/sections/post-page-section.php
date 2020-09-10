@@ -312,7 +312,7 @@ Kirki::add_field(
 		'transport' => 'auto',
 		'output'    => array(
 			array(
-				'element'  => '.entry-footer, .entry-meta, .single-post .navigation .column a',
+				'element'  => '.entry-footer, .entry-meta',
 				'property' => 'color',
 			),
 		),

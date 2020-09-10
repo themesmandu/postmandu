@@ -99,7 +99,7 @@ Kirki::add_field(
 		'transport'   => 'auto',
 		'output'      => array(
 			array(
-				'element'  => '.episode-title a, .episode-meta span, a.podcast-meta-download, a.podcast-meta-new-window',
+				'element'  => '.episode-title a, .episode-meta span, a.podcast-meta-download, a.podcast-meta-new-window, .episode-meta a',
 				'property' => 'color',
 			),
 

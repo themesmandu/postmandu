@@ -5,12 +5,12 @@ a{color:#27b0ff;transition:.3s;}
 a{cursor:pointer;text-decoration:underline;}
 a:hover{text-decoration:underline !important;}
 a:focus,a:active,input:focus,textarea:focus,select:focus,input[type="submit"]:focus,button:focus,.main-navigation .nav-link:focus{outline:1px dotted !important;}
-.navbar .navbar-brand,.btn,button,input[type="submit"],.nav-link,.entry-meta a,.entry-title a,.entry-footer a,.pagination a,.comments-area .date,.comments-area .comment-reply-link,.nav_direction a,#cancel-comment-reply-link,.wp-block-file a,.post-meta a,.cat-links a,.tags-links a,.wp-block-archives a,.wp-block-categories a,table a,.wp-block-calendar a,.page-links a,.fn a{text-decoration:none;}
+.navbar .navbar-brand,.btn,button,input[type="submit"],.nav-link,.entry-meta a,.entry-title a,.entry-footer a,.pagination a,.comments-area .date,.comments-area .comment-reply-link,.nav_direction a,#cancel-comment-reply-link,.wp-block-file a,.post-meta a,.cat-links a,.tags-links a,.wp-block-archives a,.wp-block-categories a,table a,.wp-block-calendar a,.page-links a,.fn a,.header-banner .btn-podcast,.episode-title a,.btn-simple-podcast,.episode-meta a,a.podcast-meta-download,a.podcast-meta-new-window{text-decoration:none;}
 p a,input[type="submit"]:hover,button:hover,.btn:hover{text-decoration:underline;}
-p a:hover,.wp-caption-text a:hover,article.post .cat-links a:hover,article.post .tags-links a:hover,figcaption a:hover,li a:hover,.wp-block-archives a:hover,dl a:hover{text-decoration:none !important;}
+p a:hover,.wp-caption-text a:hover,article.post .cat-links a:hover,article.post .tags-links a:hover,figcaption a:hover,li a:hover,.wp-block-archives a:hover,dl a:hover,a.podcast-meta-download:hover,a.podcast-meta-new-window:hover{text-decoration:none !important;}
 p a.btn:hover,table a:hover,.comments-area .date:hover,.comments-area .comment-reply-link:hover,#cancel-comment-reply-link:hover,.fn a:hover,.sidebar .widget li a:hover,.main-navigation .navbar-nav .nav-link:hover{text-decoration:underline !important;}
-article.post .cat-links a,article.post .tags-links a,.wp-block-archives a{border-bottom:1px solid;transition:.3s;}
-article.post .cat-links a:hover,article.post .tags-links a:hover,.wp-block-archives a:hover{border-bottom:none;}
+article.post .cat-links a,article.post .tags-links a,.wp-block-archives a,a.podcast-meta-download,a.podcast-meta-new-window{border-bottom:1px solid;transition:.3s;}
+article.post .cat-links a:hover,article.post .tags-links a:hover,.wp-block-archives a:hover,a.podcast-meta-download:hover,a.podcast-meta-new-window:hover{border-bottom:none;}
 /* -- Player Focus Styles -- */
 .mejs-play>button:focus,.mejs-mute>button:focus,.mejs-controls a.mejs-horizontal-volume-slider:focus{outline:1px dotted !important;}
 .btn-simple-podcast:focus,input[type="submit"]:focus{opacity:.7;}
@@ -96,7 +96,7 @@ h6{font-size:18px;}
 .latest-episode figure img{height:auto;}
 .latest-episode .episode-title{font-size:28px;font-weight:600;}
 .episode-meta span{position:relative;}
-.episode-meta span:after{content:'|';color:#eeeeee;margin:0 10px;}
+.episode-meta span:after{content:'|';color:inherit;margin:0 10px;}
 .episode-meta span:last-child:after{display:none;}
 .episode-meta a{font-size:14px;color:#eeeeee;}
 .episode-summary{margin-top:15px;color:#ffffff;}
@@ -188,7 +188,7 @@ span.page-numbers.current{padding:4px 7px;border:none;}
 .navigation .nav_direction .column figure{position:relative;}
 .navigation .nav_direction .column figure a:before{content:'';background:rgba(0,0,0,.6);visibility:hidden;}
 .navigation .nav_direction .column:hover figure a:before{visibility:visible;}
-.navigation .nav_direction a{color:inherit;display:block;}
+.navigation .nav_direction a{display:block;}
 .navigation .nav_direction span{font-weight:300;color:inherit;}
 .navigation .nav_direction .column span{font-size:inherit;font-weight:500;margin:0;}
 .single-post .next_post{text-align:right;margin-left:auto;}
