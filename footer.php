@@ -50,7 +50,10 @@
 		<div class="container">
 			<?php if ( simple_podcast_get_theme_option( 'footer_copyright' ) ) : ?>
 			<div class="site-info">
-				<?php echo wp_kses_post( simple_podcast_get_theme_option( 'footer_copyright' ) ); ?>
+				<?php
+				$text = sprintf( __( 'Powered by %s', 'simple-podcast' ), simple_podcast_get_theme_option( 'footer_copyright' ) );
+				echo wp_kses_post($text );
+				?>
 			</div><!-- .site-info -->
 			<?php endif; ?>
 
