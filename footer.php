@@ -52,7 +52,7 @@
 		<div class="container">
 			<?php if (simple_podcast_get_theme_option('footer_copyright')) : ?>
 				<div class="site-info">
-					<?php echo __(wp_kses_post(simple_podcast_get_theme_option('footer_copyright')), 'simple-podcast'); ?>
+					<?php echo wp_kses_post(simple_podcast_get_theme_option('footer_copyright')); ?>
 				</div><!-- .site-info -->
 			<?php endif; ?>
 
