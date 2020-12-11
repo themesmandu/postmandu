@@ -14,11 +14,11 @@
 			<div class="site-branding">
 				<?php if ( ! has_custom_logo() ) { ?>
 
-					<?php if ( is_front_page() && is_home() ) : ?>
+					<?php if ( ( is_front_page() || is_home() ) && ! is_page() ) : ?>
 
-				<span class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
+				<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
 						title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
-						itemprop="url"><?php bloginfo( 'name' ); ?></a></span>
+						itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
 				<?php else : ?>
 
@@ -31,7 +31,13 @@
 
 					<?php
 				} else {
-					the_custom_logo();
+						if ( ( is_front_page() || is_home() ) && ! is_page() ) : ?>
+							<h1 class="navbar-brand mb-0">
+								<?php the_custom_logo(); ?>
+							</h1>
+						<?php else :
+								the_custom_logo();
+							endif;
 				}
 				?>
 			</div>
