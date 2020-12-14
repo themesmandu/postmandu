@@ -262,7 +262,7 @@ Kirki::add_field(
 				'property' => 'border-color',
 			),
 			array(
-				'element'  => '#navbarmenus .close-btn, .current-menu-item.menu-item-has-children .caret,
+				'element'  => '#menu, #navbarmenus .close-btn, .current-menu-item.menu-item-has-children .caret,
 				.main-navigation .menu-item.current-menu-item.menu-item-has-children:after, article.post .more-link, .action .active i, .action .active i:hover',
 				'property' => 'color',
 			),
@@ -270,6 +270,10 @@ Kirki::add_field(
 				'element'  => '.main-navigation .sub-menu .menu-item.current-menu-item> .caret,
 				.is-style-outline .wp-block-button__link, .is-style-outline .wp-block-button__link:not([href]):not([tabindex]), .is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:not([href]):not([tabindex]):hover',
 				'property' => 'color',
+			),
+			array(
+				'element'  => '#menu:focus',
+				'property' => 'outline-color',
 			),
 		),
 	)
