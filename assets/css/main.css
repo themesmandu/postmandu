@@ -126,10 +126,25 @@ article .entry-footer a:hover {
     border-bottom: none;
 }
 
+.btn:focus,
+.btn-podcast:focus,
+.btn-simple-podcast:focus {
+    outline: 2px dotted !important;
+    outline-offset: -3px;
+}
+
 /* -- Player Focus Styles -- */
+.mejs-play>button,
+.mejs-mute>button,
+.mejs-controls a.mejs-horizontal-volume-slider,
+.mejs-mediaelement a {
+    color: inherit;
+}
+
 .mejs-play>button:focus,
 .mejs-mute>button:focus,
-.mejs-controls a.mejs-horizontal-volume-slider:focus {
+.mejs-controls a.mejs-horizontal-volume-slider:focus,
+.mejs-mediaelement a:focus {
     outline: 1px dotted !important;
 }
 
