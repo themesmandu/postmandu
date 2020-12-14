@@ -53,8 +53,8 @@
 			<?php if ( simple_podcast_get_theme_option( 'footer_copyright' ) ) : ?>
 			<div class="site-info">
 				<?php
-				$simple-podcast-footercopyright = sprintf( __( 'Powered by %s', 'simple-podcast' ), simple_podcast_get_theme_option( 'footer_copyright' ) );
-				echo wp_kses_post($simple-podcast-footercopyright );
+				//$simple-podcast-footercopyright = sprintf( __( 'Powered by %s', 'simple-podcast' ), simple_podcast_get_theme_option( 'footer_copyright' ) );
+				echo wp_kses_post(simple_podcast_get_theme_option( 'footer_copyright' ));
 				?>
 			</div><!-- .site-info -->
 			<?php endif; ?>
