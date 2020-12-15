@@ -62,7 +62,6 @@ input[type="submit"],
 .tags-links a,
 .wp-block-archives a,
 .wp-block-categories a,
-table a,
 .wp-block-calendar a,
 .page-links a,
 .fn a,
@@ -92,12 +91,13 @@ li a:hover,
 dl a:hover,
 a.podcast-meta-download:hover,
 a.podcast-meta-new-window:hover,
-article .entry-footer a:hover {
+article .entry-footer a:hover,
+table a:hover {
     text-decoration: none !important;
 }
 
 p a.btn:hover,
-table a:hover,
+table a,
 .comments-area .date:hover,
 .comments-area .comment-reply-link:hover,
 #cancel-comment-reply-link:hover,
