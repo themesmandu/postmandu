@@ -26,7 +26,7 @@
 		<header id="top-header" class="site-header" role="banner">
 			<div class="header-wrap">
 				<?php if ( simple_podcast_get_theme_option( 'skip_to_content_toggle' ) ) : ?>
-				<a class="skip-link" href="#content"><?php esc_html_e( 'To the content', 'simple-podcast' ); ?></a>
+				<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'To the content', 'simple-podcast' ); ?></a>
 				<?php endif; ?>
 
 				<?php

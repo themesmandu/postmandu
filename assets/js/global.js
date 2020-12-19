@@ -10,15 +10,6 @@ jQuery(document).ready(function ($) {
           }
         });
 
-    $(window).scroll(function () {
-        var height = $(window).scrollTop();
-        if (height > 100) {
-            $('.skip-link').fadeOut();
-        } else {
-            $('.skip-link').fadeIn();
-        }
-    });
-
     // Add class in navigation bar
     $(window).scroll(function () {
         var height = $(window).scrollTop();
