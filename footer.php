@@ -73,7 +73,7 @@
 			?>
 		</div>
 	</div><!-- .footer-copyright -->
-	<button class="up-btn btn-simple-podcast" id="up-btn" title="<?php echo esc_html( __( 'Go to top', 'simple-podcast' ) ); ?>" style="display: block;"><span class="screen-reader-text"><?php echo esc_html( __( 'to the top', 'simple-podcast' ) ); ?>to the top</span>&uarr;</button>
+	<button class="up-btn btn-simple-podcast" id="up-btn" title="<?php echo esc_attr_e( 'Go to top', 'simple-podcast' ); ?>" style="display: block;"><span class="screen-reader-text"><?php echo esc_attr_e( 'to the top', 'simple-podcast' ); ?></span>&uarr;</button>
 </footer>
 
 </div><!-- #page -->
