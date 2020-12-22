@@ -28,18 +28,21 @@ get_header();
 					get_template_part( 'template-parts/post/single', get_post_format() );
 					?>
 					<?php if ( ! is_attachment() ) { ?>
-				<nav class="navigation card-footer" role="navigation" aria-label="<?php esc_attr_e('Post', 'simple-podcast'); ?>">
+				<nav class="navigation card-footer" role="navigation" aria-label="<?php esc_attr_e( 'Post', 'simple-podcast' ); ?>">
 					<div class="nav_direction">
 						<?php
 						$prevpost = get_previous_post();
 						if ( $prevpost ) {
 							?>
 						<div class="previous_post column">
-							<?php $prevthumbnail = get_the_post_thumbnail_url( $prevpost->ID, 'prev-next-link-image' ); ?>
-							<?php if ($prevthumbnail) : ?>
+							<?php
+							$prevthumbnail = get_the_post_thumbnail_url( $prevpost->ID );
+							$prevtitle     = get_the_title( $prevpost->ID );
+							?>
+							<?php if ( $prevthumbnail ) : ?>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $prevpost->ID ) ); ?>"><img
-										src="<?php echo esc_url( $prevthumbnail ); ?>" alt="<?php echo esc_url( $prevthumbnail ); ?>"></a>
+										src="<?php echo esc_attr( $prevthumbnail ); ?>" alt="<?php echo esc_attr( $prevtitle ); ?>"></a>
 							</figure>
 							<?php endif; ?>
 							<div class="prev_title">
@@ -54,11 +57,14 @@ get_header();
 						if ( $nextpost ) {
 							?>
 						<div class="next_post column">
-							<?php $nextthumbnail = get_the_post_thumbnail_url( $nextpost->ID, 'prev-next-link-image' ); ?>
-							<?php if ($nextthumbnail) : ?>
+							<?php
+							$nextthumbnail = get_the_post_thumbnail_url( $nextpost->ID );
+							$nexttitle     = get_the_title( $prevpost->ID );
+							?>
+							<?php if ( $nextthumbnail ) : ?>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $nextpost->ID ) ); ?>"><img
-										src="<?php echo esc_url( $nextthumbnail ); ?>" alt="<?php echo esc_url( $nextthumbnail ); ?>"></a>
+										src="<?php echo esc_attr( $nextthumbnail ); ?>" alt="<?php echo esc_attr( $nexttitle ); ?>"></a>
 							</figure>
 							<?php endif; ?>
 
