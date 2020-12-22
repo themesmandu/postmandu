@@ -68,13 +68,13 @@ if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 		$defaults['sidebar_position'] = 'right';
 
 		//footer copyright text default.
-		$defaults['footer_copyright'] = 'Here lies copyright text';
+		$defaults['footer_copyright'] = esc_html__( 'Here lies copyright text', 'simple-podcast' );
 
 		//footer copyright text default.
 		$defaults['banner_toggle'] = '0';
 
 		// Pass through filter.
-		$defaults = apply_filters( 'simple-podcast_get_default_theme_options', $defaults );
+		$defaults = apply_filters( 'simple_podcast_get_default_theme_options', $defaults );
 		return $defaults;
 	}
 
