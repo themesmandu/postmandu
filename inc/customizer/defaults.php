@@ -68,7 +68,7 @@ if ( ! function_exists( 'simple_podcast_get_default_theme_options' ) ) :
 		$defaults['sidebar_position'] = 'right';
 
 		//footer copyright text default.
-		$defaults['footer_copyright'] = 'Themesmandu';
+		$defaults['footer_copyright'] = 'Here lies copyright text';
 
 		//footer copyright text default.
 		$defaults['banner_toggle'] = '0';
