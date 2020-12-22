@@ -44,7 +44,7 @@
 
 			<button id="menu" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
 				data-target="#navbarmenus">
-				<span class="screen-reader-text">Menu</span>
+				<span class="screen-reader-text"><?php echo esc_html__( 'Menu', 'simple-podcast' ); ?></span>
 				<span></span>
 				<span></span>
 				<span></span>
