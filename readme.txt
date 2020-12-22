@@ -1,11 +1,10 @@
-
 === Simple Podcast ===
 Contributors: Themesmandu
 Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready, accessibility-ready, sticky-post
 Requires at least: 5.3
-Tested up to: 5.4.2
+Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -163,3 +162,8 @@ license Url: https://stocksnap.io/license
 
 = 1.0.5 - November 29 2020 =
 * Removed accessibility-ready tag
+
+= 1.0.6 - December 22 2020 =
+* Fixed Heading level
+* Added translator to footer copyright text
+* Fixed Header bugs
