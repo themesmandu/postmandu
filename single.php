@@ -62,16 +62,15 @@ get_header();
 							$nexttitle     = get_the_title( $prevpost->ID );
 							?>
 							<?php if ( $nextthumbnail ) : ?>
-							<figure>
-								<a href="<?php echo esc_url( get_permalink( $nextpost->ID ) ); ?>"><img
-										src="<?php echo esc_attr( $nextthumbnail ); ?>" alt="<?php echo esc_attr( $nexttitle ); ?>"></a>
-							</figure>
-							<?php endif; ?>
-
 							<div class="next_title">
 								<span><?php echo esc_html__( 'Next Post', 'simple-podcast' ); ?></span>
 								<?php next_post_link( '%link', "<div class='detials'><span>%title</span></div>" ); ?>
 							</div>
+							<figure>
+								<a href="<?php echo esc_url( get_permalink( $nextpost->ID ) ); ?>"><img
+										src="<?php echo esc_attr( $nextthumbnail ); ?>" alt="<?php echo esc_attr( $nexttitle ); ?>"></a>
+							</figure>
+							<?php endif; ?>	
 						</div>
 						<?php } ?>
 					</div>
