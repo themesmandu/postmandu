@@ -19,7 +19,7 @@ get_header();
 	<div class="row">
 
 	<div id="primary" class="content-area<?php simple_podcast_content_class(); ?>">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main" role="main">
 
 		<?php
 		while ( have_posts() ) :
