@@ -194,7 +194,7 @@ function simple_podcast_scripts() {
 	wp_enqueue_style( 'simple-podcast-mediascreen', get_theme_file_uri( '/assets/css/mediascreen.min.css' ), array( 'simple-podcast-style' ), wp_get_theme()->get( 'Version' ) );
 
 	// Add font-awesome fonts, used in the main stylesheet.
-	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.14.0/css/all.css', array( 'simple-podcast-style' ), '5.14.0' );
+	wp_enqueue_style( 'simple-podcast-font-awesome', get_theme_file_uri( '/assets/font-awesome-5.6.1/css/all.css' ), array( 'simple-podcast-style' ), '5.3.1' );
 
 	// Dashicons Support
 	wp_enqueue_style( 'dashicons' );
