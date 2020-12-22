@@ -37,11 +37,11 @@ get_header();
 		<?php endif; ?>
 		<div class="action to-right-align">
 			<button class="active view-grid">
-				<span class="screen-reader-text">grid view</span>
+				<span class="screen-reader-text"><?php echo esc_html__( 'grid view', 'simple-podcast' ); ?></span>
 				<i class="fas fa-th-large"></i>
 			</button>
 			<button class="view-list">
-				<span class="screen-reader-text">list view</span>
+				<span class="screen-reader-text"><?php echo esc_html__( 'list view', 'simple-podcast' ); ?></span>
 				<i class="fas fa-th-list"></i>
 			</button>
 		</div>
