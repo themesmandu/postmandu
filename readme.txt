@@ -170,5 +170,10 @@ license Url: https://stocksnap.io/license
 
 = 1.0.6 - December 22 2020 =
 * Fixed Heading level
-* Added translator to footer copyright text
+* Added missing translate function
 * Fixed Header bugs
+* Fixed focus order on post navigation
+* Added missing license and fixed wrong license
+* Fixed incorrect escaping function
+* Added Font Awesome locally
+* Other minor fixes

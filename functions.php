@@ -204,6 +204,16 @@ function simple_podcast_scripts() {
 	wp_enqueue_script( 'popper', get_template_directory_uri() . '/vendor/bootstrap-src/js/popper.min.js', array(), '1.14.3', true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap-src/js/bootstrap.min.js', array(), '4.1.2', true );
 
+
+	// Register the script
+	wp_register_script( 'simple-podcast-global', get_template_directory_uri() . '/assets/js/global.min.js' );
+
+	// Localize the script with new data
+	$translation_array = array(
+	    'text' => __( 'Show sub menu', 'simple-podcast' ),
+	);
+	wp_localize_script( 'simple-podcast-global', 'simple_podcast_global_var', $translation_array );
+
 	// Theme added JavaScript: Added by Developers.
 	wp_enqueue_script( 'simple-podcast-global', get_template_directory_uri() . '/assets/js/global.min.js', array(), wp_get_theme()->get( 'Version' ), true );
 

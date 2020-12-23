@@ -30,7 +30,7 @@ jQuery(document).ready(function ($) {
         $('.menu-item-has-children').children().focusout(function(){
             $(this).parent().removeClass('focus');
         });
-        
+
         $(window).click(function(){
             $('.menu-item-has-children').removeClass('focus');
         });
@@ -38,7 +38,7 @@ jQuery(document).ready(function ($) {
 
     // Added class on dropdown menu span
     if ($(document).width() < 1200) {
-        $('<button class="caret"><span class="screen-reader-text">Show sub menu</span><i class="fas fa-chevron-down"></i></button>').insertBefore( ".main-navigation .menu-item-has-children .sub-menu" );
+        $('<button class="caret"><span class="screen-reader-text">' + simple_podcast_global_var.text + '</span><i class="fas fa-chevron-down"></i></button>').insertBefore( ".main-navigation .menu-item-has-children .sub-menu" );
 
         $('.caret').click(function () {
             $(this).parent().toggleClass('menu-open').siblings().removeClass('menu-open');
