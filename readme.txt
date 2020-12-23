@@ -89,6 +89,11 @@ Source: https://popper.js.org/
 License: © 2016-2019 FEDERICO ZIVOLO & CONTRIBUTORS,
 license Url: https://github.com/popperjs/popper-core/blob/master/LICENSE.md
 
+* Slick.js
+Source: https://kenwheeler.github.io/slick/
+License: MIT
+license Url: https://github.com/kenwheeler/slick/blob/master/LICENSE
+
 * Screenshot
 screenshot.png
 Source: https://stocksnap.io/photo/microphone-music-VIGKZY2P20, https://stocksnap.io/photo/people-boy-P62MVB826H, https://stocksnap.io/photo/microphone-condenser-4C9TCUEARS
