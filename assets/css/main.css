@@ -1,4 +1,5 @@
 /* -- All Basic Styles Of Theme -- */
+
 html,
 body {
     margin: 0;
@@ -133,7 +134,9 @@ article .entry-footer a:hover {
     outline-offset: -3px;
 }
 
+
 /* -- Player Focus Styles -- */
+
 .mejs-play>button,
 .mejs-mute>button,
 .mejs-controls a.mejs-horizontal-volume-slider,
@@ -265,7 +268,9 @@ button,
     text-align: center;
 }
 
+
 /* -- Heading Styles -- */
+
 h1,
 h2,
 h3,
@@ -297,7 +302,9 @@ h6 {
     font-size: 18px;
 }
 
+
 /* -- Global Styles -- */
+
 .overlay,
 .latest-episode:before,
 .featured-guest:before {
@@ -343,7 +350,9 @@ h6 {
     display: inline-block;
 }
 
+
 /* -- Container Styles -- */
+
 .container {
     max-width: 1230px;
 }
@@ -353,7 +362,9 @@ h6 {
     padding: 0 15px;
 }
 
+
 /* -- Main Navigation Styles -- */
+
 .main-navigation {
     right: 0;
     left: 0;
@@ -371,7 +382,6 @@ h6 {
 
 .site-branding span {
     display: block;
-    color: #ffffff;
 }
 
 .navbar .navbar-brand {
@@ -403,7 +413,9 @@ h6 {
     padding: 8px 12px;
 }
 
+
 /* -- Search Form Styles -- */
+
 .form-control {
     font-size: 14px;
     border: none;
@@ -418,7 +430,9 @@ h6 {
     box-shadow: none;
 }
 
+
 /* -- Navbar With Search Bar [Alternative Option] -- */
+
 .navbar #searchform {
     margin-left: 15px;
 }
@@ -435,7 +449,9 @@ h6 {
     letter-spacing: 1px;
 }
 
+
 /* -- Background Image Jumbotron Styles -- */
+
 .jumbotron {
     border-radius: 0;
 }
@@ -464,7 +480,9 @@ h6 {
     margin: 42px 0 0;
 }
 
+
 /* -- Header Banner Styles -- */
+
 .header-banner {
     height: 800px;
     text-align: center;
@@ -499,7 +517,9 @@ h6 {
     display: inline-block;
 }
 
+
 /* -- Content Styles -- */
+
 #content {
     padding: 48px 0;
     background: inherit;
@@ -509,7 +529,9 @@ h6 {
     padding: 0;
 }
 
+
 /* -- Section Latest Episode Styles -- */
+
 .latest-episode:before {
     content: '';
 }
@@ -604,7 +626,9 @@ h6 {
     font-size: 0;
 }
 
+
 /* -- Grid Styles -- */
+
 .episode-grid {
     text-align: center;
 }
@@ -624,7 +648,9 @@ h6 {
     display: inline-block;
 }
 
+
 /* -- List Styles -- */
+
 .episode-list {
     text-align: center;
 }
@@ -652,7 +678,9 @@ h6 {
     font-size: 14px;
 }
 
+
 /* -- Latest Episode Content Section Styles -- */
+
 .grid-wrap {
     margin: 0 -20px;
 }
@@ -673,7 +701,9 @@ h6 {
     color: inherit;
 }
 
+
 /* -- Feature Guest Section Styles -- */
+
 .featured-guest {
     text-align: center;
 }
@@ -715,7 +745,9 @@ h6 {
     margin-top: 15px;
 }
 
+
 /* -- Page Styles -- */
+
 .page-content {
     padding: 100px 0;
 }
@@ -747,7 +779,9 @@ h6 {
     padding: 20px;
 }
 
+
 /* -- Blog Page Styles -- */
+
 .featured-jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
@@ -909,7 +943,9 @@ article li {
     margin-bottom: 15px;
 }
 
+
 /* -- Post Navigation -- */
+
 .posts-navigation .screen-reader-text,
 .pagination .screen-reader-text {
     display: none;
@@ -929,7 +965,9 @@ article li {
     margin-right: auto;
 }
 
+
 /* -- Navigation Pagination Styles -- */
+
 .pagination,
 .comment_pagination {
     margin-top: 32px;
@@ -966,7 +1004,9 @@ span.page-numbers.current {
     margin: 12px 0 0;
 }
 
+
 /* -- Single Page Styles -- */
+
 .single-post article,
 .single-podcast article {
     padding: 20px;
@@ -1050,7 +1090,9 @@ span.page-numbers.current {
     margin: 0 0 0 20px;
 }
 
+
 /* -- Comment Form Styles -- */
+
 #comments,
 #respond {
     background: inherit;
@@ -1225,7 +1267,9 @@ span.page-numbers.current {
     padding: 4px 7px;
 }
 
+
 /* -- Sidebar Styles -- */
+
 #sidebar {
     max-width: 345px;
     margin-left: auto;
@@ -1335,7 +1379,9 @@ section.widget p {
     margin-bottom: 4px;
 }
 
+
 /* -- Contact Form Seven -- */
+
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing,
 div.wpcf7-mail-sent-ng,
@@ -1354,7 +1400,9 @@ section span.wpcf7-not-valid-tip {
     text-align: left;
 }
 
+
 /* -- Footer Styles -- */
+
 #footer {
     position: relative;
 }
@@ -1440,7 +1488,9 @@ footer .paragraph span:last-child:after,
     margin-right: 0;
 }
 
+
 /* -- Footer Widget Styles -- */
+
 #footer-widgets {
     text-align: left;
 }
@@ -1462,7 +1512,9 @@ footer .paragraph span:last-child:after,
     color: inherit;
 }
 
+
 /* -- Footer Newsletter Section Styles -- */
+
 #footer .newsletter-widgets {
     background-color: #f6f6f6;
     text-align: center;
@@ -1537,7 +1589,9 @@ footer .paragraph span:last-child:after,
     cursor: pointer;
 }
 
+
 /* -- 404 Error Page Styles -- */
+
 .error404 #content {
     display: none;
 }
@@ -1568,7 +1622,9 @@ footer .paragraph span:last-child:after,
     margin-bottom: 0;
 }
 
+
 /* -- Wp Block Styles -- */
+
 .wp-block-button {
     margin: 20px 0;
 }
@@ -1630,18 +1686,21 @@ code {
     color: #ff0000;
 }
 
+
 /* -- Plugins Styles -- */
+
 .tnp-field label {
     font-weight: 400;
 }
 
+
 /* -- All Animation Styles -- */
+
 @keyframes fade {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
