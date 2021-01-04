@@ -29,10 +29,10 @@
     }
 
     #footer-widgets .column {
-        margin-bottom: 42px;
+        margin: 0 0 42px;
     }
 
-    #footer-widgets .column:last-child,
+    #footer-widgets .column:nth-last-child(1),
     #footer-widgets .column:nth-last-child(2) {
         margin-bottom: 0;
     }
