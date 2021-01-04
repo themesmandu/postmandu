@@ -59,7 +59,7 @@ get_header();
 						<div class="next_post column">
 							<?php
 							$nextthumbnail = get_the_post_thumbnail_url( $nextpost->ID );
-							$nexttitle     = get_the_title( $prevpost->ID );
+							$nexttitle     = get_the_title( $nextpost->ID );
 							?>
 							<?php if ( $nextthumbnail ) : ?>
 							<div class="next_title">
