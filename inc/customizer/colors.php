@@ -131,7 +131,7 @@ Kirki::add_field(
 				'property' => 'color',
 			),
 			array(
-				'element'  => '.site-branding span',
+				'element'  => '.navbar-brand a',
 				'property' => 'color',
 			),
 		),
