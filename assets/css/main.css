@@ -1351,7 +1351,8 @@ section.widget p {
 
 .widget li .post-date,
 .widget li .comment-author-link {
-    font-size: 13px;
+    font-size: 12px;
+    font-style: italic;
     color: inherit;
     text-transform: capitalize;
     display: block;
@@ -1404,10 +1405,6 @@ section span.wpcf7-not-valid-tip {
 
 #footer {
     position: relative;
-}
-
-#footer .overlay {
-    z-index: -1;
 }
 
 #footer .widget-content-wrap {
