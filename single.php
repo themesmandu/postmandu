@@ -42,7 +42,7 @@ get_header();
 							<?php if ( $prevthumbnail ) : ?>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $prevpost->ID ) ); ?>"><img
-										src="<?php echo esc_attr( $prevthumbnail ); ?>" alt="<?php echo esc_attr( $prevtitle ); ?>"></a>
+										src="<?php echo esc_url( $prevthumbnail ); ?>" alt="<?php echo esc_attr( $prevtitle ); ?>"></a>
 							</figure>
 							<?php endif; ?>
 							<div class="prev_title">
@@ -68,9 +68,9 @@ get_header();
 							</div>
 							<figure>
 								<a href="<?php echo esc_url( get_permalink( $nextpost->ID ) ); ?>"><img
-										src="<?php echo esc_attr( $nextthumbnail ); ?>" alt="<?php echo esc_attr( $nexttitle ); ?>"></a>
+										src="<?php echo esc_url( $nextthumbnail ); ?>" alt="<?php echo esc_attr( $nexttitle ); ?>"></a>
 							</figure>
-							<?php endif; ?>	
+							<?php endif; ?>
 						</div>
 						<?php } ?>
 					</div>
