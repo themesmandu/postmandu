@@ -4,7 +4,7 @@ Tags: blog, entertainment, custom-background, custom-colors, custom-logo, custom
 Requires at least: 5.3
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -177,3 +177,6 @@ license Url: https://stocksnap.io/license
 * Fixed incorrect escaping function
 * Added Font Awesome locally
 * Other minor fixes
+
+= 1.0.7 - January 8 2020 =
+* Fixed escaping function
